@@ -1,0 +1,127 @@
+<script language="JavaScript" type="text/JavaScript">
+<!--
+//=========================
+jQuery (document).ready (function () {
+  jQuery ('.SkinImg').click (function() {
+    ToggleSkin (jQuery (this));
+  })
+});
+
+//--------------------------------------------------
+function ToggleSkin (img)
+{
+  if (img.width () < 300)
+  {
+    ShowSkin (img);
+  }
+  else
+  {
+    HideSkin (img);
+  }
+}
+
+//--------------------------------------------------
+function ShowSkin (img)
+{
+  img.animate ({
+    width: '414px',
+    height: '294px'
+  },
+  {
+    step: function (now, fx) {
+      var frac = now / 300;
+      var top = -20 * ( 1 - frac);
+      var w = 331 + 83 * frac;
+      var h = 235 + 59 * frac;
+      fx.elem.style.backgroundPosition = "0px " + top + "px";
+      fx.elem.style.backgroundSize = w + "px " + h + "px";
+    },
+    easing: "swing"
+  })
+}
+
+//--------------------------------------------------
+function HideSkin (img)
+{
+  img.animate ({
+    width: '200px',
+    height: '56px'
+  },
+  {
+    step: function (now, fx) {
+      var frac = now / 300;
+      var top = -20 * ( 1 - frac);
+      var w = 331 + 83 * frac;
+      var h = 235 + 59 * frac;
+      fx.elem.style.backgroundPosition = "0px " + top + "px";
+      fx.elem.style.backgroundSize = w + "px " + h + "px";
+    },
+    easing: "swing"
+  })
+}
+//-->
+</script>
+
+[DESCRIPTION]
+Title = BoxWorld
+Copyright = Cristiano Machado
+Email = cris-machado@pop.com.br
+
+[SKIN]
+Transparent = 000000000
+
+Goal = 7
+Floor = 1
+Wall = 0
+Pack = 8
+Pack_Goal = 2
+
+Man_Right=3
+Man_Down=5
+Man_Left=4
+Man_Up=6
+
+[IMAGE]
+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
+[BACKGROUND]
+iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAIAAAC0Ujn1AAAAJElEQVR42u3MMQ0A
+AAwDoNW/6Xlo0g8EkJuJWq1Wq9VqtVrde6/1AB8+anZCAAAAAElFTkSuQmCC
+[END]

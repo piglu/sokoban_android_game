@@ -1,0 +1,96 @@
+<script language="JavaScript" type="text/JavaScript">
+<!--
+//=========================
+jQuery (document).ready (function () {
+  jQuery ('.SkinImg').click (function() {
+    ToggleSkin (jQuery (this));
+  })
+});
+
+//--------------------------------------------------
+function ToggleSkin (img)
+{
+  if (img.width () < 300)
+  {
+    ShowSkin (img);
+  }
+  else
+  {
+    HideSkin (img);
+  }
+}
+
+//--------------------------------------------------
+function ShowSkin (img)
+{
+  img.animate ({
+    width: '414px',
+    height: '294px'
+  },
+  {
+    step: function (now, fx) {
+      var frac = now / 300;
+      var top = -20 * ( 1 - frac);
+      var w = 331 + 83 * frac;
+      var h = 235 + 59 * frac;
+      fx.elem.style.backgroundPosition = "0px " + top + "px";
+      fx.elem.style.backgroundSize = w + "px " + h + "px";
+    },
+    easing: "swing"
+  })
+}
+
+//--------------------------------------------------
+function HideSkin (img)
+{
+  img.animate ({
+    width: '200px',
+    height: '56px'
+  },
+  {
+    step: function (now, fx) {
+      var frac = now / 300;
+      var top = -20 * ( 1 - frac);
+      var w = 331 + 83 * frac;
+      var h = 235 + 59 * frac;
+      fx.elem.style.backgroundPosition = "0px " + top + "px";
+      fx.elem.style.backgroundSize = w + "px " + h + "px";
+    },
+    easing: "swing"
+  })
+}
+//-->
+</script>
+
+[DESCRIPTION]
+
+Title = Sokored
+Copyright = Carlos Montiers
+
+[SKIN]
+Type = 2
+
+Man = 0
+Man_Goal = 1
+Pack = 2
+Pack_Goal = 3
+Goal = 4
+Wall = 5
+Floor = 6
+Outside=7
+
+[IMAGE]
+iVBORw0KGgoAAAANSUhEUgAAAKAAAAAUCAYAAAAKlDZOAAAAAXNSR0IArs4c6QAA
+AAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wF
+EAMaFe5nDnIAAAHgSURBVHja7Zq/ToRAEMalt9LCRjtbfQXo7awtTXwNXsPE0trO
+nmfQ9jptLM7KHhmSMcNklv034cCdL7mwLMt3s8vvBnaPquu6/si0GjVNo+o3XF9V
+v7quK02/ygBclyRg2rYdPz5J7bSBXgxAX+CxvywNv9TBdHlr+2nIACSB9z9f8knH
+Z0kA5vjhQPavt3EdvHkZt9xf209LBiAJHIABOBAcLOcAmOo3nh8Jy18nB2gkADX9
+tGQAksDXlgERGMxCPtH2cwBq+GnJJiFkIGimAtH9HABT/DgwUMbtpEPCsRAAc/20
+BHGlZjuXn6YWnQVLWSsFPuq3P7+c1J1+7oInIDxjSWBgHR7H+pAMCPvfD2+TdieP
+10F+Ll3d3U/235+fvP0sHsDQoEMvAvpx+FAAoc9vLmNJQKZkQA4fCiGMBZDDh5qD
+0ADEoH2rg1UkgIPf/sIB4MfO6ycBQ8tSljIAtw4gfBU/inUrAhDkuh1jeUsAamqT
+k5CtAPgfb8G2DBMRdOwzIEiahIT4lTIJMQB50FIGnBksSRp+pSzDGIA8eAGYnGWY
+VL9SFqINQB48PguCIp/9NP1K+SvOJiGBA7H02zClvIxgyzBC4DjYUl2oNPxKeB3L
+ADQdVAag6aAqDcBfzqgRBrfewn8AAAAASUVORK5CYII=
+[END]

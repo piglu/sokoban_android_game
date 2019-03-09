@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.stanks.andsokoban_full"
+	android:versionCode="2"
+	android:versionName="1.0b2"
+	android:installLocation="internalOnly">
+	
+	<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="14"/>
+	<supports-screens android:largeScreens="true" 
+	    android:normalScreens="true" 
+	    android:smallScreens="true" 
+	    android:anyDensity="true"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<uses-permission android:name="android.permission.INTERNET"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<application
+		android:icon="@drawable/icon"
+		android:label="andSokoban">
+		
+		<activity
+		android:name="com.dropbox.core.android.AuthActivity"
+		android:configChanges="orientation|keyboard"
+		android:launchMode="singleTask" >
+		<intent-filter>
+		<data android:scheme="db-ea41vz8owssfdhq" />
+		<action android:name="android.intent.action.VIEW" />
+		<category android:name="android.intent.category.BROWSABLE" />
+		<category android:name="android.intent.category.DEFAULT" />
+		</intent-filter>
+		</activity>
+		<activity android:name="com.google.android.gms.common.api.GoogleApiActivity"
+		  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+		  android:exported="false"/>
+		  <meta-data
+		  android:name="com.google.android.gms.version"
+		  android:value="@integer/google_play_services_version" />
+		<activity
+		  android:name="com.google.android.gms.ads.AdActivity"
+		  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+		  android:theme="@android:style/Theme.Translucent" />
+		  <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"
+		  android:theme="@style/Theme.IAPTheme"/>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".main"
+			android:label="andSokoban"
+			android:screenOrientation="landscape">
+			<intent-filter>
+			   <action android:name="android.intent.action.MAIN" />
+			   <category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			
+		</activity>
+		<service android:name=".starter">
+		</service>
+		<receiver android:name=".starter$starter_BR">
+		</receiver>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".play"
+			android:label="andSokoban"
+			android:screenOrientation="landscape">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".odabir"
+			android:label="andSokoban"
+			android:screenOrientation="landscape">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".video"
+			android:label="andSokoban"
+			android:screenOrientation="landscape">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".rijesenja"
+			android:label="andSokoban"
+			android:screenOrientation="landscape">
+		</activity>
+		<activity
+			android:windowSoftInputMode="stateHidden"
+			android:launchMode="singleTop"
+			android:name=".opt"
+			android:label="andSokoban"
+			android:screenOrientation="landscape">
+		</activity>
+	</application>
+</manifest>

@@ -1,0 +1,301 @@
+﻿Version=6.8
+NumberOfModules=12
+Module1=Starter
+Module2=play
+Module3=odabir
+Module4=video
+Module5=rijesenja
+Module6=opt
+Module7=CustomListView
+Module8=DBUtils
+Module9=KeyValueStore
+Module10=Table
+Module11=ClsActionBar
+Module12=ClsFloatingWindow
+Build1=Default,com.stanks.andsokoban_full,Full
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: http://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="14"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~'End of default text.~\n~'AddApplicationText(<activity android:name="anywheresoftware.b4a.objects.preferenceactivity"/>)~\n~AddApplicationText(<activity~\n~android:name="com.dropbox.core.android.AuthActivity"~\n~android:configChanges="orientation|keyboard"~\n~android:launchMode="singleTask" >~\n~<intent-filter>~\n~<data android:scheme="db-ea41vz8owssfdhq" />~\n~<action android:name="android.intent.action.VIEW" />~\n~<category android:name="android.intent.category.BROWSABLE" />~\n~<category android:name="android.intent.category.DEFAULT" />~\n~</intent-filter>~\n~</activity>)~\n~'************ Google Play Services Base ************~\n~AddApplicationText(~\n~  <activity android:name="com.google.android.gms.common.api.GoogleApiActivity"~\n~  android:theme="@android:style/Theme.Translucent.NoTitleBar"~\n~  android:exported="false"/>~\n~  <meta-data~\n~  android:name="com.google.android.gms.version"~\n~  android:value="@integer/google_play_services_version" />~\n~)~\n~'************ Google Play Services Base (end) ************~\n~'************ Firebase Ads ************~\n~AddApplicationText(~\n~  <activity~\n~  android:name="com.google.android.gms.ads.AdActivity"~\n~  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"~\n~  android:theme="@android:style/Theme.Translucent" />~\n~  <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"~\n~  android:theme="@style/Theme.IAPTheme"/>~\n~)~\n~'************ Firebase Ads (end) ************~\n~AddPermission(android.permission.ACCESS_NETWORK_STATE)~\n~AddPermission(android.permission.INTERNET)
+IconFile=
+NumberOfFiles=135
+File1=#.png
+File2=a.png
+File3=all_finished.bal
+File4=all_levels_finished.gif
+File5=all_lvls.mp3
+File6=autor
+File7=b.png
+File8=c.png
+File9=c1.png
+File10=c10.png
+File11=c11.png
+File12=c12.png
+File13=c13.png
+File14=c14.png
+File15=c15.png
+File16=c16.png
+File17=c17.png
+File18=c2.png
+File19=c3.png
+File20=c4.png
+File21=c5.png
+File22=c6.png
+File23=c7.png
+File24=c8.png
+File25=c9.png
+File26=d.png
+File27=db
+File28=db_orig
+File29=de_ikona.png
+File30=de_plava_ikona.png
+File31=del.png
+File32=desc
+File33=do_ikona.png
+File34=do_plava_ikona.png
+File35=e.png
+File36=email
+File37=email.png
+File38=email_btn.png
+File39=evasdigiscript.ttf
+File40=f.png
+File41=g.png
+File42=g_ikona.png
+File43=g_plava_ikona.png
+File44=gotovi_nivo_kvacica.png
+File45=h.png
+File46=i.png
+File47=igra_scv.bal
+File48=igrac.png
+File49=igrac_iks.png
+File50=igrac2.png
+File51=iks.png
+File52=iks_2.png
+File53=info.png
+File54=info_panel.bal
+File55=info2.png
+File56=j.png
+File57=k.png
+File58=kutija.png
+File59=kutija_2.png
+File60=kutija_na_mjestu.png
+File61=kutija_na_mjestu_2.png
+File62=l.png
+File63=l_ikona.png
+File64=l_plava_ikona.png
+File65=level_finished.gif
+File66=lista.bal
+File67=lvl.mp3
+File68=lvl_finished.gif
+File69=m.png
+File70=meni4.png
+File71=menu.png
+File72=n.png
+File73=na_mjestu.mp3
+File74=natrag_pl.png
+File75=o.png
+File76=off.png
+File77=on.png
+File78=opc.png
+File79=opcije.png
+File80=opcije1.png
+File81=opt.bal
+File82=p.png
+File83=play.png
+File84=plus.png
+File85=pod.png
+File86=q.png
+File87=r.png
+File88=reset_pl.png
+File89=reset_ze.png
+File90=s.png
+File91=s_main_pnl.bal
+File92=s_off.png
+File93=s_on.png
+File94=sb.png
+File95=skins.zip
+File96=sokoban.png
+File97=sokoban_2.png
+File98=sokoban_2_na_mjestu.png
+File99=solution.png
+File100=sort_asc.png
+File101=sort_desc.png
+File102=stavka.bal
+File103=strelica_dole.png
+File104=t.png
+File105=t1.png
+File106=t2.png
+File107=t3.png
+File108=t4.png
+File109=t5.png
+File110=tajmer.png
+File111=tid
+File112=title
+File113=u.png
+File114=upitnik.png
+File115=url
+File116=v.png
+File117=video.png
+File118=w.png
+File119=win.mp3
+File120=www.png
+File121=www_btn.png
+File122=x.png
+File123=y.png
+File124=z.png
+File125=z_desno.png
+File126=z_desno2.png
+File127=z_dole2.png
+File128=z_gore2.png
+File129=z_lijevo.png
+File130=z_lijevo2.png
+File131=z_plus_meni.ico
+File132=z_reset.png
+File133=z_undo.png
+File134=zid.mp3
+File135=zid_2.png
+NumberOfLibraries=15
+Library1=core
+Library2=phone
+Library3=xmlsax
+Library4=reflection
+Library5=stringutils
+Library6=sql
+Library7=scrollview2d
+Library8=audio
+Library9=screenrecorder
+Library10=archiver
+Library11=gifdecoder
+Library12=dropboxv2
+Library13=randomaccessfile
+Library14=animation
+Library15=firebaseadmob
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: andSokoban
+	#VersionCode: 2
+	#VersionName: 1.0b2
+	'SupportedOrientations possible values: unspecified, landscape or portrait.
+	#SupportedOrientations: landscape
+	#CanInstallToExternalStorage: False
+	#DebuggerForceStandardAssets: true
+#End Region
+
+#Region  Activity Attributes 
+	#FullScreen: False
+	#IncludeTitle: False
+#End Region
+
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+	Dim gumb As String
+'	Dim imaSenzora As Boolean
+End Sub
+
+Sub Globals
+	'These global variables will be redeclared each time the activity is created.
+	'These variables can only be accessed from this module.
+	Private sv As ScrollView
+	Private Button1 As Button
+	Private Button2 As Button
+	Private Button3 As Button
+	Private Button4 As Button
+	Private Button5 As Button
+	Private Button6 As Button
+	Private Button7 As Button
+	Private Button8 As Button
+	Private Button9 As Button
+	Private Button10 As Button
+	Private Button11 As Button
+	Private Button12 As Button
+	Private Button13 As Button
+	Private Button14 As Button
+	Private Button15 As Button
+	Private Button16 As Button
+	Private Button17 As Button
+	Private Button18 As Button
+	Private Button19 As Button
+	Private Button20 As Button
+	Private Button21 As Button
+	Private Button22 As Button
+	Private Button23 As Button
+	Private Button24 As Button
+	Private Button25 As Button
+	Private Button26 As Button
+	Private Button27 As Button
+	Private Panel1 As Panel
+'	Dim btn As Button
+'	Private btnOpcije As Button
+'	Private btnScore As Button
+'	Dim sensors As PhoneSensors
+	Dim arch As Archiver
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	'Do not forget to load the layout file created with the visual designer. For example:
+
+	sv.Initialize(1000dip)
+	Activity.AddView(sv, 0, 0, 100%x, 100%y)
+	sv.Panel.LoadLayout("s_main_pnl")
+	sv.Panel.Height = Panel1.Height
+
+	If File.Exists(File.DirInternal, "skins.zip") = False Then
+		File.Copy(File.DirAssets, "skins.zip", File.DirInternal, "skins.zip")
+		RaspakirajSkinoveIzArhive
+	End If
+
+	If File.Exists(File.DirInternal, "opcije") = False Then
+		Dim mOpcije As Map
+
+		mOpcije.Initialize
+		mOpcije.Put("cb", False)
+		mOpcije.Put("rb2", True)
+		mOpcije.Put("rb3", False)
+		mOpcije.Put("rb4", False)
+		mOpcije.Put("skin", "1yoshi-32")
+		mOpcije.Put("mjuzaZid", False)
+		File.WriteMap(File.DirInternal, "opcije", mOpcije)
+	End If
+
+	' postavljanje defaultne vrijednosti ako korisnik prvone pokrene aktivnost opcije
+'	StateManager.SaveState(Activity, "opt")
+'	StateManager.SetSetting("skin", "lager-20")
+'	StateManager.SaveSettings
+
+	If FirstTime Then
+		Msgbox("Remeber to use long tap on (almost) all buttons in any activity to get more info about what button do!", "Info")
+	End If
+'		sensors.Initialize2(sensors.TYPE_ORIENTATION, 1)
+'	End If
+End Sub
+
+Sub RaspakirajSkinoveIzArhive
+	arch.UnZip(File.DirInternal, "skins.zip", File.DirInternal, "anzip")
+End Sub
+
+Sub btn_Click
+	Dim gumb1 As Button
+
+	gumb1 = Sender
+'	Log(gumb1.Tag)
+	Select gumb1.Tag
+'		Case "sb"
+'			Msgbox("Score board not yet implemented!", "Warning")
+''			StartActivity(score_board)
+
+		Case "opt"
+'			Msgbox("options not yet implemented!", "Warning")
+			StartActivity(opt)
+
+		Case "o"
+			Msgbox("A lot of sokoban(c) level packs (17k+?)", "About andSokoban v1.0b2")
+
+		Case Else
+			gumb = gumb1.Tag
+			StartActivity(odabir)
+	End Select
+End Sub
+
+Sub Activity_Resume
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+End Sub
