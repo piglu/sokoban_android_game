@@ -1,7 +1,8 @@
-﻿Type=Class
-Version=6.8
+﻿B4A=true
+Group=Default Group
 ModulesStructureVersion=1
-B4A=true
+Type=Class
+Version=6.8
 @EndOfDesignText@
 'Class module
 'Version: 1.24
@@ -415,6 +416,7 @@ Public Sub getWidth As Int
 		r.Target = Window
 		Largeur = r.RunMethod("getWidth")
 		If Largeur = 0 Then
+'			Sleep(0)
 			DoEvents
 			Largeur = r.RunMethod("getWidth")
 		End If

@@ -1,7 +1,8 @@
-﻿Type=Activity
-Version=6.8
+﻿B4A=true
+Group=Default Group
 ModulesStructureVersion=1
-B4A=true
+Type=Activity
+Version=6.8
 @EndOfDesignText@
 #Region  Activity Attributes 
 	#FullScreen: False
@@ -124,16 +125,16 @@ Sub Globals
 '	Dim pocPozIgrZaNatragPlus1 As String
 '	Dim pocPozIgrZaNatragPlus2 As String
 	Dim btnNatrag As Button
-	Private iad As InterstitialAd
+'	Private iad As InterstitialAd
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
-#if debug
-	iad.Initialize("iad","ca-app-pub-3940256099942544/1033173712") 'test ID
-#else
-	iad.Initialize("iad", "ca-app-pub-3462427055174223/1046533533")
-	iad.LoadAd
-#End If
+'#if debug
+'	iad.Initialize("iad","ca-app-pub-3940256099942544/1033173712") 'test ID
+'#else
+'	iad.Initialize("iad", "ca-app-pub-3462427055174223/1046533533")
+'	iad.LoadAd
+'#End If
 
 	Dim ph As Phone
 
@@ -141,7 +142,7 @@ Sub Activity_Create(FirstTime As Boolean)
 
 	Dim mOpcije As Map
 	Dim rb4 As Boolean
-	mOpcije = File.ReadMap(File.DirInternal, "opcije")
+	mOpcije = File.ReadMap(Starter.SourceFolder, "opcije")
 	rb4 = mOpcije.Get("rb4")
 	Dim nivo, mjuza, mjuzaMoveObj, mjuzaZid As String
 	nivo = mOpcije.Get("skin")
@@ -165,14 +166,14 @@ Sub Activity_Create(FirstTime As Boolean)
 		If nivo.StartsWith("1") Then
 			bounceId2 = sounds.Load(File.DirAssets, "na_mjestu.mp3")
 		Else
-			bounceId2 = sounds.Load(File.DirInternal & "/skins/" & nivo & "/", mjuzaMoveObj)
+			bounceId2 = sounds.Load(Starter.SourceFolder & "/skins/" & nivo & "/", mjuzaMoveObj)
 		End If
 
 		If nivo.StartsWith("1") Or mOpcije.ContainsKey("mjuza") = False Then	' završni zvuk
 			bounceId3 = sounds.Load(File.DirAssets, "lvl.mp3")
 			bounceId4 = sounds.Load(File.DirAssets, "all_lvls.mp3")
 		Else if mOpcije.ContainsKey("mjuza") Then
-			bounceId3 = sounds.Load(File.DirInternal & "/skins/" & nivo & "/", mjuza)
+			bounceId3 = sounds.Load(Starter.SourceFolder & "/skins/" & nivo & "/", mjuza)
 		End If
 	End If
 
@@ -261,7 +262,7 @@ Sub Activity_Resume
 	awake.KeepAlive(True)
 	Dim mOpcije As Map
 	Dim rb4 As Boolean
-	mOpcije = File.ReadMap(File.DirInternal, "opcije")
+	mOpcije = File.ReadMap(Starter.SourceFolder, "opcije")
 	rb4 = mOpcije.Get("rb4")
 	If rb4 Then
 		sensor.StartListening("sensor")
@@ -277,14 +278,14 @@ Sub Activity_Pause (UserClosed As Boolean)
 End Sub
 
 Sub NovaIgra
-'	If File.Exists(File.DirInternal, odabir.ime_datoteke_za_info  & "_" & razina & ".snapshot") Then
+'	If File.Exists(Starter.SourceFolder, odabir.ime_datoteke_za_info  & "_" & razina & ".snapshot") Then
 '		Dim res As Int = Msgbox2("We have snapshot for this level." & CRLF & "Do you want to continue from last time?", "Info", "OK", "Cancel", "", LoadBitmap(File.DirAssets, "upitnik.png"))
 '		If res = DialogResponse.POSITIVE Then
 '			UcitajSnapshotInfo
 '			UcitajSnapshot
 '		End If
 '	Else
-	If File.Exists(File.DirInternal, odabir.ime_datoteke_za_info & ".info") Then
+	If File.Exists(Starter.SourceFolder, Main.ime_datoteke_za_info & ".info") Then
 		Log("play -> NovaIgra -> UcitajInfo -> učitava se info o tome koliko je nivoa odigrano za paket nivoa!")
 		UcitajInfo
 		If razina = ukupno_razina Then
@@ -347,7 +348,7 @@ Sub NovaIgra
 '			izgRazineDoIndeksaKraj = izgRazineDoIndeksaKraj + hLevel.Get(razina) - 1
 
 	Else
-		ParsajRazine(odabir.datZaParsanjeRazina)
+		ParsajRazine(Main.datZaParsanjeRazina)
 		izgRazineOdIndeksaPoc = 0
 		If razina = 0 Then izgRazineDoIndeksaKraj = 0
 		izgRazineDoIndeksaKraj = izgRazineDoIndeksaKraj + hLevel.Get(razina) - 1
@@ -418,7 +419,7 @@ Sub KreirajNivo
 	Dim cb, rb2 As Boolean
 	Dim skn As String
 
-	mOpcije = File.ReadMap(File.DirInternal, "opcije")
+	mOpcije = File.ReadMap(Starter.SourceFolder, "opcije")
 	cb = mOpcije.Get("cb")
 	rb2 = mOpcije.Get("rb2")
 	skn = mOpcije.Get("skin")
@@ -435,52 +436,52 @@ Sub KreirajNivo
 '	Dim skn As String = spn'StateManager.GetSetting("skin")
 
 	If skn.StartsWith("1") Then
-		zid1 = LoadBitmap(File.DirInternal & "/skins/" & skn & "/", skn.SubString(1) & "-wall.png")
-		kutija1 = LoadBitmap(File.DirInternal & "/skins/" & skn & "/", skn.SubString(1) & "-box.png")
-		kutnamj1 = LoadBitmap(File.DirInternal & "/skins/" & skn & "/", skn.SubString(1) & "-box-docked.png")
-		mjzakut1 = LoadBitmap(File.DirInternal & "/skins/" & skn & "/", skn.SubString(1) & "-dock.png")
-		pod1 = LoadBitmap(File.DirInternal & "/skins/" & skn & "/", skn.SubString(1) & "-floor.png")
-		igr1 = LoadBitmap(File.DirInternal & "/skins/" & skn & "/", skn.SubString(1) & "-worker.png")
-		igrnamj1 = LoadBitmap(File.DirInternal & "/skins/" & skn & "/", skn.SubString(1) & "-worker-docked.png")
+		zid1 = LoadBitmap(Starter.SourceFolder & "/skins/" & skn & "/", skn.SubString(1) & "-wall.png")
+		kutija1 = LoadBitmap(Starter.SourceFolder & "/skins/" & skn & "/", skn.SubString(1) & "-box.png")
+		kutnamj1 = LoadBitmap(Starter.SourceFolder & "/skins/" & skn & "/", skn.SubString(1) & "-box-docked.png")
+		mjzakut1 = LoadBitmap(Starter.SourceFolder & "/skins/" & skn & "/", skn.SubString(1) & "-dock.png")
+		pod1 = LoadBitmap(Starter.SourceFolder & "/skins/" & skn & "/", skn.SubString(1) & "-floor.png")
+		igr1 = LoadBitmap(Starter.SourceFolder & "/skins/" & skn & "/", skn.SubString(1) & "-worker.png")
+		igrnamj1 = LoadBitmap(Starter.SourceFolder & "/skins/" & skn & "/", skn.SubString(1) & "-worker-docked.png")
 '		bounceId3 = sounds.Load(File.DirAssets, "win.mp3")
 	Else
 		If zid <> "null" Then
-			zid1 = LoadBitmap(File.DirInternal & "/skins/" & skn & "/", zid)
+			zid1 = LoadBitmap(Starter.SourceFolder & "/skins/" & skn & "/", zid)
 		Else
 			zid1 = LoadBitmap(File.DirAssets, "zid_2.png")
 		End If
 		If kutija <> "null" Then
-			kutija1 = LoadBitmap(File.DirInternal & "/skins/" & skn & "/", kutija)
+			kutija1 = LoadBitmap(Starter.SourceFolder & "/skins/" & skn & "/", kutija)
 		Else
 			kutija1 = LoadBitmap(File.DirAssets, "kutija_2.png")
 		End If
 		If kutnamj <> "null" Then
-			kutnamj1 = LoadBitmap(File.DirInternal & "/skins/" & skn & "/", kutnamj)
+			kutnamj1 = LoadBitmap(Starter.SourceFolder & "/skins/" & skn & "/", kutnamj)
 		Else
 			kutnamj1 = LoadBitmap(File.DirAssets, "kutija_na_mjestu_2.png")
 		End If
 		If mjzakut <> "null" Then
-			mjzakut1 = LoadBitmap(File.DirInternal & "/skins/" & skn & "/", mjzakut)
+			mjzakut1 = LoadBitmap(Starter.SourceFolder & "/skins/" & skn & "/", mjzakut)
 		Else
 			mjzakut1 = LoadBitmap(File.DirAssets, "iks_2.png")
 		End If
 		If pod <> "null" Then
-			pod1 = LoadBitmap(File.DirInternal & "/skins/" & skn & "/", pod)
+			pod1 = LoadBitmap(Starter.SourceFolder & "/skins/" & skn & "/", pod)
 		Else
 			pod1 = LoadBitmap(File.DirAssets, "pod.png")
 		End If
 		If igr <> "null" Then
-			igr1 = LoadBitmap(File.DirInternal & "/skins/" & skn & "/", igr)
+			igr1 = LoadBitmap(Starter.SourceFolder & "/skins/" & skn & "/", igr)
 		Else
 			igr1 = LoadBitmap(File.DirAssets, "igrac2.png")
 		End If
 		If igrnamj <> "null" Then
-			igrnamj1 = LoadBitmap(File.DirInternal & "/skins/" & skn & "/", igrnamj)
+			igrnamj1 = LoadBitmap(Starter.SourceFolder & "/skins/" & skn & "/", igrnamj)
 		Else
 			igrnamj1 = LoadBitmap(File.DirAssets, "igrac2.png")
 		End If
 		
-'		bounceId3 = sounds.Load(File.DirInternal & "/skins/" & skn & "/", mjuza)
+'		bounceId3 = sounds.Load(Starter.SourceFolder & "/skins/" & skn & "/", mjuza)
 	End If
 	
 '''''''	Activity.LoadLayout("igra_scv")
@@ -799,8 +800,8 @@ Sub KreirajNivo
 '	lblRazina.Text = s & CRLF & "Played: " & (razina+1) & "/" & ukupno_razina
 '	SetLabelTextSize(lblRazina, lblRazina.Text, 28, 8)
 
-	DoEvents
-'	Sleep(0)
+'	DoEvents
+	Sleep(0)
 	sv2d.SmoothScrollTo(IzracunajPozicijuX, IzracunajPozicijuY)
 
 	Activity.LoadLayout("info_panel")
@@ -996,7 +997,7 @@ Sub btn_Click
 
 		Case "sound"
 '			Dim mOpcije As Map
-'			mOpcije = File.ReadMap(File.DirInternal, "opcije")
+'			mOpcije = File.ReadMap(Starter.SourceFolder, "opcije")
 '			Dim mjuzaZid As String
 '			mjuzaZid = mOpcije.Get("mjuzaZid")
 
@@ -1006,14 +1007,14 @@ Sub btn_Click
 '				Dim mOpcije As Map
 '				mOpcije.Initialize
 '				mOpcije.Put("mjuzaZid", False)
-'				File.WriteMap(File.DirInternal, "opcije", mOpcije)
+'				File.WriteMap(Starter.SourceFolder, "opcije", mOpcije)
 			Else
 				snd = True
 				btnSound.SetBackgroundImage(LoadBitmap(File.DirAssets, "s_on.png"))
 '				Dim mOpcije As Map
 '				mOpcije.Initialize
 '				mOpcije.Put("mjuzaZid", True)
-'				File.WriteMap(File.DirInternal, "opcije", mOpcije)
+'				File.WriteMap(Starter.SourceFolder, "opcije", mOpcije)
 			End If
 			btnInfo_Click
 
@@ -1359,7 +1360,7 @@ End Sub
 'Sub ProvjeriIPomakni(sp As String, np As String, dkp As String, bkg As ColorDrawable, smjer As Int)
 Sub ProvjeriIPomakni(sp As String, np As String, dkp As String, smjer As Int)', bkg As ColorDrawable)
 '	Dim mOpcije As Map
-'	mOpcije = File.ReadMap(File.DirInternal, "opcije")
+'	mOpcije = File.ReadMap(Starter.SourceFolder, "opcije")
 '	Dim mjuzaZid As String
 '	mjuzaZid = mOpcije.Get("mjuzaZid")
 
@@ -1644,7 +1645,7 @@ Sub ProvjeriKutijeNaMjestu
 				Timer5.Interval = gif.Delay(Frame)
 				ImageView1.Bitmap = gif.Frame(Frame)
 				Timer5.Enabled = True
-				iad.Show
+'				iad.Show
 '			Else
 '				panelGotovo.top = 14%y
 '				panelGotovo.SetLayout(0, 14%y, 100%x, 100%y - 14%y)
@@ -1672,7 +1673,7 @@ Sub ProvjeriKutijeNaMjestu
 End Sub
 
 Sub UsnimiRijesenje
-	Dim s As String = odabir.ime_datoteke_za_info
+	Dim s As String = Main.ime_datoteke_za_info
 	s = s.SubString2(0, s.IndexOf("."))
 
 	Log(razina)
@@ -1681,12 +1682,12 @@ Sub UsnimiRijesenje
 	Dim sol_info As List
 
 	sol_info.Initialize
-	sol_info.Add(odabir.zaSolutionIme)
+	sol_info.Add(Main.zaSolutionIme)
 	sol_info.Add(brojKoraka)
 	sol_info.Add(brojGuranja)
 	sol_info.Add(rijesenje)
-'	Log(File.DirInternal & "/" & dat)
-	File.WriteList(File.DirInternal, dat, sol_info)	
+'	Log(Starter.SourceFolder & "/" & dat)
+	File.WriteList(Starter.SourceFolder, dat, sol_info)	
 End Sub
 
 'Sub UcitajRijesenje
@@ -1705,8 +1706,8 @@ Sub UsnimiInfo
 '	list_info.Add(pokusaj)
 	list_info.Add(razina)
 	list_info.Add(ukupno_razina)
-	list_info.Add(odabir.ime_datoteke_za_info)
-	File.WriteList(File.DirInternal, odabir.ime_datoteke_za_info & ".info", list_info)
+	list_info.Add(Main.ime_datoteke_za_info)
+	File.WriteList(Starter.SourceFolder, Main.ime_datoteke_za_info & ".info", list_info)
 '	Dim stu As StringUtils
 '	stu.SaveCSV(File.DirDefaultExternal, odabir.ime_datoteke_za_info & ".info", ",", list_info)
 End Sub
@@ -1715,7 +1716,7 @@ Sub UcitajInfo
 	Dim list_info As List
 
 	list_info.Initialize
-	list_info = File.ReadList(File.DirInternal, odabir.ime_datoteke_za_info & ".info")
+	list_info = File.ReadList(Starter.SourceFolder, Main.ime_datoteke_za_info & ".info")
 '	Dim stu As StringUtils
 '	list_info = stu.LoadCSV(File.DirDefaultExternal, odabir.ime_datoteke_za_info & ".info", ",")
 '	pokusaj = list_info.Get(0)
@@ -1729,7 +1730,7 @@ End Sub
 '	Dim list_info As List
 '
 '	list_info.Initialize
-'	list_info = File.ReadList(File.DirInternal, odabir.ime_datoteke_za_info & ".snapshotinfo")
+'	list_info = File.ReadList(Starter.SourceFolder, odabir.ime_datoteke_za_info & ".snapshotinfo")
 '	'	pokusaj = list_info.Get(0)
 '	razina = list_info.Get(0)
 '	ukupno_razina = list_info.Get(1)
@@ -1748,13 +1749,13 @@ End Sub
 '	list_info.Add(odabir.ime_datoteke_za_info)
 '	list_info.Add(brojGuranja)
 '	list_info.Add(brojKoraka)
-'	File.WriteList(File.DirInternal, odabir.ime_datoteke_za_info & ".snapshotinfo", list_info)
+'	File.WriteList(Starter.SourceFolder, odabir.ime_datoteke_za_info & ".snapshotinfo", list_info)
 'End Sub
 '
 'Sub UcitajSnapshot
 '	Dim tr As TextReader
 '
-'	tr.Initialize(File.OpenInput(File.DirInternal, odabir.ime_datoteke_za_info & "_" & razina & ".snapshot"))
+'	tr.Initialize(File.OpenInput(Starter.SourceFolder, odabir.ime_datoteke_za_info & "_" & razina & ".snapshot"))
 '	Dim l As String
 '	Do While l <> Null
 '		Log(l)
@@ -1770,11 +1771,11 @@ End Sub
 '	Dim l2 As String = "</Level>"
 '	sve = l1
 '
-'	If File.Exists(File.DirInternal, odabir.ime_datoteke_za_info & "_" & razina & ".snapshot") Then
-'		File.Delete(File.DirInternal, odabir.ime_datoteke_za_info & "_" & razina & ".snapshot")
+'	If File.Exists(Starter.SourceFolder, odabir.ime_datoteke_za_info & "_" & razina & ".snapshot") Then
+'		File.Delete(Starter.SourceFolder, odabir.ime_datoteke_za_info & "_" & razina & ".snapshot")
 '	End If
 '
-'	tw.Initialize(File.OpenOutput(File.DirInternal, odabir.ime_datoteke_za_info & "_" & razina & ".snapshot", False))
+'	tw.Initialize(File.OpenOutput(Starter.SourceFolder, odabir.ime_datoteke_za_info & "_" & razina & ".snapshot", False))
 '
 '	Dim k As Int = 0
 '	For i = 0 To velicinaRetka.Size - 1'izgRazineOdIndeksaPoc To izgRazineDoIndeksaKraj
@@ -1847,28 +1848,28 @@ End Sub
 Sub rec_Result(Grant As Boolean)
 	'here we check if user granted permission to record the screen
 	If Grant = True Then
-		Dim s As String = odabir.ime_datoteke_za_info
+		Dim s As String = Main.ime_datoteke_za_info
 		s = s.SubString2(0, s.IndexOf("."))
 '		Log(s & ".level_" & (razina+1))
 		DatZaSnimku = s & ".level_" & (razina+1)
 		'in this sample-app, I am using the same file-name for all recordings and therefore
 		'I delete the previous video-file. Here you will need to implement your own solution
 		'in order to make sure the video file-name does not already exist....
-		If File.Exists(File.DirInternal, DatZaSnimku & ".mp4") Then
+		If File.Exists(Starter.SourceFolder, DatZaSnimku & ".mp4") Then
 			Dim res As Int = Msgbox2("File exists! Overwrite?", "Warning", "OK", "Cancel", "", LoadBitmap(File.DirAssets, "upitnik.png"))
 '			Wait For Msgbox_Result (res As Int)
 			If res = DialogResponse.POSITIVE Then
 '				Timer2.Enabled = True
-				File.Delete(File.DirInternal, DatZaSnimku)
+				File.Delete(Starter.SourceFolder, DatZaSnimku)
 				'Below code starts the recording immediately. A better solution would be to use a timer and perhaps
 				'delay the beginning of the screen recording to give user time to reach the app he/she wants to record.
 				recB = True
-				rec.StartRecording(GetDeviceLayoutValues.Width, GetDeviceLayoutValues.Height, File.DirInternal, DatZaSnimku)
+				rec.StartRecording(GetDeviceLayoutValues.Width, GetDeviceLayoutValues.Height, Starter.SourceFolder, DatZaSnimku)
 				Timer1.Enabled = True
 			End If
 		Else
 			recB = True
-			rec.StartRecording(GetDeviceLayoutValues.Width, GetDeviceLayoutValues.Height, File.DirInternal, DatZaSnimku)
+			rec.StartRecording(GetDeviceLayoutValues.Width, GetDeviceLayoutValues.Height, Starter.SourceFolder, DatZaSnimku)
 			Timer1.Enabled = True
 		End If
 	Else
@@ -1880,7 +1881,7 @@ Sub rec_Result(Grant As Boolean)
 		Timer1.Enabled = False
 '		lbl1.Visible = False
 	End If
-	Log(File.DirInternal & "/" & DatZaSnimku)
+	Log(Starter.SourceFolder & "/" & DatZaSnimku)
 End Sub
 
 Sub GetSDK() As Int
@@ -2058,7 +2059,7 @@ End Sub
 Sub sv2d_Touch(o As Object, ACTION As Int, x As Float, y As Float, motion As Object) As Boolean'(viewtag As Object, action As Int, x As Float, Y As Float, motionevent As Object) As Boolean
 	Dim mOpcije As Map
 	Dim rb3 As Boolean
-	mOpcije = File.ReadMap(File.DirInternal, "opcije")
+	mOpcije = File.ReadMap(Starter.SourceFolder, "opcije")
 	rb3 = mOpcije.Get("rb3")
 
 	If Timer1.Enabled = False Then Timer1.Enabled = True

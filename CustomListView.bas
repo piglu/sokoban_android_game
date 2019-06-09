@@ -1,7 +1,8 @@
-﻿Type=Class
-Version=6.8
+﻿B4A=true
+Group=Default Group
 ModulesStructureVersion=1
-B4A=true
+Type=Class
+Version=6.8
 @EndOfDesignText@
 'version: 1.10
 #Event: ItemClick (Index As Int, Value As Object)
@@ -195,11 +196,11 @@ Public Sub JumpToItem(Index As Int)
 	Next
 	sv.ScrollPosition = top
 	'The scroll position doesn't always gets updated without two calls to DoEvents
-	DoEvents
-'	Sleep(0)
+'	DoEvents
+	Sleep(0)
 	sv.ScrollPosition = top
-	DoEvents
-'	Sleep(0)
+'	DoEvents
+	Sleep(0)
 End Sub
 
 Private Sub Panel_Click

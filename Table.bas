@@ -1,7 +1,8 @@
-﻿Type=Class
-Version=6.8
+﻿B4A=true
+Group=Default Group
 ModulesStructureVersion=1
-B4A=true
+Type=Class
+Version=6.8
 @EndOfDesignText@
 'Version 1.43
 'The modifications in LoadSQLiteDB were not OK for all cases
@@ -529,7 +530,7 @@ Private Sub ShowRow(Row As Int)
 		If (Header.GetView(I).Width > 1 ) Then 
 			SV.Panel.AddView(lbls(I), Header.GetView(I).Left, Row * cRowHeight, Header.GetView(I).Width, cRowHeight - cLineWidth)
 			lbls(I).Text = values(I)
-			If I = SelectedCol AND (SelectedRows.indexof(Row) <> -1) Then
+			If I = SelectedCol And (SelectedRows.indexof(Row) <> -1) Then
 				lbls(I).Background = SelectedCellDrawable
 			Else
 				lbls(I).Background = rowColor(I)
@@ -544,7 +545,7 @@ Private Sub ShowRow(Row As Int)
 End Sub
 
 Private Sub IsRowVisible(Row As Int) As Boolean
-	Return Row < (SV.VerticalScrollPosition + SV.Height) / (cRowHeight + 1) AND _
+	Return Row < (SV.VerticalScrollPosition + SV.Height) / (cRowHeight + 1) And _
 		Row > SV.VerticalScrollPosition / cRowHeight
 End Sub
 
@@ -662,10 +663,10 @@ Public Sub SetHeader(Values() As String)
 			Else
 				HeaderWidths(col) = cvs.MeasureStringWidth(Values(col), L.Typeface, cTextSize)  + ExtraWidth
 			End If
-			If HeaderWidths(col) > ColumnWidths(col) Then OR HeaderWidths(col) > ColumnWidths(col) Then
+			If HeaderWidths(col) > ColumnWidths(col) Or HeaderWidths(col) > ColumnWidths(col) Then
 				Change = 1
 				ColumnWidths(col) = Max(HeaderWidths(col), ColumnWidths(col))
-			Else If ColumnWidths(col) > HeaderWidths(col) AND ColumnWidths(col) > DataWidths(col) Then
+			Else If ColumnWidths(col) > HeaderWidths(col) And ColumnWidths(col) > DataWidths(col) Then
 				Change = 1
 				ColumnWidths(col) = Max(HeaderWidths(col), DataWidths(col))
 			End If

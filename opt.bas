@@ -1,7 +1,8 @@
-﻿Type=Activity
-Version=6.8
+﻿B4A=true
+Group=Default Group
 ModulesStructureVersion=1
-B4A=true
+Type=Activity
+Version=6.8
 @EndOfDesignText@
 #Region  Activity Attributes 
 	#FullScreen: False
@@ -82,7 +83,7 @@ End Sub
 Sub Activity_Create(FirstTime As Boolean)
 	sv.Initialize(1000dip)
 	Activity.AddView(sv, 0, 0, 100%x, 100%y)
-	sv.Panel.LoadLayout("opt")
+	sv.Panel.LoadLayout("opcije")
 	sv.Panel.Height = RadioButton1.Height + CheckBox1.Height + RadioButton2.Height + RadioButton3.Height + Label1.Height + spnSkin.Height + lblSkinInfo.Height + ImageView1.Height + ImageView6.Height + _
 					  ImageView11.Height + ImageView18.Height + ImageView25.Height + Label2.Height' + 10%y
 
@@ -91,8 +92,8 @@ Sub Activity_Create(FirstTime As Boolean)
 							  ImageView21, ImageView22, ImageView23, ImageView24, ImageView25, ImageView26, ImageView27, ImageView28, ImageView29, ImageView30, _
 							  ImageView31)
 
-	If File.Exists(File.DirInternal, "skins.zip") = False Then
-		File.Copy(File.DirAssets, "skins.zip", File.DirInternal, "skins.zip")
+	If File.Exists(Starter.SourceFolder, "skins.zip") = False Then
+		File.Copy(File.DirAssets, "skins.zip", Starter.SourceFolder, "skins.zip")
 		RaspakirajSkinoveIzArhive
 	End If
 
@@ -102,23 +103,23 @@ Sub Activity_Create(FirstTime As Boolean)
 	'
 	'
 	Dim f As String
-	If File.Exists(File.DirInternal, "/skins/Neon") Then
-		Dim l As List = File.ListFiles(File.DirInternal & "/skins/Neon")
+	If File.Exists(Starter.SourceFolder, "/skins/Neon") Then
+		Dim l As List = File.ListFiles(Starter.SourceFolder & "/skins/Neon")
 		For i = 0 To l.Size - 1
 			f = l.Get(i)
-			File.Delete(File.DirInternal & "/skins/Neon/", f)
+			File.Delete(Starter.SourceFolder & "/skins/Neon/", f)
 		Next
-		File.Delete(File.DirInternal & "/skins/", "Neon")
+		File.Delete(Starter.SourceFolder & "/skins/", "Neon")
 	End If
 
 
-	Log(File.DirInternal & "/skins")
-	Dim l As List = ProcitajSveFoldereUSkinDir(File.DirInternal & "/skins")
+	Log(Starter.SourceFolder & "/skins")
+	Dim l As List = ProcitajSveFoldereUSkinDir(Starter.SourceFolder & "/skins")
 	For i = 0 To l.Size - 1
 		spnSkin.Add(l.Get(i))
 	Next
 
-	mOpcije = File.ReadMap(File.DirInternal, "opcije")
+	mOpcije = File.ReadMap(Starter.SourceFolder, "opcije")
 	cb = mOpcije.Get("cb")
 	rb2 = mOpcije.Get("rb2")
 	rb3 = mOpcije.Get("rb3")
@@ -154,7 +155,7 @@ Sub Activity_Create(FirstTime As Boolean)
 		imgPreview.Visible = True
 		btnSkinLic.Visible = True
 		Label2.Visible = True
-		Dim bmp As Bitmap = LoadBitmap(File.DirInternal & "/skins" & "/" & s, s.SubString(1) & "-preview-simple.png")
+		Dim bmp As Bitmap = LoadBitmap(Starter.SourceFolder & "/skins" & "/" & s, s.SubString(1) & "-preview-simple.png")
 		imgPreview.Bitmap = bmp
 		imgPreview.Width = DipToCurrent(bmp.Width)
 		imgPreview.Height = DipToCurrent(bmp.Height)
@@ -204,14 +205,14 @@ Sub Activity_Pause (UserClosed As Boolean)
 			mOpcije.Put("rb3", rb3)
 			mOpcije.Put("rb4", rb4)
 			mOpcije.Put("skin", spn)
-			File.Delete(File.DirInternal, "opcije")
-			File.WriteMap(File.DirInternal, "opcije", mOpcije)
+			File.Delete(Starter.SourceFolder, "opcije")
+			File.WriteMap(Starter.SourceFolder, "opcije", mOpcije)
 		End If
 	End If
 End Sub
 
 Sub RaspakirajSkinoveIzArhive
-	arch.UnZip(File.DirInternal, "skins.zip", File.DirInternal, "anzip")
+	arch.UnZip(Starter.SourceFolder, "skins.zip", Starter.SourceFolder, "anzip")
 End Sub
 
 Sub ProcitajSveFoldereUSkinDir(dir As String) As List
@@ -248,7 +249,7 @@ End Sub
 
 Sub spnSkin_ItemClick (Position As Int, Value As Object)
 	spn = Value
-	Dim l As List = File.ListFiles(File.DirInternal & "/skins/" & Value)
+	Dim l As List = File.ListFiles(Starter.SourceFolder & "/skins/" & Value)
 	' skinovi sa png slikama i manje njih
 	If spn.StartsWith("1") Then
 		lblSkinInfo.Visible = False
@@ -258,7 +259,7 @@ Sub spnSkin_ItemClick (Position As Int, Value As Object)
 		For i = 0 To l.Size - 1
 			Dim s As String = l.get(i)
 			If s.Contains("preview-simple") Then
-				Dim bmp As Bitmap = LoadBitmap(File.DirInternal & "/skins" & "/" & spn, spn.SubString(1) & "-preview-simple.png")
+				Dim bmp As Bitmap = LoadBitmap(Starter.SourceFolder & "/skins" & "/" & spn, spn.SubString(1) & "-preview-simple.png")
 				imgPreview.Bitmap = bmp
 				imgPreview.Width = DipToCurrent(bmp.Width)
 				imgPreview.Height = DipToCurrent(bmp.Height)
@@ -302,8 +303,8 @@ Sub ParsajINIDat(dat As String, folder As String)
 	igr1 = "null"
 	igrnamj1 = "null"
 
-'	Log(File.DirInternal & folder & dat)
-	tr.Initialize(File.OpenInput(File.DirInternal & folder,  dat))
+'	Log(Starter.SourceFolder & folder & dat)
+	tr.Initialize(File.OpenInput(Starter.SourceFolder & folder,  dat))
 	Dim l As List = tr.ReadList
 	tr.Close
 	For i = 0 To l.Size - 1
@@ -405,7 +406,7 @@ Sub SloziPreview(fold As String)
 				imamoZid = True
 				Dim bmp As Bitmap
 				If zid1.Contains("null") = False Then ' .Length > 0 Then
-					bmp.Initialize(File.DirInternal & fold & "/", zid1)
+					bmp.Initialize(Starter.SourceFolder & fold & "/", zid1)
 				Else
 					bmp.Initialize(File.DirAssets, "zid_2.png")
 				End If
@@ -419,7 +420,7 @@ Sub SloziPreview(fold As String)
 						Dim bmp As Bitmap
 '						Log(pod1.Length)
 						If pod1.Contains("null") = False Then
-							bmp.Initialize(File.DirInternal & fold & "/", pod1)
+							bmp.Initialize(Starter.SourceFolder & fold & "/", pod1)
 						Else
 							bmp.Initialize(File.DirAssets, "pod.png")
 						End If
@@ -432,7 +433,7 @@ Sub SloziPreview(fold As String)
 			else if s1.EqualsIgnoreCase("$") Then
 				Dim bmp As Bitmap
 				If kutija1.Contains("null") = False Then' .Length > 0 Then
-					bmp.Initialize(File.DirInternal & fold & "/", kutija1)
+					bmp.Initialize(Starter.SourceFolder & fold & "/", kutija1)
 				Else
 					bmp.Initialize(File.DirAssets, "kutija_2.png")
 				End If
@@ -444,7 +445,7 @@ Sub SloziPreview(fold As String)
 				If s1.EqualsIgnoreCase("*") Then
 					Dim bmp As Bitmap
 					If kutnamj1.Contains("null") = False Then ' .Length > 0 Then
-						bmp.Initialize(File.DirInternal & fold & "/", kutnamj1)
+						bmp.Initialize(Starter.SourceFolder & fold & "/", kutnamj1)
 					Else
 						bmp.Initialize(File.DirAssets, "kutija_na_mjestu_2.png")
 					End If
@@ -454,7 +455,7 @@ Sub SloziPreview(fold As String)
 				Else if s1.EqualsIgnoreCase(".") Then
 					Dim bmp As Bitmap
 					If mjzakut1.Contains("null") = False Then ' .Length > 0 Then
-						bmp.Initialize(File.DirInternal & fold & "/", mjzakut1)
+						bmp.Initialize(Starter.SourceFolder & fold & "/", mjzakut1)
 					Else
 						bmp.Initialize(File.DirAssets, "iks_2.png")
 					End If
@@ -466,7 +467,7 @@ Sub SloziPreview(fold As String)
 			else if s1.EqualsIgnoreCase("@") Or s1.EqualsIgnoreCase("+") Then
 				Dim bmp As Bitmap
 				If igr1.Contains("null") = False Then ' .Length > 0 Then
-					bmp.Initialize(File.DirInternal & fold & "/", igr1)
+					bmp.Initialize(Starter.SourceFolder & fold & "/", igr1)
 				Else
 					bmp.Initialize(File.DirAssets, "igrac2.png")
 				End If
@@ -480,14 +481,14 @@ Sub SloziPreview(fold As String)
 End Sub
 
 Sub btnSkinLic_Click
-	Dim s As String = File.ReadString(File.DirInternal & "/skins/", "LICENCE.txt")
+	Dim s As String = File.ReadString(Starter.SourceFolder & "/skins/", "LICENCE.txt")
 
 	Msgbox(s, "Skins license")
 End Sub
 
 Sub btnDelSkin_Click
 	Dim s As String = spnSkin.SelectedItem
-	Dim l As List = File.ListFiles(File.DirInternal & "/skins/" & s)
+	Dim l As List = File.ListFiles(Starter.SourceFolder & "/skins/" & s)
 	Dim f As String
 
 	Dim res As Int = Msgbox2("Do you really want to delete this skin?", "Question", "OK", "Cancel", "", LoadBitmap(File.DirAssets, "upitnik.png"))
@@ -495,11 +496,11 @@ Sub btnDelSkin_Click
 	If res = DialogResponse.POSITIVE Then
 		For i = 0 To l.Size - 1
 			f = l.Get(i)
-			File.Delete(File.DirInternal & "/skins/" & s & "/", f)
+			File.Delete(Starter.SourceFolder & "/skins/" & s & "/", f)
 		Next
-		File.Delete(File.DirInternal & "/skins/", s)
+		File.Delete(Starter.SourceFolder & "/skins/", s)
 		lblSkinInfo.Text = ""
-		Dim l As List = ProcitajSveFoldereUSkinDir(File.DirInternal & "/skins")
+		Dim l As List = ProcitajSveFoldereUSkinDir(Starter.SourceFolder & "/skins")
 		spnSkin.Clear
 		For i = 0 To l.Size - 1
 			spnSkin.Add(l.Get(i))

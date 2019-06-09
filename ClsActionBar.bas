@@ -1,7 +1,8 @@
-﻿Type=Class
-Version=6.8
+﻿B4A=true
+Group=Default Group
 ModulesStructureVersion=1
-B4A=true
+Type=Class
+Version=6.8
 @EndOfDesignText@
 'Class module
 'Version 1.43

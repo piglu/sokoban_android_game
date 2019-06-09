@@ -1,7 +1,8 @@
-﻿Type=Activity
-Version=6.8
+﻿B4A=true
+Group=Default Group
 ModulesStructureVersion=1
-B4A=true
+Type=Activity
+Version=6.8
 @EndOfDesignText@
 #Region  Activity Attributes 
 	#FullScreen: False
@@ -43,7 +44,7 @@ Sub Activity_Create(FirstTime As Boolean)
 	'Do not forget to load the layout file created with the visual designer. For example:
 	Activity.LoadLayout("lista")
 
-	slovoOdabira = Main.gumb.ToLowerCase
+'	slovoOdabira = Main.gumb.ToLowerCase
 
 	slc_parse.Initialize
 	listaDatZaVideo.Initialize
@@ -351,30 +352,35 @@ End Sub
 
 Sub UbaciUListu
 	For i = 0 To Title.Size - 1
-		cvOdabir.Add(CreateListItem(Title.Get(i) & " by " & Autor.Get(i), Description.Get(i), ime_dat.Get(i), brojRazina.Get(i), cvOdabir.AsView.Width, 10%x), 10%x, "")
+'		cvOdabir.Add(CreateListItem(Title.Get(i) & " by " & Autor.Get(i), Description.Get(i), ime_dat.Get(i), brojRazina.Get(i), cvOdabir.AsView.Width, 10%x), 10%x, "")
+		cvOdabir.Add(CreateListItem(Title.Get(i) & " by " & Autor.Get(i), ime_dat.Get(i), brojRazina.Get(i), cvOdabir.AsView.Width, 10%x), "")
 	Next
 End Sub
 
-Sub CreateListItem(t1 As String, t2 As String, ime_d As String, br As String, Width As Int, Height As Int) As Panel
+'Sub CreateListItem(t1 As String, t2 As String, ime_d As String, br As String, Width As Int, Height As Int) As Panel
+Sub CreateListItem(t1 As String, ime_d As String, br As String, Width As Int, Height As Int) As Panel
 	Dim p As Panel
 
 	p.Initialize("")
-	p.Color = Colors.Black
+'	p.Color = Colors.Black
 	'we need to add the panel to a parent to set its dimensions. It will be removed after the layout is loaded.
-	Activity.AddView(p, 0, 0, Width, Height)
+'	Activity.AddView(p, 0, 0, Width, Height)
+'	p.LoadLayout("stavka")
+'	p.RemoveView
+
+	p.SetLayout(0, 0, Width, Height)
 	p.LoadLayout("stavka")
-	p.RemoveView
 
 	lblTitleAutor.Text = t1
 	SetLabelTextSize(lblTitleAutor, lblTitleAutor.Text, 14, 8)
 '	t2 = t2.Replace(CRLF, " ")
 '	lblDesc.Text = t2
 '	SetLabelTextSize(lblDesc, lblDesc.Text, 14, 8)
-	If File.Exists(File.DirInternal, ime_d & ".info") Then
+	If File.Exists(Starter.SourceFolder, ime_d & ".info") Then
 		Log("info postoji!")
 		Dim list_info As List
 		list_info.Initialize
-		list_info = File.ReadList(File.DirInternal, ime_d & ".info")
+		list_info = File.ReadList(Starter.SourceFolder, ime_d & ".info")
 		Dim x As Int = list_info.Get(0)
 		x = x + 1
 		lblInfo.Text = "Finished: " & x & "/" & list_info.Get(1)'list_info.Get(0) & "/" & list_info.Get(1)
@@ -496,8 +502,8 @@ Sub imgDelete_Click
 '	Wait For Msgbox_Result (res As Int)
 	If res = DialogResponse.POSITIVE Then
 		' ime_datoteke
-		If File.Exists(File.DirInternal, ime_datoteke & ".info") Then
-			File.Delete(File.DirInternal, ime_datoteke & ".info")
+		If File.Exists(Starter.SourceFolder, ime_datoteke & ".info") Then
+			File.Delete(Starter.SourceFolder, ime_datoteke & ".info")
 			Dim pnl As Panel
 			pnl = cvOdabir.GetPanel(index)
 			Dim lbl As Label
@@ -552,7 +558,7 @@ Sub OtvoriVideoDat
 	listaDatZaVideo.Clear
 
 	tmpList.Initialize
-	tmpList = File.ListFiles(File.DirInternal)
+	tmpList = File.ListFiles(Starter.SourceFolder)
 	For i = 0 To tmpList.Size - 1
 		Dim s As String = tmpList.Get(i)
 		If s.StartsWith(ime_dat_za_video) And s.EndsWith(".mp4") Then

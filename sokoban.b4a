@@ -1,40 +1,55 @@
-﻿Version=6.8
-NumberOfModules=12
-Module1=Starter
-Module2=play
-Module3=odabir
-Module4=video
-Module5=rijesenja
-Module6=opt
-Module7=CustomListView
-Module8=DBUtils
-Module9=KeyValueStore
-Module10=Table
-Module11=ClsActionBar
-Module12=ClsFloatingWindow
-Build1=Default,com.stanks.andsokoban_full,Full
-ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: http://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="14"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~'End of default text.~\n~'AddApplicationText(<activity android:name="anywheresoftware.b4a.objects.preferenceactivity"/>)~\n~AddApplicationText(<activity~\n~android:name="com.dropbox.core.android.AuthActivity"~\n~android:configChanges="orientation|keyboard"~\n~android:launchMode="singleTask" >~\n~<intent-filter>~\n~<data android:scheme="db-ea41vz8owssfdhq" />~\n~<action android:name="android.intent.action.VIEW" />~\n~<category android:name="android.intent.category.BROWSABLE" />~\n~<category android:name="android.intent.category.DEFAULT" />~\n~</intent-filter>~\n~</activity>)~\n~'************ Google Play Services Base ************~\n~AddApplicationText(~\n~  <activity android:name="com.google.android.gms.common.api.GoogleApiActivity"~\n~  android:theme="@android:style/Theme.Translucent.NoTitleBar"~\n~  android:exported="false"/>~\n~  <meta-data~\n~  android:name="com.google.android.gms.version"~\n~  android:value="@integer/google_play_services_version" />~\n~)~\n~'************ Google Play Services Base (end) ************~\n~'************ Firebase Ads ************~\n~AddApplicationText(~\n~  <activity~\n~  android:name="com.google.android.gms.ads.AdActivity"~\n~  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"~\n~  android:theme="@android:style/Theme.Translucent" />~\n~  <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"~\n~  android:theme="@style/Theme.IAPTheme"/>~\n~)~\n~'************ Firebase Ads (end) ************~\n~AddPermission(android.permission.ACCESS_NETWORK_STATE)~\n~AddPermission(android.permission.INTERNET)
-IconFile=
-NumberOfFiles=135
+﻿Build1=Default,com.stanks.andsokoban_full,Full
 File1=#.png
-File2=a.png
-File3=all_finished.bal
-File4=all_levels_finished.gif
-File5=all_lvls.mp3
-File6=autor
-File7=b.png
-File8=c.png
-File9=c1.png
 File10=c10.png
+File100=sokoban_2.png
+File101=sokoban_2_na_mjestu.png
+File102=solution.png
+File103=sort_asc.png
+File104=sort_desc.png
+File105=stavka.bal
+File106=strelica_dole.png
+File107=t.png
+File108=t1.png
+File109=t2.png
 File11=c11.png
+File110=t3.png
+File111=t4.png
+File112=t5.png
+File113=tajmer.png
+File114=tid
+File115=title
+File116=u.png
+File117=upitnik.png
+File118=url
+File119=v.png
 File12=c12.png
+File120=video.png
+File121=w.png
+File122=win.mp3
+File123=www.png
+File124=www_btn.png
+File125=x.png
+File126=y.png
+File127=z.png
+File128=z_desno.png
+File129=z_desno2.png
 File13=c13.png
+File130=z_dole2.png
+File131=z_gore2.png
+File132=z_lijevo.png
+File133=z_lijevo2.png
+File134=z_plus_meni.ico
+File135=z_reset.png
+File136=z_undo.png
+File137=zid.mp3
+File138=zid_2.png
 File14=c14.png
 File15=c15.png
 File16=c16.png
 File17=c17.png
 File18=c2.png
 File19=c3.png
+File2=a.png
 File20=c4.png
 File21=c5.png
 File22=c6.png
@@ -45,6 +60,7 @@ File26=d.png
 File27=db
 File28=db_orig
 File29=de_ikona.png
+File3=all_finished.bal
 File30=de_plava_ikona.png
 File31=del.png
 File32=desc
@@ -55,6 +71,7 @@ File36=email
 File37=email.png
 File38=email_btn.png
 File39=evasdigiscript.ttf
+File4=all_levels_finished.gif
 File40=f.png
 File41=g.png
 File42=g_ikona.png
@@ -65,6 +82,7 @@ File46=i.png
 File47=igra_scv.bal
 File48=igrac.png
 File49=igrac_iks.png
+File5=all_lvls.mp3
 File50=igrac2.png
 File51=iks.png
 File52=iks_2.png
@@ -75,6 +93,7 @@ File56=j.png
 File57=k.png
 File58=kutija.png
 File59=kutija_2.png
+File6=autor
 File60=kutija_na_mjestu.png
 File61=kutija_na_mjestu_2.png
 File62=l.png
@@ -85,74 +104,189 @@ File66=lista.bal
 File67=lvl.mp3
 File68=lvl_finished.gif
 File69=m.png
-File70=meni4.png
-File71=menu.png
-File72=n.png
-File73=na_mjestu.mp3
-File74=natrag_pl.png
-File75=o.png
-File76=off.png
-File77=on.png
-File78=opc.png
-File79=opcije.png
-File80=opcije1.png
-File81=opt.bal
-File82=p.png
-File83=play.png
-File84=plus.png
-File85=pod.png
-File86=q.png
-File87=r.png
-File88=reset_pl.png
-File89=reset_ze.png
-File90=s.png
-File91=s_main_pnl.bal
-File92=s_off.png
-File93=s_on.png
-File94=sb.png
-File95=skins.zip
-File96=sokoban.png
-File97=sokoban_2.png
-File98=sokoban_2_na_mjestu.png
-File99=solution.png
-File100=sort_asc.png
-File101=sort_desc.png
-File102=stavka.bal
-File103=strelica_dole.png
-File104=t.png
-File105=t1.png
-File106=t2.png
-File107=t3.png
-File108=t4.png
-File109=t5.png
-File110=tajmer.png
-File111=tid
-File112=title
-File113=u.png
-File114=upitnik.png
-File115=url
-File116=v.png
-File117=video.png
-File118=w.png
-File119=win.mp3
-File120=www.png
-File121=www_btn.png
-File122=x.png
-File123=y.png
-File124=z.png
-File125=z_desno.png
-File126=z_desno2.png
-File127=z_dole2.png
-File128=z_gore2.png
-File129=z_lijevo.png
-File130=z_lijevo2.png
-File131=z_plus_meni.ico
-File132=z_reset.png
-File133=z_undo.png
-File134=zid.mp3
-File135=zid_2.png
-NumberOfLibraries=15
+File7=b.png
+File70=mejn.bal
+File71=meni4.png
+File72=menu.png
+File73=n.png
+File74=na_mjestu.mp3
+File75=natrag_pl.png
+File76=o.png
+File77=off.png
+File78=on.png
+File79=opc.png
+File8=c.png
+File80=opcije.bal
+File81=opcije.png
+File82=opcije1.png
+File83=opcije2.bal
+File84=opcije3.bal
+File85=p.png
+File86=play.png
+File87=plus.png
+File88=pod.png
+File89=q.png
+File9=c1.png
+File90=r.png
+File91=reset_pl.png
+File92=reset_ze.png
+File93=s.png
+File94=s_main_pnl.bal
+File95=s_off.png
+File96=s_on.png
+File97=sb.png
+File98=skins.zip
+File99=sokoban.png
+FileGroup1=Default Group
+FileGroup10=Default Group
+FileGroup100=Default Group
+FileGroup101=Default Group
+FileGroup102=Default Group
+FileGroup103=Default Group
+FileGroup104=Default Group
+FileGroup105=Default Group
+FileGroup106=Default Group
+FileGroup107=Default Group
+FileGroup108=Default Group
+FileGroup109=Default Group
+FileGroup11=Default Group
+FileGroup110=Default Group
+FileGroup111=Default Group
+FileGroup112=Default Group
+FileGroup113=Default Group
+FileGroup114=Default Group
+FileGroup115=Default Group
+FileGroup116=Default Group
+FileGroup117=Default Group
+FileGroup118=Default Group
+FileGroup119=Default Group
+FileGroup12=Default Group
+FileGroup120=Default Group
+FileGroup121=Default Group
+FileGroup122=Default Group
+FileGroup123=Default Group
+FileGroup124=Default Group
+FileGroup125=Default Group
+FileGroup126=Default Group
+FileGroup127=Default Group
+FileGroup128=Default Group
+FileGroup129=Default Group
+FileGroup13=Default Group
+FileGroup130=Default Group
+FileGroup131=Default Group
+FileGroup132=Default Group
+FileGroup133=Default Group
+FileGroup134=Default Group
+FileGroup135=Default Group
+FileGroup136=Default Group
+FileGroup137=Default Group
+FileGroup138=Default Group
+FileGroup14=Default Group
+FileGroup15=Default Group
+FileGroup16=Default Group
+FileGroup17=Default Group
+FileGroup18=Default Group
+FileGroup19=Default Group
+FileGroup2=Default Group
+FileGroup20=Default Group
+FileGroup21=Default Group
+FileGroup22=Default Group
+FileGroup23=Default Group
+FileGroup24=Default Group
+FileGroup25=Default Group
+FileGroup26=Default Group
+FileGroup27=Default Group
+FileGroup28=Default Group
+FileGroup29=Default Group
+FileGroup3=Default Group
+FileGroup30=Default Group
+FileGroup31=Default Group
+FileGroup32=Default Group
+FileGroup33=Default Group
+FileGroup34=Default Group
+FileGroup35=Default Group
+FileGroup36=Default Group
+FileGroup37=Default Group
+FileGroup38=Default Group
+FileGroup39=Default Group
+FileGroup4=Default Group
+FileGroup40=Default Group
+FileGroup41=Default Group
+FileGroup42=Default Group
+FileGroup43=Default Group
+FileGroup44=Default Group
+FileGroup45=Default Group
+FileGroup46=Default Group
+FileGroup47=Default Group
+FileGroup48=Default Group
+FileGroup49=Default Group
+FileGroup5=Default Group
+FileGroup50=Default Group
+FileGroup51=Default Group
+FileGroup52=Default Group
+FileGroup53=Default Group
+FileGroup54=Default Group
+FileGroup55=Default Group
+FileGroup56=Default Group
+FileGroup57=Default Group
+FileGroup58=Default Group
+FileGroup59=Default Group
+FileGroup6=Default Group
+FileGroup60=Default Group
+FileGroup61=Default Group
+FileGroup62=Default Group
+FileGroup63=Default Group
+FileGroup64=Default Group
+FileGroup65=Default Group
+FileGroup66=Default Group
+FileGroup67=Default Group
+FileGroup68=Default Group
+FileGroup69=Default Group
+FileGroup7=Default Group
+FileGroup70=Default Group
+FileGroup71=Default Group
+FileGroup72=Default Group
+FileGroup73=Default Group
+FileGroup74=Default Group
+FileGroup75=Default Group
+FileGroup76=Default Group
+FileGroup77=Default Group
+FileGroup78=Default Group
+FileGroup79=Default Group
+FileGroup8=Default Group
+FileGroup80=Default Group
+FileGroup81=Default Group
+FileGroup82=Default Group
+FileGroup83=Default Group
+FileGroup84=Default Group
+FileGroup85=Default Group
+FileGroup86=Default Group
+FileGroup87=Default Group
+FileGroup88=Default Group
+FileGroup89=Default Group
+FileGroup9=Default Group
+FileGroup90=Default Group
+FileGroup91=Default Group
+FileGroup92=Default Group
+FileGroup93=Default Group
+FileGroup94=Default Group
+FileGroup95=Default Group
+FileGroup96=Default Group
+FileGroup97=Default Group
+FileGroup98=Default Group
+FileGroup99=Default Group
+Group=Default Group
+IconFile=
 Library1=core
+Library10=archiver
+Library11=gifdecoder
+Library12=randomaccessfile
+Library13=animation
+Library14=xcustomlistview
+Library15=runtimepermissions
+Library16=b4xtable
+Library17=javaobject
+Library18=xui views
 Library2=phone
 Library3=xmlsax
 Library4=reflection
@@ -161,88 +295,104 @@ Library6=sql
 Library7=scrollview2d
 Library8=audio
 Library9=screenrecorder
-Library10=archiver
-Library11=gifdecoder
-Library12=dropboxv2
-Library13=randomaccessfile
-Library14=animation
-Library15=firebaseadmob
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: http://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="26"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~'End of default text.~\n~'AddApplicationText(<activity android:name="anywheresoftware.b4a.objects.preferenceactivity"/>)~\n~'AddApplicationText(<activity~\n~'android:name="com.dropbox.core.android.AuthActivity"~\n~'android:configChanges="orientation|keyboard"~\n~'android:launchMode="singleTask" >~\n~'<intent-filter>~\n~'<data android:scheme="db-ea41vz8owssfdhq" />~\n~'<action android:name="android.intent.action.VIEW" />~\n~'<category android:name="android.intent.category.BROWSABLE" />~\n~'<category android:name="android.intent.category.DEFAULT" />~\n~'</intent-filter>~\n~'</activity>)~\n~'************ Google Play Services Base ************~\n~'AddApplicationText(~\n~'  <activity android:name="com.google.android.gms.common.api.GoogleApiActivity"~\n~'  android:theme="@android:style/Theme.Translucent.NoTitleBar"~\n~'  android:exported="false"/>~\n~'  <meta-data~\n~'  android:name="com.google.android.gms.version"~\n~'  android:value="@integer/google_play_services_version" />~\n~')~\n~'************ Google Play Services Base (end) ************~\n~'************ Firebase Ads ************~\n~'AddApplicationText(~\n~'  <activity~\n~'  android:name="com.google.android.gms.ads.AdActivity"~\n~'  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"~\n~'  android:theme="@android:style/Theme.Translucent" />~\n~'  <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"~\n~'  android:theme="@style/Theme.IAPTheme"/>~\n~')~\n~'************ Firebase Ads (end) ************~\n~AddPermission(android.permission.ACCESS_NETWORK_STATE)~\n~AddPermission(android.permission.INTERNET)
+Module1=Starter
+Module2=play
+Module3=odabir
+Module4=video
+Module5=rijesenja
+Module6=KeyValueStore
+Module7=opcije
+NumberOfFiles=138
+NumberOfLibraries=18
+NumberOfModules=7
+Version=9
 @EndOfDesignText@
 #Region  Project Attributes 
 	#ApplicationLabel: andSokoban
 	#VersionCode: 2
 	#VersionName: 1.0b2
 	'SupportedOrientations possible values: unspecified, landscape or portrait.
-	#SupportedOrientations: landscape
+	#SupportedOrientations: portrait
 	#CanInstallToExternalStorage: False
 	#DebuggerForceStandardAssets: true
 #End Region
 
 #Region  Activity Attributes 
 	#FullScreen: False
-	#IncludeTitle: False
+	#IncludeTitle: True
 #End Region
 
 Sub Process_Globals
 	'These global variables will be declared once when the application starts.
 	'These variables can be accessed from all modules.
-	Dim gumb As String
+'	Dim gumb As String
 '	Dim imaSenzora As Boolean
+	Dim slc_parse As SaxParser
+	Dim listaDatZaVideo As List
+	Dim imeLevela As Map
+	Dim zaSolutionIme As String
+	Dim ime_dat_za_video As String
+	Dim datZaParsanjeRazina As String
+	Dim brojLevela As Int = 0
+	Dim ime_datoteke_za_info As String
 End Sub
 
 Sub Globals
 	'These global variables will be redeclared each time the activity is created.
 	'These variables can only be accessed from this module.
-	Private sv As ScrollView
-	Private Button1 As Button
-	Private Button2 As Button
-	Private Button3 As Button
-	Private Button4 As Button
-	Private Button5 As Button
-	Private Button6 As Button
-	Private Button7 As Button
-	Private Button8 As Button
-	Private Button9 As Button
-	Private Button10 As Button
-	Private Button11 As Button
-	Private Button12 As Button
-	Private Button13 As Button
-	Private Button14 As Button
-	Private Button15 As Button
-	Private Button16 As Button
-	Private Button17 As Button
-	Private Button18 As Button
-	Private Button19 As Button
-	Private Button20 As Button
-	Private Button21 As Button
-	Private Button22 As Button
-	Private Button23 As Button
-	Private Button24 As Button
-	Private Button25 As Button
-	Private Button26 As Button
-	Private Button27 As Button
-	Private Panel1 As Panel
 '	Dim btn As Button
 '	Private btnOpcije As Button
 '	Private btnScore As Button
 '	Dim sensors As PhoneSensors
 	Dim arch As Archiver
+	Private spnLevelsTitleLetter As Spinner
+	Private clvLevelsWithTitleLetter As CustomListView
+	Dim letters As List = Array As String("#", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z")
+	Dim Title, Description, Email, Url, Autor, brojRazina As List
+	Dim ime_dat As List
+	Dim slovoOdabira As String
+	Private lblTitleAutor As Label
+	Private lblInfo As Label
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
 	'Do not forget to load the layout file created with the visual designer. For example:
 
-	sv.Initialize(1000dip)
-	Activity.AddView(sv, 0, 0, 100%x, 100%y)
-	sv.Panel.LoadLayout("s_main_pnl")
-	sv.Panel.Height = Panel1.Height
+	Activity.LoadLayout("mejn")
 
-	If File.Exists(File.DirInternal, "skins.zip") = False Then
-		File.Copy(File.DirAssets, "skins.zip", File.DirInternal, "skins.zip")
+	For i = 0 To letters.Size - 1
+		spnLevelsTitleLetter.Add("Titles with " & letters.Get(i))
+	Next
+
+	slc_parse.Initialize
+	listaDatZaVideo.Initialize
+	imeLevela.Initialize	' ime razine
+	Title.Initialize
+	Description.Initialize
+	Email.Initialize
+	Url.Initialize
+	Autor.Initialize
+	brojRazina.Initialize
+	ime_dat.Initialize
+
+	slovoOdabira = "#"
+	OtvoriIzBaze
+
+	For i = 0 To clvLevelsWithTitleLetter.Size - 1
+		
+	Next
+'	sv.Initialize(1000dip)
+'	Activity.AddView(sv, 0, 0, 100%x, 100%y)
+'	sv.Panel.LoadLayout("s_main_pnl")
+'	sv.Panel.Height = Panel1.Height
+
+	If File.Exists(Starter.SourceFolder, "skins.zip") = False Then
+		File.Copy(File.DirAssets, "skins.zip", Starter.SourceFolder, "skins.zip")
 		RaspakirajSkinoveIzArhive
 	End If
 
-	If File.Exists(File.DirInternal, "opcije") = False Then
+	If File.Exists(Starter.SourceFolder, "opcije") = False Then
 		Dim mOpcije As Map
 
 		mOpcije.Initialize
@@ -252,7 +402,7 @@ Sub Activity_Create(FirstTime As Boolean)
 		mOpcije.Put("rb4", False)
 		mOpcije.Put("skin", "1yoshi-32")
 		mOpcije.Put("mjuzaZid", False)
-		File.WriteMap(File.DirInternal, "opcije", mOpcije)
+		File.WriteMap(Starter.SourceFolder, "opcije", mOpcije)
 	End If
 
 	' postavljanje defaultne vrijednosti ako korisnik prvone pokrene aktivnost opcije
@@ -261,41 +411,352 @@ Sub Activity_Create(FirstTime As Boolean)
 '	StateManager.SaveSettings
 
 	If FirstTime Then
-		Msgbox("Remeber to use long tap on (almost) all buttons in any activity to get more info about what button do!", "Info")
+		Msgbox("Remeber to use long tap on (almost) all buttons in any activity to get more info about action with button!", "Info")
 	End If
 '		sensors.Initialize2(sensors.TYPE_ORIENTATION, 1)
 '	End If
+
+'	Activity.AddMenuItem("Settings", "settings")
+'	Activity.AddMenuItem("About...", "about")
 End Sub
 
+Sub OtvoriIzBaze
+	Dim curs As Cursor
+'	Dim l1 As List
+	Title.Clear
+	Description.Clear
+	Email.Clear
+	Url.Clear
+	Autor.Clear
+	brojRazina.Clear
+	ime_dat.Clear
+
+'	ProgressDialogShow("Učitavam razine...")
+	If slovoOdabira.StartsWith("#") Then
+		Dim q As String = "SELECT title, autor, desc, email, url, brojRazina, imeDat FROM " & Starter.DBFileName & " WHERE imeDat GLOB '[1-9]*'"
+'		Log(q)
+	Else
+		Dim q As String = "SELECT title, autor, desc, email, url, brojRazina, imeDat FROM " & Starter.DBFileName & " WHERE imeDat LIKE '" & slovoOdabira & "%'"
+	End If
+	curs = Starter.upit.ExecQuery(q)
+	If curs.RowCount > 0 Then
+		For i = 0 To curs.RowCount-1
+			curs.Position = i
+			Title.Add(curs.GetString("title"))
+			Autor.Add(curs.GetString("autor"))
+			Description.Add(curs.GetString("desc"))
+			Email.Add(curs.GetString("email"))
+			Url.Add(curs.GetString("url"))
+			brojRazina.Add(curs.GetString("brojRazina"))
+			ime_dat.Add(curs.GetString("imeDat"))
+		Next
+	Else
+		Msgbox("No level packs!", "Info")
+		Activity.Finish
+	End If
+		
+	UbaciUListu
+End Sub
+
+Sub UbaciUListu
+	For i = 0 To Title.Size - 1
+		clvLevelsWithTitleLetter.Add(CreateListItem(Title.Get(i) & " by " & Autor.Get(i), ime_dat.Get(i), brojRazina.Get(i), clvLevelsWithTitleLetter.AsView.Width, 102dip), "")
+	Next
+End Sub
+
+'Sub CreateListItem(t1 As String, t2 As String, ime_d As String, br As String, Width As Int, Height As Int) As Panel
+Sub CreateListItem(t1 As String, ime_d As String, br As String, Width As Int, Height As Int) As Panel
+	Dim p As Panel
+
+	p.Initialize("")
+
+	p.SetLayout(0, 0, Width, Height)
+	p.LoadLayout("stavka")
+	Dim cd As ColorDrawable
+	cd.Initialize(Colors.ARGB(255, 245, 245, 220), 0)
+	p.Background = cd
+
+	lblTitleAutor.Text = t1
+	SetLabelTextSize(lblTitleAutor, lblTitleAutor.Text, 14, 8)
+'	t2 = t2.Replace(CRLF, " ")
+'	lblDesc.Text = t2
+'	SetLabelTextSize(lblDesc, lblDesc.Text, 14, 8)
+	If File.Exists(Starter.SourceFolder, ime_d & ".info") Then
+		Log("info postoji!")
+		Dim list_info As List
+		list_info.Initialize
+		list_info = File.ReadList(Starter.SourceFolder, ime_d & ".info")
+		Dim x As Int = list_info.Get(0)
+		x = x + 1
+		lblInfo.Text = "Finished: " & x & "/" & list_info.Get(1)'list_info.Get(0) & "/" & list_info.Get(1)
+	Else
+		lblInfo.Text = "Finished: 0/" & br
+	End If
+	SetLabelTextSize(lblInfo, lblInfo.Text, 18, 8)
+
+	Return p
+End Sub
+
+Sub imgDelete_Click
+	Dim index As Int
+	Dim curs As Cursor
+
+	index = clvLevelsWithTitleLetter.GetItemFromView(Sender)
+	Dim q As String = "SELECT imeDat, brojRazina FROM " & Starter.DBFileName & " WHERE title = '" & Title.Get(index) & "'"
+	curs = Starter.upit.ExecQuery(q)
+	If curs.RowCount > 0 Then
+		For i = 0 To curs.RowCount-1
+			curs.Position = i
+			Dim ime_datoteke As String = curs.GetString("imeDat")
+			Dim bl As String = curs.GetString("brojRazina")
+		Next
+	End If
+
+	Dim res As Int = Msgbox2("Really delete stats?", "Warning", "Yes", "", "No", LoadBitmapSample(File.DirAssets, "upitnik.png", 32dip, 32dip))
+'	Wait For Msgbox_Result (res As Int)
+	If res = DialogResponse.POSITIVE Then
+		' ime_datoteke
+		If File.Exists(Starter.SourceFolder, ime_datoteke & ".info") Then
+			File.Delete(Starter.SourceFolder, ime_datoteke & ".info")
+			Dim pnl As Panel
+			pnl = clvLevelsWithTitleLetter.GetPanel(index)
+			Dim lbl As Label
+			lbl = pnl.GetView(7)
+			lbl.Text = "Finished: 0/" & bl
+		Else
+			Msgbox("No stats for delete!", "Warning")
+		End If
+	End If
+End Sub
+
+Sub imgVideo_Click
+	Dim index As Int
+	Dim curs As Cursor
+
+	index = clvLevelsWithTitleLetter.GetItemFromView(Sender)
+	Dim s As String = Title.Get(index)
+	If s.Contains("'") Then s = s.Replace("'", "''")
+	Dim q As String = "SELECT imeDat FROM " & Starter.DBFileName & " WHERE title = '" & s & "'"
+	curs = Starter.upit.ExecQuery(q)
+	If curs.RowCount > 0 Then
+		For i = 0 To curs.RowCount-1
+			curs.Position = i
+			ime_dat_za_video = curs.GetString("imeDat")
+		Next
+		ime_dat_za_video = ime_dat_za_video.SubString2(0, ime_dat_za_video.IndexOf("."))
+	End If
+
+	OtvoriVideoDat
+	If listaDatZaVideo.Size > 0 Then
+		StartActivity(video)
+	Else
+		Msgbox("No video files!", "Info")
+	End If
+End Sub
+
+Sub imgSolution_Click
+	Dim index As Int
+
+	index = clvLevelsWithTitleLetter.GetItemFromView(Sender)
+	Dim s As String = Title.Get(index)
+	If s.Contains("'") Then s = s.Replace("'", "''")
+	Log("odabir -> imgSolution_Click -> Title -> " & s & " by " & Autor.Get(index))
+	zaSolutionIme = s & " by " & Autor.Get(index)
+
+	StartActivity(rijesenja)
+End Sub
+
+Sub OtvoriVideoDat
+	Dim tmpList As List
+
+	listaDatZaVideo.Clear
+
+	tmpList.Initialize
+	tmpList = File.ListFiles(Starter.SourceFolder)
+	For i = 0 To tmpList.Size - 1
+		Dim s As String = tmpList.Get(i)
+		If s.StartsWith(ime_dat_za_video) And s.EndsWith(".mp4") Then
+			listaDatZaVideo.Add(s)
+'			spn.Add(s)
+		End If
+	Next
+End Sub
+
+Sub imgEmail_Click
+	Dim index As Int
+
+	index = clvLevelsWithTitleLetter.GetItemFromView(Sender)
+	
+	Dim s As String = Email.Get(index)
+	If s.Length > 0 Then
+		Log(Email.Get(index))
+		Dim res As Int = Msgbox2("Send e-mail to author?", "Question", "Yes", "", "No", LoadBitmapSample(File.DirAssets, "upitnik.png", 32dip, 32dip))
+'		Wait For Msgbox_Result (res As Int)
+		If res = DialogResponse.POSITIVE Then
+			Dim intent1 As Intent
+			intent1.Initialize(intent1.ACTION_VIEW, "mailto:" & Email.Get(index))
+			StartActivity(intent1)
+		End If
+	Else
+		Msgbox("No email!", "Info")
+	End If
+End Sub
+
+Sub imgWWW_Click
+	Dim index As Int
+	Dim p As PhoneIntents
+
+	index = clvLevelsWithTitleLetter.GetItemFromView(Sender)
+
+	Dim s As String = Url.Get(index)
+	If s.Length > 0 Then
+		Dim res As Int = Msgbox2("Open in browser?", "Question", "Yes", "", "No", LoadBitmapSample(File.DirAssets, "upitnik.png", 32dip, 32dip))
+'		Wait For Msgbox_Result (res As Int)
+		If res = DialogResponse.POSITIVE Then
+			Log(Url.Get(index))
+			StartActivity(p.OpenBrowser(Url.Get(index)))
+		End If
+	Else
+		Msgbox("No URL!", "Info")
+	End If
+End Sub
+
+Sub imgPlay_Click
+	Dim index As Int
+	Dim curs As Cursor
+
+	index = clvLevelsWithTitleLetter.GetItemFromView(Sender)
+	Dim s As String = Title.Get(index)
+	If s.Contains("'") Then s = s.Replace("'", "''")
+	Log("odabir -> imgPlay_Click -> Title -> " & s & " by " & Autor.Get(index))
+	zaSolutionIme = s & " by " & Autor.Get(index)
+	Dim q As String = "SELECT imeDat, brojRazina, datoteka FROM " & Starter.DBFileName & " WHERE title = '" & s & "'"
+	curs = Starter.upit.ExecQuery(q)
+	If curs.RowCount > 0 Then
+		For i = 0 To curs.RowCount-1
+			curs.Position = i
+'			Log(curs.GetString("brojRazina"))
+			brojLevela = curs.GetString("brojRazina")
+'			Log(curs.GetString("datoteka"))
+			datZaParsanjeRazina = curs.GetString("datoteka")
+			ime_datoteke_za_info = curs.GetString("imeDat")
+'			Log(curs.GetString("imeDat"))
+		Next
+	Else
+		Msgbox("No levels for choosen letter!", "Info")
+		Activity.Finish
+	End If
+
+	StartActivity(play)
+End Sub
+
+Sub imgInfo_Click
+	Dim index As Int
+
+	index = clvLevelsWithTitleLetter.GetItemFromView(Sender)
+	Dim s As String = Description.Get(index)
+	s = s.Replace(CRLF, " ")
+	Msgbox(s, "Levels info")
+End Sub
+
+Sub imgWWW_LongClick
+	Msgbox("Author website", "Info")
+End Sub
+
+Sub imgEmail_LongClick
+	Msgbox("Send email to author", "Info")
+End Sub
+
+Sub imgPlay_LongClick
+	Msgbox("Start playing levels", "Info")
+End Sub
+
+Sub imgDelete_LongClick
+	Msgbox("Delete stats for all levels", "Info")
+End Sub
+
+Sub imgVideo_LongClick
+	Msgbox("Watch saved video", "Info")
+End Sub
+
+Sub imgInfo_LongClick
+	Msgbox("Shows more info about level pack", "Info")
+End Sub
+
+Sub imgSolution_LongClick
+	Msgbox("Check for solution online", "Info")
+End Sub
+
+'Sub settings_Click
+'	StartActivity(opcije)
+'End Sub
+'
+'Sub about_Click
+'	Msgbox("A lot of sokoban(c) level packs (17k+?)", "About andSokoban v1.0b2")
+'End Sub
+
 Sub RaspakirajSkinoveIzArhive
-	arch.UnZip(File.DirInternal, "skins.zip", File.DirInternal, "anzip")
+	arch.UnZip(Starter.SourceFolder, "skins.zip", Starter.SourceFolder, "anzip")
 End Sub
 
 Sub btn_Click
 	Dim gumb1 As Button
 
 	gumb1 = Sender
-'	Log(gumb1.Tag)
+''	Log(gumb1.Tag)
 	Select gumb1.Tag
-'		Case "sb"
-'			Msgbox("Score board not yet implemented!", "Warning")
-''			StartActivity(score_board)
-
+''		Case "sb"
+''			Msgbox("Score board not yet implemented!", "Warning")
+'''			StartActivity(score_board)
+'
 		Case "opt"
-'			Msgbox("options not yet implemented!", "Warning")
-			StartActivity(opt)
+''			Msgbox("options not yet implemented!", "Warning")
+			StartActivity(opcije)
 
 		Case "o"
 			Msgbox("A lot of sokoban(c) level packs (17k+?)", "About andSokoban v1.0b2")
 
-		Case Else
-			gumb = gumb1.Tag
-			StartActivity(odabir)
+'		Case Else
+'			gumb = gumb1.Tag
+'			StartActivity(odabir)
 	End Select
 End Sub
 
 Sub Activity_Resume
+	Dim ph As Phone
+
+	ph.SetScreenOrientation(1)
 End Sub
 
 Sub Activity_Pause (UserClosed As Boolean)
+End Sub
+
+
+Sub spnLevelsTitleLetter_ItemClick (Position As Int, Value As Object)
+	clvLevelsWithTitleLetter.Clear
+	slovoOdabira = letters.Get(Position)'spnLevelsTitleLetter.GetItem(Position)
+	OtvoriIzBaze
+'	StartActivity(odabir)
+End Sub
+
+Sub clvLevelsWithTitleLetter_ItemClick (Index As Int, Value As Object)
+	
+End Sub
+
+Sub clvLevelsWithTitleLetter_VisibleRangeChanged (FirstIndex As Int, LastIndex As Int)
+	
+End Sub
+
+Sub SetLabelTextSize(lbl As Label, txt As String, MaxFontSize As Float, MinFontSize As Float)
+	Dim FontSize = MaxFontSize As Float
+	Dim Height As Int
+	Dim stu As StringUtils
+   
+	lbl.TextSize = FontSize
+	Height = stu.MeasureMultilineTextHeight(lbl, txt)
+	Do While Height > lbl.Height And FontSize > MinFontSize
+		FontSize = FontSize - 1
+		lbl.TextSize = FontSize
+		Height = stu.MeasureMultilineTextHeight(lbl, txt)
+	Loop
 End Sub

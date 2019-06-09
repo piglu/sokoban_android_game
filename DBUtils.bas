@@ -1,7 +1,8 @@
-﻿Type=StaticCode
-Version=6.8
+﻿B4A=true
+Group=Default Group
 ModulesStructureVersion=1
-B4A=true
+Type=StaticCode
+Version=6.8
 @EndOfDesignText@
 ' Code module
 ' Version 1.09
