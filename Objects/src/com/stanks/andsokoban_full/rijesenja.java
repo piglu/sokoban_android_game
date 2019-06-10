@@ -329,19 +329,15 @@ public class rijesenja extends Activity implements B4AActivity{
     }
 
 public anywheresoftware.b4a.keywords.Common __c = null;
-public com.stanks.andsokoban_full.b4xtable _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = null;
-public anywheresoftware.b4a.objects.PanelWrapper _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = null;
+public com.stanks.andsokoban_full.table _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = null;
+public anywheresoftware.b4a.objects.PanelWrapper _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = null;
 public anywheresoftware.b4a.objects.LabelWrapper _lbltitle = null;
-public static String _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = "";
-public static boolean _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = false;
-public static boolean _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = false;
-public b4a.example.dateutils _vvvvvvv3 = null;
-public com.stanks.andsokoban_full.main _vvvvvvv4 = null;
-public com.stanks.andsokoban_full.starter _vvvvvvv5 = null;
-public com.stanks.andsokoban_full.play _vvvvvvv6 = null;
-public com.stanks.andsokoban_full.odabir _vvvvvvv7 = null;
-public com.stanks.andsokoban_full.video _vvvvvvv0 = null;
-public com.stanks.andsokoban_full.opcije _vvvvvvvv2 = null;
+public b4a.example.dateutils _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = null;
+public com.stanks.andsokoban_full.main _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = null;
+public com.stanks.andsokoban_full.starter _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = null;
+public com.stanks.andsokoban_full.play _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = null;
+public com.stanks.andsokoban_full.video _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = null;
+public com.stanks.andsokoban_full.opcije _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = null;
 
 public static void initializeProcessGlobals() {
              try {
@@ -365,13 +361,25 @@ mostCurrent._lbltitle.setTextColor(anywheresoftware.b4a.keywords.Common.Colors.Y
  //BA.debugLineNum = 38;BA.debugLine="Activity.AddView(lblTitle, 0, 0, 100%x, 10%x)";
 mostCurrent._activity.AddView((android.view.View)(mostCurrent._lbltitle.getObject()),(int) (0),(int) (0),anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (100),mostCurrent.activityBA),anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (10),mostCurrent.activityBA));
  //BA.debugLineNum = 41;BA.debugLine="rijP.Initialize(\"\")";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.Initialize(mostCurrent.activityBA,"");
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Initialize(mostCurrent.activityBA,"");
  //BA.debugLineNum = 42;BA.debugLine="Activity.AddView(rijP, 0, 11%x, 100%x, 100%y - 11";
-mostCurrent._activity.AddView((android.view.View)(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.getObject()),(int) (0),anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (11),mostCurrent.activityBA),anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (100),mostCurrent.activityBA),(int) (anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (100),mostCurrent.activityBA)-anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (11),mostCurrent.activityBA)));
+mostCurrent._activity.AddView((android.view.View)(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.getObject()),(int) (0),anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (11),mostCurrent.activityBA),anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (100),mostCurrent.activityBA),(int) (anywheresoftware.b4a.keywords.Common.PerYToCurrent((float) (100),mostCurrent.activityBA)-anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (11),mostCurrent.activityBA)));
  //BA.debugLineNum = 45;BA.debugLine="rijT.Initialize(Me, \"\")";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3._initialize(mostCurrent.activityBA,rijesenja.getObject(),"");
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._initialize(mostCurrent.activityBA,rijesenja.getObject(),"");
+ //BA.debugLineNum = 46;BA.debugLine="rijT.CellAlignment = Bit.Or(Gravity.CENTER_HORIZO";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._setvvvvvvvvvvvvvvvvvvv0(anywheresoftware.b4a.keywords.Common.Bit.Or(anywheresoftware.b4a.keywords.Common.Gravity.CENTER_HORIZONTAL,anywheresoftware.b4a.keywords.Common.Gravity.CENTER_VERTICAL));
  //BA.debugLineNum = 47;BA.debugLine="rijT.RowHeight = 20dip";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3._vvvvvvvvvvvvv7 = anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (20));
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._setvvvvvvvvvvvvvvvvvvvvv6(anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (20)));
+ //BA.debugLineNum = 48;BA.debugLine="rijT.AddToActivity(rijP, 0, 0, rijP.Width, rijP.H";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._vvvv4((anywheresoftware.b4a.objects.ActivityWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.ActivityWrapper(), (anywheresoftware.b4a.BALayout)(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.getObject())),(int) (0),(int) (0),mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.getWidth(),mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.getHeight());
+ //BA.debugLineNum = 49;BA.debugLine="rijT.SetHeader(Array As String(\"Title\", \"Level Na";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._vvvvvvvvvvvvvv2(new String[]{"Title","Level Name","Pushes","Steps","Download"});
+ //BA.debugLineNum = 50;BA.debugLine="rijT.SetColumnsWidths(Array As Int(33%x, 33%x, 33";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._vvvvvvvvvvvvvv1(new int[]{anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (33),mostCurrent.activityBA),anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (33),mostCurrent.activityBA),anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (33),mostCurrent.activityBA),anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (33),mostCurrent.activityBA),anywheresoftware.b4a.keywords.Common.PerXToCurrent((float) (33),mostCurrent.activityBA)});
+ //BA.debugLineNum = 51;BA.debugLine="rijT.TextSize = 10.0";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._setvvvvvvvvvvvvvvvvvvvvvvv1((float) (10.0));
+ //BA.debugLineNum = 78;BA.debugLine="UbaciRijesenjaUTablicu";
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5();
  //BA.debugLineNum = 79;BA.debugLine="End Sub";
 return "";
 }
@@ -392,18 +400,12 @@ return "";
 }
 public static String  _globals() throws Exception{
  //BA.debugLineNum = 12;BA.debugLine="Sub Globals";
- //BA.debugLineNum = 15;BA.debugLine="Dim rijT As B4XTable";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = new com.stanks.andsokoban_full.b4xtable();
+ //BA.debugLineNum = 15;BA.debugLine="Dim rijT As Table";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = new com.stanks.andsokoban_full.table();
  //BA.debugLineNum = 16;BA.debugLine="Dim rijP As Panel";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = new anywheresoftware.b4a.objects.PanelWrapper();
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = new anywheresoftware.b4a.objects.PanelWrapper();
  //BA.debugLineNum = 17;BA.debugLine="Dim lblTitle As Label";
 mostCurrent._lbltitle = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 23;BA.debugLine="Dim token As String";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = "";
- //BA.debugLineNum = 25;BA.debugLine="Dim DropboxEnabled As Boolean";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = false;
- //BA.debugLineNum = 26;BA.debugLine="Private downloadrunning As Boolean";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = false;
  //BA.debugLineNum = 28;BA.debugLine="End Sub";
 return "";
 }
@@ -412,7 +414,7 @@ public static String  _process_globals() throws Exception{
  //BA.debugLineNum = 10;BA.debugLine="End Sub";
 return "";
 }
-public static String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4() throws Exception{
+public static String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5() throws Exception{
 anywheresoftware.b4a.objects.collections.List _bk = null;
 anywheresoftware.b4a.objects.collections.List _bg = null;
 anywheresoftware.b4a.objects.collections.List _rij = null;
@@ -420,9 +422,9 @@ anywheresoftware.b4a.objects.collections.List _tmplist = null;
 int _i = 0;
  //BA.debugLineNum = 81;BA.debugLine="Sub UbaciRijesenjaUTablicu";
  //BA.debugLineNum = 82;BA.debugLine="Log(video.listaRijesenja.Size)";
-anywheresoftware.b4a.keywords.Common.LogImpl("26684673",BA.NumberToString(mostCurrent._vvvvvvv0._vvvv1.getSize()),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("36750209",BA.NumberToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1._vvv4.getSize()),0);
  //BA.debugLineNum = 83;BA.debugLine="Log(video.listaRijesenjaText.Size)";
-anywheresoftware.b4a.keywords.Common.LogImpl("26684674",BA.NumberToString(mostCurrent._vvvvvvv0._vvvv2.getSize()),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("36750210",BA.NumberToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1._vvv5.getSize()),0);
  //BA.debugLineNum = 85;BA.debugLine="Dim bk, bg, rij, tmplist As List";
 _bk = new anywheresoftware.b4a.objects.collections.List();
 _bg = new anywheresoftware.b4a.objects.collections.List();
@@ -439,15 +441,15 @@ _tmplist.Initialize();
  //BA.debugLineNum = 92;BA.debugLine="For i = 0 To video.listaRijesenjaText.Size - 1";
 {
 final int step8 = 1;
-final int limit8 = (int) (mostCurrent._vvvvvvv0._vvvv2.getSize()-1);
+final int limit8 = (int) (mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1._vvv5.getSize()-1);
 _i = (int) (0) ;
 for (;_i <= limit8 ;_i = _i + step8 ) {
  //BA.debugLineNum = 93;BA.debugLine="bk.Add(video.listaRijesenjaText.Get(1))";
-_bk.Add(mostCurrent._vvvvvvv0._vvvv2.Get((int) (1)));
+_bk.Add(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1._vvv5.Get((int) (1)));
  //BA.debugLineNum = 94;BA.debugLine="bg.Add(video.listaRijesenjaText.Get(2))";
-_bg.Add(mostCurrent._vvvvvvv0._vvvv2.Get((int) (2)));
+_bg.Add(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1._vvv5.Get((int) (2)));
  //BA.debugLineNum = 95;BA.debugLine="rij.Add(video.listaRijesenjaText.Get(3))";
-_rij.Add(mostCurrent._vvvvvvv0._vvvv2.Get((int) (3)));
+_rij.Add(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1._vvv5.Get((int) (3)));
  }
 };
  //BA.debugLineNum = 98;BA.debugLine="End Sub";

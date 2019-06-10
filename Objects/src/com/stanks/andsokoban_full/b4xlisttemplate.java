@@ -24,46 +24,45 @@ public class b4xlisttemplate extends B4AClass.ImplB4AClass implements BA.SubDele
     }
 
  public anywheresoftware.b4a.keywords.Common __c = null;
-public anywheresoftware.b4a.objects.B4XViewWrapper.XUI _vvvvvvvvvvvv6 = null;
-public anywheresoftware.b4a.objects.B4XViewWrapper _vvvvvvvvvvvv5 = null;
+public anywheresoftware.b4a.objects.B4XViewWrapper.XUI _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = null;
+public anywheresoftware.b4a.objects.B4XViewWrapper _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = null;
 public b4a.example3.customlistview _customlistview1 = null;
-public anywheresoftware.b4a.objects.collections.List _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = null;
-public String _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = "";
-public com.stanks.andsokoban_full.b4xdialog _vvvvvvvvvvvvvvvvvvvvvvvvvvv3 = null;
-public boolean _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = false;
-public int _vvvvvvvvvvvvvvvv0 = 0;
-public anywheresoftware.b4a.objects.collections.List _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = null;
-public int _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = 0;
-public b4a.example.dateutils _vvvvvvv3 = null;
-public com.stanks.andsokoban_full.main _vvvvvvv4 = null;
-public com.stanks.andsokoban_full.starter _vvvvvvv5 = null;
-public com.stanks.andsokoban_full.play _vvvvvvv6 = null;
-public com.stanks.andsokoban_full.odabir _vvvvvvv7 = null;
-public com.stanks.andsokoban_full.video _vvvvvvv0 = null;
-public com.stanks.andsokoban_full.rijesenja _vvvvvvvv1 = null;
-public com.stanks.andsokoban_full.opcije _vvvvvvvv2 = null;
+public anywheresoftware.b4a.objects.collections.List _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = null;
+public String _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = "";
+public com.stanks.andsokoban_full.b4xdialog _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = null;
+public boolean _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = false;
+public int _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = 0;
+public anywheresoftware.b4a.objects.collections.List _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = null;
+public int _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = 0;
+public b4a.example.dateutils _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = null;
+public com.stanks.andsokoban_full.main _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = null;
+public com.stanks.andsokoban_full.starter _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = null;
+public com.stanks.andsokoban_full.play _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = null;
+public com.stanks.andsokoban_full.video _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = null;
+public com.stanks.andsokoban_full.rijesenja _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = null;
+public com.stanks.andsokoban_full.opcije _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = null;
 public String  _class_globals() throws Exception{
  //BA.debugLineNum = 1;BA.debugLine="Sub Class_Globals";
  //BA.debugLineNum = 2;BA.debugLine="Private xui As XUI";
-_vvvvvvvvvvvv6 = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
  //BA.debugLineNum = 3;BA.debugLine="Public mBase As B4XView";
-_vvvvvvvvvvvv5 = new anywheresoftware.b4a.objects.B4XViewWrapper();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = new anywheresoftware.b4a.objects.B4XViewWrapper();
  //BA.debugLineNum = 4;BA.debugLine="Public CustomListView1 As CustomListView";
 _customlistview1 = new b4a.example3.customlistview();
  //BA.debugLineNum = 5;BA.debugLine="Public Options As List";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = new anywheresoftware.b4a.objects.collections.List();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = new anywheresoftware.b4a.objects.collections.List();
  //BA.debugLineNum = 6;BA.debugLine="Public SelectedItem As String";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = "";
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = "";
  //BA.debugLineNum = 7;BA.debugLine="Private xDialog As B4XDialog";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvv3 = new com.stanks.andsokoban_full.b4xdialog();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = new com.stanks.andsokoban_full.b4xdialog();
  //BA.debugLineNum = 8;BA.debugLine="Public AllowMultiSelection As Boolean";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = false;
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = false;
  //BA.debugLineNum = 9;BA.debugLine="Public SelectionColor As Int = 0xAA0086FF";
-_vvvvvvvvvvvvvvvv0 = (int) (0xaa0086ff);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = (int) (0xaa0086ff);
  //BA.debugLineNum = 10;BA.debugLine="Public SelectedItems As List";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = new anywheresoftware.b4a.objects.collections.List();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = new anywheresoftware.b4a.objects.collections.List();
  //BA.debugLineNum = 11;BA.debugLine="Public MultiSelectionMinimum As Int = 0";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = (int) (0);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = (int) (0);
  //BA.debugLineNum = 12;BA.debugLine="End Sub";
 return "";
 }
@@ -74,20 +73,20 @@ b4a.example3.customlistview._clvitem _item = null;
 if ((_value).equals((Object)(""))) { 
 if (true) return "";};
  //BA.debugLineNum = 78;BA.debugLine="If AllowMultiSelection Then";
-if (_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5) { 
+if (_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4) { 
  //BA.debugLineNum = 79;BA.debugLine="Dim Item As CLVItem = CustomListView1.GetRawList";
 _item = _customlistview1._getrawlistitem(_index);
  //BA.debugLineNum = 80;BA.debugLine="SelectItem (Item, True)";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2(_item,__c.True);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1(_item,__c.True);
  }else {
  //BA.debugLineNum = 82;BA.debugLine="SelectedItem = Value";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = BA.ObjectToString(_value);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = BA.ObjectToString(_value);
  //BA.debugLineNum = 83;BA.debugLine="SelectedItems.Clear";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.Clear();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.Clear();
  //BA.debugLineNum = 84;BA.debugLine="SelectedItems.Add(Value)";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.Add(_value);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.Add(_value);
  //BA.debugLineNum = 85;BA.debugLine="xDialog.Close(xui.DialogResponse_Positive)";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvv3._vvvv3(_vvvvvvvvvvvv6.DialogResponse_Positive);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.DialogResponse_Positive);
  };
  //BA.debugLineNum = 87;BA.debugLine="End Sub";
 return "";
@@ -100,7 +99,7 @@ return "";
 public anywheresoftware.b4a.objects.B4XViewWrapper  _getpanel(com.stanks.andsokoban_full.b4xdialog _dialog) throws Exception{
  //BA.debugLineNum = 37;BA.debugLine="Public Sub GetPanel (Dialog As B4XDialog) As B4XVi";
  //BA.debugLineNum = 38;BA.debugLine="Return mBase";
-if (true) return _vvvvvvvvvvvv5;
+if (true) return _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2;
  //BA.debugLineNum = 39;BA.debugLine="End Sub";
 return null;
 }
@@ -108,41 +107,41 @@ public String  _initialize(anywheresoftware.b4a.BA _ba) throws Exception{
 innerInitialize(_ba);
  //BA.debugLineNum = 14;BA.debugLine="Public Sub Initialize";
  //BA.debugLineNum = 15;BA.debugLine="mBase = xui.CreatePanel(\"mBase\")";
-_vvvvvvvvvvvv5 = _vvvvvvvvvvvv6.CreatePanel(ba,"mBase");
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.CreatePanel(ba,"mBase");
  //BA.debugLineNum = 16;BA.debugLine="mBase.SetLayoutAnimated(0, 0, 0, 300dip, 300dip)";
-_vvvvvvvvvvvv5.SetLayoutAnimated((int) (0),(int) (0),(int) (0),__c.DipToCurrent((int) (300)),__c.DipToCurrent((int) (300)));
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.SetLayoutAnimated((int) (0),(int) (0),(int) (0),__c.DipToCurrent((int) (300)),__c.DipToCurrent((int) (300)));
  //BA.debugLineNum = 17;BA.debugLine="mBase.LoadLayout(\"ListTemplate\")";
-_vvvvvvvvvvvv5.LoadLayout("ListTemplate",ba);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.LoadLayout("ListTemplate",ba);
  //BA.debugLineNum = 18;BA.debugLine="mBase.SetColorAndBorder(xui.Color_Transparent, 0,";
-_vvvvvvvvvvvv5.SetColorAndBorder(_vvvvvvvvvvvv6.Color_Transparent,(int) (0),(int) (0),(int) (0));
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.SetColorAndBorder(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Color_Transparent,(int) (0),(int) (0),(int) (0));
  //BA.debugLineNum = 19;BA.debugLine="CustomListView1.sv.SetColorAndBorder(xui.Color_Tr";
-_customlistview1._sv.SetColorAndBorder(_vvvvvvvvvvvv6.Color_Transparent,(int) (0),(int) (0),(int) (0));
+_customlistview1._sv.SetColorAndBorder(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Color_Transparent,(int) (0),(int) (0),(int) (0));
  //BA.debugLineNum = 20;BA.debugLine="CustomListView1.DefaultTextBackgroundColor = 0xFF";
 _customlistview1._defaulttextbackgroundcolor = (int) (0xff555555);
  //BA.debugLineNum = 21;BA.debugLine="CustomListView1.DefaultTextColor = xui.Color_Whit";
-_customlistview1._defaulttextcolor = _vvvvvvvvvvvv6.Color_White;
+_customlistview1._defaulttextcolor = _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Color_White;
  //BA.debugLineNum = 26;BA.debugLine="Options.Initialize";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Initialize();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.Initialize();
  //BA.debugLineNum = 27;BA.debugLine="SelectedItems.Initialize";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.Initialize();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.Initialize();
  //BA.debugLineNum = 28;BA.debugLine="End Sub";
 return "";
 }
-public String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2(int _width,int _height) throws Exception{
+public String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1(int _width,int _height) throws Exception{
  //BA.debugLineNum = 31;BA.debugLine="Public Sub Resize(Width As Int, Height As Int)";
  //BA.debugLineNum = 32;BA.debugLine="mBase.SetLayoutAnimated(0, 0, 0, Width, Height)";
-_vvvvvvvvvvvv5.SetLayoutAnimated((int) (0),(int) (0),(int) (0),_width,_height);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.SetLayoutAnimated((int) (0),(int) (0),(int) (0),_width,_height);
  //BA.debugLineNum = 33;BA.debugLine="CustomListView1.Base_Resize(Width, Height)";
 _customlistview1._base_resize(_width,_height);
  //BA.debugLineNum = 34;BA.debugLine="End Sub";
 return "";
 }
-public String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2(b4a.example3.customlistview._clvitem _item,boolean _toggle) throws Exception{
+public String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1(b4a.example3.customlistview._clvitem _item,boolean _toggle) throws Exception{
 int _index = 0;
 boolean _selected = false;
  //BA.debugLineNum = 59;BA.debugLine="Private Sub SelectItem (Item As CLVItem, Toggle As";
  //BA.debugLineNum = 60;BA.debugLine="Dim index As Int = SelectedItems.IndexOf(Item.Val";
-_index = _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.IndexOf(_item.Value);
+_index = _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.IndexOf(_item.Value);
  //BA.debugLineNum = 61;BA.debugLine="Dim Selected As Boolean = index > -1";
 _selected = _index>-1;
  //BA.debugLineNum = 62;BA.debugLine="If Toggle Then Selected = Not(Selected)";
@@ -152,24 +151,24 @@ _selected = __c.Not(_selected);};
 if (_selected) { 
  //BA.debugLineNum = 64;BA.debugLine="If Not(Toggle) Then Item.Panel.Color = Selection";
 if (__c.Not(_toggle)) { 
-_item.Panel.setColor(_vvvvvvvvvvvvvvvv0);};
+_item.Panel.setColor(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5);};
  //BA.debugLineNum = 65;BA.debugLine="Item.Color = CustomListView1.DefaultTextBackgrou";
 _item.Color = _customlistview1._defaulttextbackgroundcolor;
  //BA.debugLineNum = 66;BA.debugLine="If index = -1 Then SelectedItems.Add(Item.Value)";
 if (_index==-1) { 
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.Add(_item.Value);};
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.Add(_item.Value);};
  }else {
  //BA.debugLineNum = 68;BA.debugLine="Item.Color = SelectionColor";
-_item.Color = _vvvvvvvvvvvvvvvv0;
+_item.Color = _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5;
  //BA.debugLineNum = 69;BA.debugLine="If Not(Toggle) Then Item.Panel.Color = CustomLis";
 if (__c.Not(_toggle)) { 
 _item.Panel.setColor(_customlistview1._defaulttextbackgroundcolor);};
  //BA.debugLineNum = 70;BA.debugLine="If index > -1 Then SelectedItems.RemoveAt(index)";
 if (_index>-1) { 
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.RemoveAt(_index);};
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.RemoveAt(_index);};
  };
  //BA.debugLineNum = 72;BA.debugLine="xDialog.SetButtonState(xui.DialogResponse_Positiv";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvv3._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4(_vvvvvvvvvvvv6.DialogResponse_Positive,_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.getSize()>=_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.DialogResponse_Positive,_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.getSize()>=_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7);
  //BA.debugLineNum = 73;BA.debugLine="End Sub";
 return "";
 }
@@ -205,7 +204,7 @@ case 0:
 //C
 this.state = 1;
  //BA.debugLineNum = 42;BA.debugLine="xDialog = Dialog";
-parent._vvvvvvvvvvvvvvvvvvvvvvvvvvv3 = _dialog;
+parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = _dialog;
  //BA.debugLineNum = 43;BA.debugLine="CustomListView1.Clear";
 parent._customlistview1._clear();
  //BA.debugLineNum = 44;BA.debugLine="For Each opt As Object In Options";
@@ -214,7 +213,7 @@ if (true) break;
 case 1:
 //for
 this.state = 4;
-group3 = parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3;
+group3 = parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2;
 index3 = 0;
 groupLen3 = group3.getSize();
 this.state = 12;
@@ -247,7 +246,7 @@ if (true) break;
 case 4:
 //if
 this.state = 11;
-if (parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5) { 
+if (parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4) { 
 this.state = 6;
 }if (true) break;
 
@@ -292,7 +291,7 @@ this.state = 16;
  //BA.debugLineNum = 50;BA.debugLine="Dim item As CLVItem = CustomListView1.GetRawLis";
 _item = parent._customlistview1._getrawlistitem(_i);
  //BA.debugLineNum = 51;BA.debugLine="SelectItem (item, False)";
-parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2(_item,parent.__c.False);
+parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1(_item,parent.__c.False);
  if (true) break;
 if (true) break;
 
@@ -307,9 +306,9 @@ case 11:
 this.state = -1;
 ;
  //BA.debugLineNum = 54;BA.debugLine="Dialog.InternalAddStubToCLVIfNeeded(CustomListVie";
-_dialog._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0(parent._customlistview1,parent._customlistview1._defaulttextbackgroundcolor);
+_dialog._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(parent._customlistview1,parent._customlistview1._defaulttextbackgroundcolor);
  //BA.debugLineNum = 55;BA.debugLine="SelectedItem = \"\"";
-parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = "";
+parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = "";
  //BA.debugLineNum = 57;BA.debugLine="End Sub";
 if (true) break;
 

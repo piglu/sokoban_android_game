@@ -319,6 +319,7 @@ Version=8.8
 '
 ' - provjeriti varijablu slijedeći/prethodni za case "Next" level i "Prev" level (Play -> btn_Click)
 ' - VratiPotez ne radi kako bi trebala (Play)
+' - slijedeći level poveća brojač finished za 1. to ispraviti. jedino ako je igrač stvarno završio level (congratulations!) onda se brojač poveća za 1
 '
 '
 

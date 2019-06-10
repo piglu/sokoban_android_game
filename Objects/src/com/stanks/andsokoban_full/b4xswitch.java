@@ -24,30 +24,29 @@ public class b4xswitch extends B4AClass.ImplB4AClass implements BA.SubDelegator{
     }
 
  public anywheresoftware.b4a.keywords.Common __c = null;
-public String _vvvvvvvvvvvv3 = "";
-public Object _vvvvvvvvvvvv4 = null;
-public anywheresoftware.b4a.objects.B4XViewWrapper _vvvvvvvvvvvv5 = null;
-public anywheresoftware.b4a.objects.B4XViewWrapper.XUI _vvvvvvvvvvvv6 = null;
-public b4a.example.bcpath._bcbrush _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = null;
-public b4a.example.bcpath._bcbrush _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = null;
-public b4a.example.bitmapcreator _vvvvvvvvvvvvvvvvvvvvvv4 = null;
-public int _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = 0;
-public int _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = 0;
-public b4a.example.bcpath._bcbrush _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = null;
-public anywheresoftware.b4a.objects.ImageViewWrapper _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = null;
-public boolean _vvvvvvvvvvvvvvvvvvvv5 = false;
-public b4a.example.bcpath._bcbrush _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = null;
-public int _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = 0;
-public Object _vvvvvvvvvvvv7 = null;
-public float _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = 0f;
-public b4a.example.dateutils _vvvvvvv3 = null;
-public com.stanks.andsokoban_full.main _vvvvvvv4 = null;
-public com.stanks.andsokoban_full.starter _vvvvvvv5 = null;
-public com.stanks.andsokoban_full.play _vvvvvvv6 = null;
-public com.stanks.andsokoban_full.odabir _vvvvvvv7 = null;
-public com.stanks.andsokoban_full.video _vvvvvvv0 = null;
-public com.stanks.andsokoban_full.rijesenja _vvvvvvvv1 = null;
-public com.stanks.andsokoban_full.opcije _vvvvvvvv2 = null;
+public String _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = "";
+public Object _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = null;
+public anywheresoftware.b4a.objects.B4XViewWrapper _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = null;
+public anywheresoftware.b4a.objects.B4XViewWrapper.XUI _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = null;
+public b4a.example.bcpath._bcbrush _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = null;
+public b4a.example.bcpath._bcbrush _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = null;
+public b4a.example.bitmapcreator _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = null;
+public int _vvvvvvvvvvvvvvvvvvvvvvv5 = 0;
+public int _vvvvvvvvvvvvvvvvvvvv5 = 0;
+public b4a.example.bcpath._bcbrush _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = null;
+public anywheresoftware.b4a.objects.ImageViewWrapper _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = null;
+public boolean _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = false;
+public b4a.example.bcpath._bcbrush _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = null;
+public int _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = 0;
+public Object _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = null;
+public float _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = 0f;
+public b4a.example.dateutils _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = null;
+public com.stanks.andsokoban_full.main _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = null;
+public com.stanks.andsokoban_full.starter _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = null;
+public com.stanks.andsokoban_full.play _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = null;
+public com.stanks.andsokoban_full.video _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = null;
+public com.stanks.andsokoban_full.rijesenja _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = null;
+public com.stanks.andsokoban_full.opcije _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = null;
 public String  _base_resize(double _width1,double _height1) throws Exception{
  //BA.debugLineNum = 121;BA.debugLine="Private Sub Base_Resize (Width1 As Double, Height1";
  //BA.debugLineNum = 123;BA.debugLine="End Sub";
@@ -56,36 +55,36 @@ return "";
 public String  _class_globals() throws Exception{
  //BA.debugLineNum = 6;BA.debugLine="Sub Class_Globals";
  //BA.debugLineNum = 7;BA.debugLine="Private mEventName As String 'ignore";
-_vvvvvvvvvvvv3 = "";
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = "";
  //BA.debugLineNum = 8;BA.debugLine="Private mCallBack As Object 'ignore";
-_vvvvvvvvvvvv4 = new Object();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = new Object();
  //BA.debugLineNum = 9;BA.debugLine="Private mBase As B4XView 'ignore";
-_vvvvvvvvvvvv5 = new anywheresoftware.b4a.objects.B4XViewWrapper();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = new anywheresoftware.b4a.objects.B4XViewWrapper();
  //BA.debugLineNum = 10;BA.debugLine="Private xui As XUI 'ignore";
-_vvvvvvvvvvvv6 = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
  //BA.debugLineNum = 11;BA.debugLine="Private OnColor, OffColor As BCBrush";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = new b4a.example.bcpath._bcbrush();
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = new b4a.example.bcpath._bcbrush();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = new b4a.example.bcpath._bcbrush();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = new b4a.example.bcpath._bcbrush();
  //BA.debugLineNum = 12;BA.debugLine="Private bc As BitmapCreator";
-_vvvvvvvvvvvvvvvvvvvvvv4 = new b4a.example.bitmapcreator();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = new b4a.example.bitmapcreator();
  //BA.debugLineNum = 13;BA.debugLine="Private Width As Int = 55dip";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = __c.DipToCurrent((int) (55));
+_vvvvvvvvvvvvvvvvvvvvvvv5 = __c.DipToCurrent((int) (55));
  //BA.debugLineNum = 14;BA.debugLine="Private Height As Int = 31dip";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = __c.DipToCurrent((int) (31));
+_vvvvvvvvvvvvvvvvvvvv5 = __c.DipToCurrent((int) (31));
  //BA.debugLineNum = 15;BA.debugLine="Private ThumbColor As BCBrush";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = new b4a.example.bcpath._bcbrush();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = new b4a.example.bcpath._bcbrush();
  //BA.debugLineNum = 16;BA.debugLine="Private iv As ImageView";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = new anywheresoftware.b4a.objects.ImageViewWrapper();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = new anywheresoftware.b4a.objects.ImageViewWrapper();
  //BA.debugLineNum = 17;BA.debugLine="Private mValue As Boolean";
-_vvvvvvvvvvvvvvvvvvvv5 = false;
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = false;
  //BA.debugLineNum = 18;BA.debugLine="Private transparent As BCBrush";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = new b4a.example.bcpath._bcbrush();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = new b4a.example.bcpath._bcbrush();
  //BA.debugLineNum = 19;BA.debugLine="Private LoopIndex As Int";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = 0;
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = 0;
  //BA.debugLineNum = 20;BA.debugLine="Public Tag As Object";
-_vvvvvvvvvvvv7 = new Object();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = new Object();
  //BA.debugLineNum = 21;BA.debugLine="Private Scale As Float";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = 0f;
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = 0f;
  //BA.debugLineNum = 22;BA.debugLine="End Sub";
 return "";
 }
@@ -93,44 +92,44 @@ public String  _designercreateview(Object _base,anywheresoftware.b4a.objects.Lab
 anywheresoftware.b4a.objects.B4XViewWrapper _pnl = null;
  //BA.debugLineNum = 30;BA.debugLine="Public Sub DesignerCreateView (Base As Object, Lbl";
  //BA.debugLineNum = 31;BA.debugLine="mBase = Base";
-_vvvvvvvvvvvv5.setObject((java.lang.Object)(_base));
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.setObject((java.lang.Object)(_base));
  //BA.debugLineNum = 32;BA.debugLine="Tag = mBase.Tag : mBase.Tag = Me";
-_vvvvvvvvvvvv7 = _vvvvvvvvvvvv5.getTag();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.getTag();
  //BA.debugLineNum = 32;BA.debugLine="Tag = mBase.Tag : mBase.Tag = Me";
-_vvvvvvvvvvvv5.setTag(this);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.setTag(this);
  //BA.debugLineNum = 33;BA.debugLine="mBase.SetLayoutAnimated(0, mBase.Left, mBase.Top,";
-_vvvvvvvvvvvv5.SetLayoutAnimated((int) (0),_vvvvvvvvvvvv5.getLeft(),_vvvvvvvvvvvv5.getTop(),_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2,_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.SetLayoutAnimated((int) (0),_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.getLeft(),_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.getTop(),_vvvvvvvvvvvvvvvvvvvvvvv5,_vvvvvvvvvvvvvvvvvvvv5);
  //BA.debugLineNum = 34;BA.debugLine="mBase.SetColorAndBorder(xui.Color_Transparent, 0,";
-_vvvvvvvvvvvv5.SetColorAndBorder(_vvvvvvvvvvvv6.Color_Transparent,(int) (0),(int) (0),(int) (0));
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.SetColorAndBorder(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Color_Transparent,(int) (0),(int) (0),(int) (0));
  //BA.debugLineNum = 35;BA.debugLine="Dim pnl As B4XView = xui.CreatePanel(\"pnl\")";
 _pnl = new anywheresoftware.b4a.objects.B4XViewWrapper();
-_pnl = _vvvvvvvvvvvv6.CreatePanel(ba,"pnl");
+_pnl = _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.CreatePanel(ba,"pnl");
  //BA.debugLineNum = 36;BA.debugLine="pnl.Color = xui.Color_Transparent";
-_pnl.setColor(_vvvvvvvvvvvv6.Color_Transparent);
+_pnl.setColor(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Color_Transparent);
  //BA.debugLineNum = 37;BA.debugLine="iv.Initialize(\"\")";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5.Initialize(ba,"");
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Initialize(ba,"");
  //BA.debugLineNum = 38;BA.debugLine="mBase.AddView(iv, 0, 0, Width, Height)";
-_vvvvvvvvvvvv5.AddView((android.view.View)(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5.getObject()),(int) (0),(int) (0),_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2,_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.AddView((android.view.View)(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.getObject()),(int) (0),(int) (0),_vvvvvvvvvvvvvvvvvvvvvvv5,_vvvvvvvvvvvvvvvvvvvv5);
  //BA.debugLineNum = 39;BA.debugLine="mBase.AddView(pnl, 0, 0, Width, Height)";
-_vvvvvvvvvvvv5.AddView((android.view.View)(_pnl.getObject()),(int) (0),(int) (0),_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2,_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.AddView((android.view.View)(_pnl.getObject()),(int) (0),(int) (0),_vvvvvvvvvvvvvvvvvvvvvvv5,_vvvvvvvvvvvvvvvvvvvv5);
  //BA.debugLineNum = 41;BA.debugLine="bc.Initialize(Width, Height)";
-_vvvvvvvvvvvvvvvvvvvvvv4._initialize(ba,_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2,_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._initialize(ba,_vvvvvvvvvvvvvvvvvvvvvvv5,_vvvvvvvvvvvvvvvvvvvv5);
  //BA.debugLineNum = 42;BA.debugLine="Scale = xui.Scale";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = _vvvvvvvvvvvv6.getScale();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.getScale();
  //BA.debugLineNum = 47;BA.debugLine="OnColor = bc.CreateBrushFromColor(xui.PaintOrColo";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = _vvvvvvvvvvvvvvvvvvvvvv4._createbrushfromcolor(_vvvvvvvvvvvv6.PaintOrColorToColor(_props.Get((Object)("OnColor"))));
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._createbrushfromcolor(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.PaintOrColorToColor(_props.Get((Object)("OnColor"))));
  //BA.debugLineNum = 48;BA.debugLine="OffColor = bc.CreateBrushFromColor(xui.PaintOrCol";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = _vvvvvvvvvvvvvvvvvvvvvv4._createbrushfromcolor(_vvvvvvvvvvvv6.PaintOrColorToColor(_props.Get((Object)("OffColor"))));
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._createbrushfromcolor(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.PaintOrColorToColor(_props.Get((Object)("OffColor"))));
  //BA.debugLineNum = 49;BA.debugLine="ThumbColor = bc.CreateBrushFromColor(xui.PaintOrC";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = _vvvvvvvvvvvvvvvvvvvvvv4._createbrushfromcolor(_vvvvvvvvvvvv6.PaintOrColorToColor(_props.Get((Object)("ThumbColor"))));
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._createbrushfromcolor(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.PaintOrColorToColor(_props.Get((Object)("ThumbColor"))));
  //BA.debugLineNum = 50;BA.debugLine="transparent = bc.CreateBrushFromColor(xui.Color_T";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = _vvvvvvvvvvvvvvvvvvvvvv4._createbrushfromcolor(_vvvvvvvvvvvv6.Color_Transparent);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._createbrushfromcolor(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Color_Transparent);
  //BA.debugLineNum = 51;BA.debugLine="SetValueImpl(Props.Get(\"Value\"), True)";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(BA.ObjectToBoolean(_props.Get((Object)("Value"))),__c.True);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(BA.ObjectToBoolean(_props.Get((Object)("Value"))),__c.True);
  //BA.debugLineNum = 52;BA.debugLine="End Sub";
 return "";
 }
-public String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6(float _state) throws Exception{
+public String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6(float _state) throws Exception{
 float _r = 0f;
 float _cx = 0f;
 int _cy = 0;
@@ -139,46 +138,46 @@ float _w = 0f;
 float _h = 0f;
  //BA.debugLineNum = 101;BA.debugLine="Private Sub Draw (State As Float)";
  //BA.debugLineNum = 102;BA.debugLine="bc.DrawRect2(bc.TargetRect, transparent, True, 0)";
-_vvvvvvvvvvvvvvvvvvvvvv4._drawrect2(_vvvvvvvvvvvvvvvvvvvvvv4._targetrect,_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6,__c.True,(int) (0));
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._drawrect2(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._targetrect,_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4,__c.True,(int) (0));
  //BA.debugLineNum = 103;BA.debugLine="Dim r As Float = Round(bc.mHeight / 2)";
-_r = (float) (__c.Round(_vvvvvvvvvvvvvvvvvvvvvv4._mheight/(double)2));
+_r = (float) (__c.Round(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._mheight/(double)2));
  //BA.debugLineNum = 104;BA.debugLine="Dim cx As Float = r - 1 * Scale + (bc.mWidth - 2";
-_cx = (float) (_r-1*_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0+(_vvvvvvvvvvvvvvvvvvvvvv4._mwidth-2*_r)*_state);
+_cx = (float) (_r-1*_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6+(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._mwidth-2*_r)*_state);
  //BA.debugLineNum = 105;BA.debugLine="If State = 0 Then";
 if (_state==0) { 
  //BA.debugLineNum = 106;BA.debugLine="cx = r";
 _cx = _r;
  }else if(_state==1) { 
  //BA.debugLineNum = 108;BA.debugLine="cx = Round(bc.mWidth - 1 * Scale - r)";
-_cx = (float) (__c.Round(_vvvvvvvvvvvvvvvvvvvvvv4._mwidth-1*_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0-_r));
+_cx = (float) (__c.Round(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._mwidth-1*_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6-_r));
  };
  //BA.debugLineNum = 110;BA.debugLine="Dim cy As Int = bc.mHeight / 2";
-_cy = (int) (_vvvvvvvvvvvvvvvvvvvvvv4._mheight/(double)2);
+_cy = (int) (_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._mheight/(double)2);
  //BA.debugLineNum = 111;BA.debugLine="Dim smallrect As B4XRect";
 _smallrect = new anywheresoftware.b4a.objects.B4XCanvas.B4XRect();
  //BA.debugLineNum = 112;BA.debugLine="Dim w As Float = State * bc.mWidth";
-_w = (float) (_state*_vvvvvvvvvvvvvvvvvvvvvv4._mwidth);
+_w = (float) (_state*_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._mwidth);
  //BA.debugLineNum = 113;BA.debugLine="Dim h As Float = State * bc.mHeight";
-_h = (float) (_state*_vvvvvvvvvvvvvvvvvvvvvv4._mheight);
+_h = (float) (_state*_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._mheight);
  //BA.debugLineNum = 114;BA.debugLine="If State < 1 Then bc.DrawRectRounded2(bc.TargetRe";
 if (_state<1) { 
-_vvvvvvvvvvvvvvvvvvvvvv4._drawrectrounded2(_vvvvvvvvvvvvvvvvvvvvvv4._targetrect,_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1,__c.True,(int) (2*_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0),(int) (_r));};
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._drawrectrounded2(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._targetrect,_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1,__c.True,(int) (2*_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6),(int) (_r));};
  //BA.debugLineNum = 115;BA.debugLine="smallrect.Initialize(bc.mWidth / 2 - w / 2, cy -";
-_smallrect.Initialize((float) (_vvvvvvvvvvvvvvvvvvvvvv4._mwidth/(double)2-_w/(double)2),(float) (_cy-_h/(double)2),(float) (_vvvvvvvvvvvvvvvvvvvvvv4._mwidth/(double)2+_w/(double)2),(float) (_cy+_h/(double)2));
+_smallrect.Initialize((float) (_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._mwidth/(double)2-_w/(double)2),(float) (_cy-_h/(double)2),(float) (_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._mwidth/(double)2+_w/(double)2),(float) (_cy+_h/(double)2));
  //BA.debugLineNum = 116;BA.debugLine="If State > 0 Then bc.DrawRectRounded2(smallrect,";
 if (_state>0) { 
-_vvvvvvvvvvvvvvvvvvvvvv4._drawrectrounded2(_smallrect,_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0,__c.True,(int) (2*_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0),(int) (_smallrect.getHeight()/(double)2));};
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._drawrectrounded2(_smallrect,_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0,__c.True,(int) (2*_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6),(int) (_smallrect.getHeight()/(double)2));};
  //BA.debugLineNum = 117;BA.debugLine="bc.DrawCircle2(cx, cy, r - 2 * Scale, ThumbColor,";
-_vvvvvvvvvvvvvvvvvvvvvv4._drawcircle2(_cx,(float) (_cy),(float) (_r-2*_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0),_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4,__c.True,(int) (0));
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._drawcircle2(_cx,(float) (_cy),(float) (_r-2*_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6),_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2,__c.True,(int) (0));
  //BA.debugLineNum = 118;BA.debugLine="bc.SetBitmapToImageView(bc.Bitmap, iv)";
-_vvvvvvvvvvvvvvvvvvvvvv4._setbitmaptoimageview(_vvvvvvvvvvvvvvvvvvvvvv4._getbitmap(),(anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5.getObject())));
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._setbitmaptoimageview(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4._getbitmap(),(anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.getObject())));
  //BA.debugLineNum = 119;BA.debugLine="End Sub";
 return "";
 }
-public boolean  _getvvvvvvvvvvvvvvvvvvvv1() throws Exception{
+public boolean  _getvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7() throws Exception{
  //BA.debugLineNum = 97;BA.debugLine="Public Sub getValue As Boolean";
  //BA.debugLineNum = 98;BA.debugLine="Return mValue";
-if (true) return _vvvvvvvvvvvvvvvvvvvv5;
+if (true) return _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7;
  //BA.debugLineNum = 99;BA.debugLine="End Sub";
 return false;
 }
@@ -186,32 +185,32 @@ public String  _initialize(anywheresoftware.b4a.BA _ba,Object _callback,String _
 innerInitialize(_ba);
  //BA.debugLineNum = 24;BA.debugLine="Public Sub Initialize (Callback As Object, EventNa";
  //BA.debugLineNum = 25;BA.debugLine="mEventName = EventName";
-_vvvvvvvvvvvv3 = _eventname;
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = _eventname;
  //BA.debugLineNum = 26;BA.debugLine="mCallBack = Callback";
-_vvvvvvvvvvvv4 = _callback;
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = _callback;
  //BA.debugLineNum = 27;BA.debugLine="End Sub";
 return "";
 }
 public String  _pnl_click() throws Exception{
  //BA.debugLineNum = 64;BA.debugLine="Private Sub pnl_Click";
  //BA.debugLineNum = 66;BA.debugLine="SetValueImpl(Not(mValue), False)";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(__c.Not(_vvvvvvvvvvvvvvvvvvvv5),__c.False);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(__c.Not(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7),__c.False);
  //BA.debugLineNum = 67;BA.debugLine="CallSubDelayed2(mCallBack, mEventName & \"_ValueCh";
-__c.CallSubDelayed2(ba,_vvvvvvvvvvvv4,_vvvvvvvvvvvv3+"_ValueChanged",(Object)(_vvvvvvvvvvvvvvvvvvvv5));
+__c.CallSubDelayed2(ba,_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1,_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0+"_ValueChanged",(Object)(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7));
  //BA.debugLineNum = 68;BA.debugLine="End Sub";
 return "";
 }
-public String  _setvvvvvvvvvvvvvvvvvvvv1(boolean _b) throws Exception{
+public String  _setvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(boolean _b) throws Exception{
  //BA.debugLineNum = 92;BA.debugLine="Public Sub setValue(b As Boolean)";
  //BA.debugLineNum = 93;BA.debugLine="If b = mValue Then Return";
-if (_b==_vvvvvvvvvvvvvvvvvvvv5) { 
+if (_b==_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7) { 
 if (true) return "";};
  //BA.debugLineNum = 94;BA.debugLine="SetValueImpl(b, False)";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(_b,__c.False);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(_b,__c.False);
  //BA.debugLineNum = 95;BA.debugLine="End Sub";
 return "";
 }
-public void  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(boolean _b,boolean _immediate) throws Exception{
+public void  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(boolean _b,boolean _immediate) throws Exception{
 ResumableSub_SetValueImpl rsub = new ResumableSub_SetValueImpl(this,_b,_immediate);
 rsub.resume(ba, null);
 }
@@ -241,9 +240,9 @@ case 0:
 //C
 this.state = 1;
  //BA.debugLineNum = 71;BA.debugLine="mValue = b";
-parent._vvvvvvvvvvvvvvvvvvvv5 = _b;
+parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = _b;
  //BA.debugLineNum = 72;BA.debugLine="LoopIndex = LoopIndex + 1";
-parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = (int) (parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7+1);
+parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = (int) (parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5+1);
  //BA.debugLineNum = 73;BA.debugLine="If Immediate Then";
 if (true) break;
 
@@ -265,7 +264,7 @@ if (true) break;
 case 4:
 //if
 this.state = 11;
-if (parent._vvvvvvvvvvvvvvvvvvvv5) { 
+if (parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7) { 
 this.state = 6;
 ;}
 else {
@@ -275,13 +274,13 @@ this.state = 8;
 case 6:
 //C
 this.state = 11;
-parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6((float) (1));
+parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6((float) (1));
 if (true) break;
 
 case 8:
 //C
 this.state = 11;
-parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6((float) (0));
+parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6((float) (0));
 if (true) break;
 
 case 11:
@@ -294,7 +293,7 @@ case 13:
 //C
 this.state = 14;
  //BA.debugLineNum = 76;BA.debugLine="Dim MyIndex As Int = LoopIndex";
-_myindex = parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7;
+_myindex = parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5;
  //BA.debugLineNum = 77;BA.debugLine="Dim start As Long = DateTime.Now";
 _start = parent.__c.DateTime.getNow();
  //BA.debugLineNum = 78;BA.debugLine="Dim duration As Int = 200";
@@ -322,7 +321,7 @@ if (true) break;
 case 17:
 //if
 this.state = 22;
-if (parent._vvvvvvvvvvvvvvvvvvvv5==parent.__c.False) { 
+if (parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7==parent.__c.False) { 
 this.state = 19;
 ;}if (true) break;
 
@@ -337,7 +336,7 @@ case 22:
 this.state = 23;
 ;
  //BA.debugLineNum = 82;BA.debugLine="Draw(state1)";
-parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6(_state1);
+parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6(_state1);
  //BA.debugLineNum = 83;BA.debugLine="Sleep(16)";
 parent.__c.Sleep(ba,this,(int) (16));
 this.state = 42;
@@ -352,7 +351,7 @@ if (true) break;
 case 23:
 //if
 this.state = 28;
-if (_myindex!=parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7) { 
+if (_myindex!=parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5) { 
 this.state = 25;
 ;}if (true) break;
 
@@ -374,7 +373,7 @@ this.state = 14;
 case 29:
 //if
 this.state = 40;
-if (_myindex==parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7) { 
+if (_myindex==parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5) { 
 this.state = 31;
 }if (true) break;
 
@@ -387,7 +386,7 @@ if (true) break;
 case 32:
 //if
 this.state = 39;
-if (parent._vvvvvvvvvvvvvvvvvvvv5) { 
+if (parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7) { 
 this.state = 34;
 ;}
 else {
@@ -397,13 +396,13 @@ this.state = 36;
 case 34:
 //C
 this.state = 39;
-parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6((float) (1));
+parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6((float) (1));
 if (true) break;
 
 case 36:
 //C
 this.state = 39;
-parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6((float) (0));
+parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6((float) (0));
 if (true) break;
 
 case 39:

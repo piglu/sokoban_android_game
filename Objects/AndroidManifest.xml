@@ -2,8 +2,8 @@
 <manifest
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	package="com.stanks.andsokoban_full"
-	android:versionCode="2"
-	android:versionName="1.0b2"
+	android:versionCode="3"
+	android:versionName="1.0b3"
 	android:installLocation="internalOnly">
 	
 	<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="26"/>
@@ -37,13 +37,6 @@
 			android:windowSoftInputMode="stateHidden"
 			android:launchMode="singleTop"
 			android:name=".play"
-			android:label="andSokoban"
-			android:screenOrientation="portrait">
-		</activity>
-		<activity
-			android:windowSoftInputMode="stateHidden"
-			android:launchMode="singleTop"
-			android:name=".odabir"
 			android:label="andSokoban"
 			android:screenOrientation="portrait">
 		</activity>

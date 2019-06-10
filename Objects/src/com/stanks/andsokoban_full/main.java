@@ -330,40 +330,37 @@ public class main extends Activity implements B4AActivity{
 
 public anywheresoftware.b4a.keywords.Common __c = null;
 public static anywheresoftware.b4a.objects.SaxParser _slc_parse = null;
-public static anywheresoftware.b4a.objects.collections.List _vvv7 = null;
-public static anywheresoftware.b4a.objects.collections.Map _vvv4 = null;
+public static anywheresoftware.b4a.objects.collections.List _vvv6 = null;
+public static anywheresoftware.b4a.objects.collections.Map _vvv7 = null;
 public static String _vvv0 = "";
 public static String _ime_dat_za_video = "";
-public static String _vvv5 = "";
-public static int _vvv6 = 0;
+public static String _vvvv1 = "";
 public static String _ime_datoteke_za_info = "";
-public flm.b4a.archiver.ArchiverForB4A _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = null;
+public flm.b4a.archiver.ArchiverForB4A _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = null;
 public anywheresoftware.b4a.objects.SpinnerWrapper _spnlevelstitleletter = null;
 public b4a.example3.customlistview _clvlevelswithtitleletter = null;
-public anywheresoftware.b4a.objects.collections.List _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = null;
-public anywheresoftware.b4a.objects.collections.List _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = null;
-public anywheresoftware.b4a.objects.collections.List _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = null;
-public anywheresoftware.b4a.objects.collections.List _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = null;
-public anywheresoftware.b4a.objects.collections.List _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = null;
-public anywheresoftware.b4a.objects.collections.List _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = null;
-public anywheresoftware.b4a.objects.collections.List _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = null;
+public anywheresoftware.b4a.objects.collections.List _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = null;
+public anywheresoftware.b4a.objects.collections.List _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = null;
+public anywheresoftware.b4a.objects.collections.List _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = null;
+public anywheresoftware.b4a.objects.collections.List _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = null;
+public anywheresoftware.b4a.objects.collections.List _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = null;
+public anywheresoftware.b4a.objects.collections.List _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = null;
+public anywheresoftware.b4a.objects.collections.List _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = null;
 public anywheresoftware.b4a.objects.collections.List _ime_dat = null;
-public static String _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = "";
+public static String _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = "";
 public anywheresoftware.b4a.objects.LabelWrapper _lbltitleautor = null;
 public anywheresoftware.b4a.objects.LabelWrapper _lblinfo = null;
-public b4a.example.dateutils _vvvvvvv3 = null;
-public com.stanks.andsokoban_full.starter _vvvvvvv5 = null;
-public com.stanks.andsokoban_full.play _vvvvvvv6 = null;
-public com.stanks.andsokoban_full.odabir _vvvvvvv7 = null;
-public com.stanks.andsokoban_full.video _vvvvvvv0 = null;
-public com.stanks.andsokoban_full.rijesenja _vvvvvvvv1 = null;
-public com.stanks.andsokoban_full.opcije _vvvvvvvv2 = null;
+public b4a.example.dateutils _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = null;
+public com.stanks.andsokoban_full.starter _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = null;
+public com.stanks.andsokoban_full.play _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = null;
+public com.stanks.andsokoban_full.video _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = null;
+public com.stanks.andsokoban_full.rijesenja _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = null;
+public com.stanks.andsokoban_full.opcije _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = null;
 
 public static boolean isAnyActivityVisible() {
     boolean vis = false;
 vis = vis | (main.mostCurrent != null);
 vis = vis | (play.mostCurrent != null);
-vis = vis | (odabir.mostCurrent != null);
 vis = vis | (video.mostCurrent != null);
 vis = vis | (rijesenja.mostCurrent != null);
 vis = vis | (opcije.mostCurrent != null);
@@ -371,44 +368,44 @@ return vis;}
 public static String  _activity_create(boolean _firsttime) throws Exception{
 int _i = 0;
 anywheresoftware.b4a.objects.collections.Map _mopcije = null;
- //BA.debugLineNum = 49;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
- //BA.debugLineNum = 52;BA.debugLine="Activity.LoadLayout(\"mejn\")";
+ //BA.debugLineNum = 58;BA.debugLine="Sub Activity_Create(FirstTime As Boolean)";
+ //BA.debugLineNum = 61;BA.debugLine="Activity.LoadLayout(\"mejn\")";
 mostCurrent._activity.LoadLayout("mejn",mostCurrent.activityBA);
- //BA.debugLineNum = 54;BA.debugLine="For i = 0 To letters.Size - 1";
+ //BA.debugLineNum = 63;BA.debugLine="For i = 0 To letters.Size - 1";
 {
 final int step2 = 1;
-final int limit2 = (int) (mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.getSize()-1);
+final int limit2 = (int) (mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5.getSize()-1);
 _i = (int) (0) ;
 for (;_i <= limit2 ;_i = _i + step2 ) {
- //BA.debugLineNum = 55;BA.debugLine="spnLevelsTitleLetter.Add(\"Titles with \" & letter";
-mostCurrent._spnlevelstitleletter.Add("Titles with "+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.Get(_i)));
+ //BA.debugLineNum = 64;BA.debugLine="spnLevelsTitleLetter.Add(\"Titles with \" & letter";
+mostCurrent._spnlevelstitleletter.Add("Titles with "+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5.Get(_i)));
  }
 };
- //BA.debugLineNum = 58;BA.debugLine="slc_parse.Initialize";
+ //BA.debugLineNum = 67;BA.debugLine="slc_parse.Initialize";
 _slc_parse.Initialize(processBA);
- //BA.debugLineNum = 59;BA.debugLine="listaDatZaVideo.Initialize";
+ //BA.debugLineNum = 68;BA.debugLine="listaDatZaVideo.Initialize";
+_vvv6.Initialize();
+ //BA.debugLineNum = 69;BA.debugLine="imeLevela.Initialize	' ime razine";
 _vvv7.Initialize();
- //BA.debugLineNum = 60;BA.debugLine="imeLevela.Initialize	' ime razine";
-_vvv4.Initialize();
- //BA.debugLineNum = 61;BA.debugLine="Title.Initialize";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4.Initialize();
- //BA.debugLineNum = 62;BA.debugLine="Description.Initialize";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.Initialize();
- //BA.debugLineNum = 63;BA.debugLine="Email.Initialize";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Initialize();
- //BA.debugLineNum = 64;BA.debugLine="Url.Initialize";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4.Initialize();
- //BA.debugLineNum = 65;BA.debugLine="Autor.Initialize";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5.Initialize();
- //BA.debugLineNum = 66;BA.debugLine="brojRazina.Initialize";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.Initialize();
- //BA.debugLineNum = 67;BA.debugLine="ime_dat.Initialize";
+ //BA.debugLineNum = 70;BA.debugLine="Title.Initialize";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Initialize();
+ //BA.debugLineNum = 71;BA.debugLine="Description.Initialize";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.Initialize();
+ //BA.debugLineNum = 72;BA.debugLine="Email.Initialize";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7.Initialize();
+ //BA.debugLineNum = 73;BA.debugLine="Url.Initialize";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0.Initialize();
+ //BA.debugLineNum = 74;BA.debugLine="Autor.Initialize";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.Initialize();
+ //BA.debugLineNum = 75;BA.debugLine="brojRazina.Initialize";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.Initialize();
+ //BA.debugLineNum = 76;BA.debugLine="ime_dat.Initialize";
 mostCurrent._ime_dat.Initialize();
- //BA.debugLineNum = 69;BA.debugLine="slovoOdabira = \"#\"";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = "#";
- //BA.debugLineNum = 70;BA.debugLine="OtvoriIzBaze";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0();
- //BA.debugLineNum = 72;BA.debugLine="For i = 0 To clvLevelsWithTitleLetter.Size - 1";
+ //BA.debugLineNum = 78;BA.debugLine="slovoOdabira = \"#\"";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = "#";
+ //BA.debugLineNum = 79;BA.debugLine="OtvoriIzBaze";
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4();
+ //BA.debugLineNum = 81;BA.debugLine="For i = 0 To clvLevelsWithTitleLetter.Size - 1";
 {
 final int step17 = 1;
 final int limit17 = (int) (mostCurrent._clvlevelswithtitleletter._getsize()-1);
@@ -416,167 +413,167 @@ _i = (int) (0) ;
 for (;_i <= limit17 ;_i = _i + step17 ) {
  }
 };
- //BA.debugLineNum = 80;BA.debugLine="If File.Exists(Starter.SourceFolder, \"skins.zip\")";
-if (anywheresoftware.b4a.keywords.Common.File.Exists(mostCurrent._vvvvvvv5._vv1,"skins.zip")==anywheresoftware.b4a.keywords.Common.False) { 
- //BA.debugLineNum = 81;BA.debugLine="File.Copy(File.DirAssets, \"skins.zip\", Starter.S";
-anywheresoftware.b4a.keywords.Common.File.Copy(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"skins.zip",mostCurrent._vvvvvvv5._vv1,"skins.zip");
- //BA.debugLineNum = 82;BA.debugLine="RaspakirajSkinoveIzArhive";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1();
+ //BA.debugLineNum = 89;BA.debugLine="If File.Exists(Starter.SourceFolder, \"skins.zip\")";
+if (anywheresoftware.b4a.keywords.Common.File.Exists(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._vv1,"skins.zip")==anywheresoftware.b4a.keywords.Common.False) { 
+ //BA.debugLineNum = 90;BA.debugLine="File.Copy(File.DirAssets, \"skins.zip\", Starter.S";
+anywheresoftware.b4a.keywords.Common.File.Copy(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"skins.zip",mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._vv1,"skins.zip");
+ //BA.debugLineNum = 91;BA.debugLine="RaspakirajSkinoveIzArhive";
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5();
  };
- //BA.debugLineNum = 85;BA.debugLine="If File.Exists(Starter.SourceFolder, \"opcije\") =";
-if (anywheresoftware.b4a.keywords.Common.File.Exists(mostCurrent._vvvvvvv5._vv1,"opcije")==anywheresoftware.b4a.keywords.Common.False) { 
- //BA.debugLineNum = 86;BA.debugLine="Dim mOpcije As Map";
+ //BA.debugLineNum = 94;BA.debugLine="If File.Exists(Starter.SourceFolder, \"opcije\") =";
+if (anywheresoftware.b4a.keywords.Common.File.Exists(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._vv1,"opcije")==anywheresoftware.b4a.keywords.Common.False) { 
+ //BA.debugLineNum = 95;BA.debugLine="Dim mOpcije As Map";
 _mopcije = new anywheresoftware.b4a.objects.collections.Map();
- //BA.debugLineNum = 88;BA.debugLine="mOpcije.Initialize";
+ //BA.debugLineNum = 97;BA.debugLine="mOpcije.Initialize";
 _mopcije.Initialize();
- //BA.debugLineNum = 89;BA.debugLine="mOpcije.Put(\"cb\", False)";
+ //BA.debugLineNum = 98;BA.debugLine="mOpcije.Put(\"cb\", False)";
 _mopcije.Put((Object)("cb"),(Object)(anywheresoftware.b4a.keywords.Common.False));
- //BA.debugLineNum = 90;BA.debugLine="mOpcije.Put(\"rb2\", True)";
+ //BA.debugLineNum = 99;BA.debugLine="mOpcije.Put(\"rb2\", True)";
 _mopcije.Put((Object)("rb2"),(Object)(anywheresoftware.b4a.keywords.Common.True));
- //BA.debugLineNum = 91;BA.debugLine="mOpcije.Put(\"rb3\", False)";
+ //BA.debugLineNum = 100;BA.debugLine="mOpcije.Put(\"rb3\", False)";
 _mopcije.Put((Object)("rb3"),(Object)(anywheresoftware.b4a.keywords.Common.False));
- //BA.debugLineNum = 92;BA.debugLine="mOpcije.Put(\"rb4\", False)";
+ //BA.debugLineNum = 101;BA.debugLine="mOpcije.Put(\"rb4\", False)";
 _mopcije.Put((Object)("rb4"),(Object)(anywheresoftware.b4a.keywords.Common.False));
- //BA.debugLineNum = 93;BA.debugLine="mOpcije.Put(\"skin\", \"1yoshi-32\")";
+ //BA.debugLineNum = 102;BA.debugLine="mOpcije.Put(\"skin\", \"1yoshi-32\")";
 _mopcije.Put((Object)("skin"),(Object)("1yoshi-32"));
- //BA.debugLineNum = 94;BA.debugLine="mOpcije.Put(\"mjuzaZid\", False)";
+ //BA.debugLineNum = 103;BA.debugLine="mOpcije.Put(\"mjuzaZid\", False)";
 _mopcije.Put((Object)("mjuzaZid"),(Object)(anywheresoftware.b4a.keywords.Common.False));
- //BA.debugLineNum = 95;BA.debugLine="File.WriteMap(Starter.SourceFolder, \"opcije\", mO";
-anywheresoftware.b4a.keywords.Common.File.WriteMap(mostCurrent._vvvvvvv5._vv1,"opcije",_mopcije);
+ //BA.debugLineNum = 104;BA.debugLine="File.WriteMap(Starter.SourceFolder, \"opcije\", mO";
+anywheresoftware.b4a.keywords.Common.File.WriteMap(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._vv1,"opcije",_mopcije);
  };
- //BA.debugLineNum = 103;BA.debugLine="If FirstTime Then";
+ //BA.debugLineNum = 112;BA.debugLine="If FirstTime Then";
 if (_firsttime) { 
- //BA.debugLineNum = 104;BA.debugLine="Msgbox(\"Remeber to use long tap on (almost) all";
+ //BA.debugLineNum = 113;BA.debugLine="Msgbox(\"Remeber to use long tap on (almost) all";
 anywheresoftware.b4a.keywords.Common.Msgbox(BA.ObjectToCharSequence("Remeber to use long tap on (almost) all buttons in any activity to get more info about action with button!"),BA.ObjectToCharSequence("Info"),mostCurrent.activityBA);
  };
- //BA.debugLineNum = 111;BA.debugLine="End Sub";
+ //BA.debugLineNum = 120;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_pause(boolean _userclosed) throws Exception{
- //BA.debugLineNum = 421;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
- //BA.debugLineNum = 422;BA.debugLine="End Sub";
+ //BA.debugLineNum = 430;BA.debugLine="Sub Activity_Pause (UserClosed As Boolean)";
+ //BA.debugLineNum = 431;BA.debugLine="End Sub";
 return "";
 }
 public static String  _activity_resume() throws Exception{
 anywheresoftware.b4a.phone.Phone _ph = null;
- //BA.debugLineNum = 415;BA.debugLine="Sub Activity_Resume";
- //BA.debugLineNum = 416;BA.debugLine="Dim ph As Phone";
+ //BA.debugLineNum = 424;BA.debugLine="Sub Activity_Resume";
+ //BA.debugLineNum = 425;BA.debugLine="Dim ph As Phone";
 _ph = new anywheresoftware.b4a.phone.Phone();
- //BA.debugLineNum = 418;BA.debugLine="ph.SetScreenOrientation(1)";
+ //BA.debugLineNum = 427;BA.debugLine="ph.SetScreenOrientation(1)";
 _ph.SetScreenOrientation(processBA,(int) (1));
- //BA.debugLineNum = 419;BA.debugLine="End Sub";
+ //BA.debugLineNum = 428;BA.debugLine="End Sub";
 return "";
 }
 public static String  _btn_click() throws Exception{
 anywheresoftware.b4a.objects.ButtonWrapper _gumb1 = null;
- //BA.debugLineNum = 392;BA.debugLine="Sub btn_Click";
- //BA.debugLineNum = 393;BA.debugLine="Dim gumb1 As Button";
+ //BA.debugLineNum = 401;BA.debugLine="Sub btn_Click";
+ //BA.debugLineNum = 402;BA.debugLine="Dim gumb1 As Button";
 _gumb1 = new anywheresoftware.b4a.objects.ButtonWrapper();
- //BA.debugLineNum = 395;BA.debugLine="gumb1 = Sender";
+ //BA.debugLineNum = 404;BA.debugLine="gumb1 = Sender";
 _gumb1.setObject((android.widget.Button)(anywheresoftware.b4a.keywords.Common.Sender(mostCurrent.activityBA)));
- //BA.debugLineNum = 397;BA.debugLine="Select gumb1.Tag";
+ //BA.debugLineNum = 406;BA.debugLine="Select gumb1.Tag";
 switch (BA.switchObjectToInt(_gumb1.getTag(),(Object)("opt"),(Object)("o"))) {
 case 0: {
- //BA.debugLineNum = 404;BA.debugLine="StartActivity(opcije)";
-anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._vvvvvvvv2.getObject()));
+ //BA.debugLineNum = 413;BA.debugLine="StartActivity(opcije)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.getObject()));
  break; }
 case 1: {
- //BA.debugLineNum = 407;BA.debugLine="Msgbox(\"A lot of sokoban(c) level packs (17k+?)";
+ //BA.debugLineNum = 416;BA.debugLine="Msgbox(\"A lot of sokoban(c) level packs (17k+?)";
 anywheresoftware.b4a.keywords.Common.Msgbox(BA.ObjectToCharSequence("A lot of sokoban(c) level packs (17k+?)"),BA.ObjectToCharSequence("About andSokoban v1.0b2"),mostCurrent.activityBA);
  break; }
 }
 ;
- //BA.debugLineNum = 413;BA.debugLine="End Sub";
+ //BA.debugLineNum = 422;BA.debugLine="End Sub";
 return "";
 }
 public static String  _clvlevelswithtitleletter_itemclick(int _index,Object _value) throws Exception{
- //BA.debugLineNum = 432;BA.debugLine="Sub clvLevelsWithTitleLetter_ItemClick (Index As I";
- //BA.debugLineNum = 434;BA.debugLine="End Sub";
+ //BA.debugLineNum = 441;BA.debugLine="Sub clvLevelsWithTitleLetter_ItemClick (Index As I";
+ //BA.debugLineNum = 443;BA.debugLine="End Sub";
 return "";
 }
 public static String  _clvlevelswithtitleletter_visiblerangechanged(int _firstindex,int _lastindex) throws Exception{
- //BA.debugLineNum = 436;BA.debugLine="Sub clvLevelsWithTitleLetter_VisibleRangeChanged (";
- //BA.debugLineNum = 438;BA.debugLine="End Sub";
+ //BA.debugLineNum = 445;BA.debugLine="Sub clvLevelsWithTitleLetter_VisibleRangeChanged (";
+ //BA.debugLineNum = 447;BA.debugLine="End Sub";
 return "";
 }
-public static anywheresoftware.b4a.objects.PanelWrapper  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2(String _t1,String _ime_d,String _br,int _width,int _height) throws Exception{
+public static anywheresoftware.b4a.objects.PanelWrapper  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6(String _t1,String _ime_d,String _br,int _width,int _height) throws Exception{
 anywheresoftware.b4a.objects.PanelWrapper _p = null;
 anywheresoftware.b4a.objects.drawable.ColorDrawable _cd = null;
 anywheresoftware.b4a.objects.collections.List _list_info = null;
 int _x = 0;
- //BA.debugLineNum = 158;BA.debugLine="Sub CreateListItem(t1 As String, ime_d As String,";
- //BA.debugLineNum = 159;BA.debugLine="Dim p As Panel";
+ //BA.debugLineNum = 167;BA.debugLine="Sub CreateListItem(t1 As String, ime_d As String,";
+ //BA.debugLineNum = 168;BA.debugLine="Dim p As Panel";
 _p = new anywheresoftware.b4a.objects.PanelWrapper();
- //BA.debugLineNum = 161;BA.debugLine="p.Initialize(\"\")";
+ //BA.debugLineNum = 170;BA.debugLine="p.Initialize(\"\")";
 _p.Initialize(mostCurrent.activityBA,"");
- //BA.debugLineNum = 163;BA.debugLine="p.SetLayout(0, 0, Width, Height)";
+ //BA.debugLineNum = 172;BA.debugLine="p.SetLayout(0, 0, Width, Height)";
 _p.SetLayout((int) (0),(int) (0),_width,_height);
- //BA.debugLineNum = 164;BA.debugLine="p.LoadLayout(\"stavka\")";
+ //BA.debugLineNum = 173;BA.debugLine="p.LoadLayout(\"stavka\")";
 _p.LoadLayout("stavka",mostCurrent.activityBA);
- //BA.debugLineNum = 165;BA.debugLine="Dim cd As ColorDrawable";
+ //BA.debugLineNum = 174;BA.debugLine="Dim cd As ColorDrawable";
 _cd = new anywheresoftware.b4a.objects.drawable.ColorDrawable();
- //BA.debugLineNum = 166;BA.debugLine="cd.Initialize(Colors.ARGB(255, 245, 245, 220), 0)";
+ //BA.debugLineNum = 175;BA.debugLine="cd.Initialize(Colors.ARGB(255, 245, 245, 220), 0)";
 _cd.Initialize(anywheresoftware.b4a.keywords.Common.Colors.ARGB((int) (255),(int) (245),(int) (245),(int) (220)),(int) (0));
- //BA.debugLineNum = 167;BA.debugLine="p.Background = cd";
+ //BA.debugLineNum = 176;BA.debugLine="p.Background = cd";
 _p.setBackground((android.graphics.drawable.Drawable)(_cd.getObject()));
- //BA.debugLineNum = 169;BA.debugLine="lblTitleAutor.Text = t1";
+ //BA.debugLineNum = 178;BA.debugLine="lblTitleAutor.Text = t1";
 mostCurrent._lbltitleautor.setText(BA.ObjectToCharSequence(_t1));
- //BA.debugLineNum = 170;BA.debugLine="SetLabelTextSize(lblTitleAutor, lblTitleAutor.Tex";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3(mostCurrent._lbltitleautor,mostCurrent._lbltitleautor.getText(),(float) (14),(float) (8));
- //BA.debugLineNum = 174;BA.debugLine="If File.Exists(Starter.SourceFolder, ime_d & \".in";
-if (anywheresoftware.b4a.keywords.Common.File.Exists(mostCurrent._vvvvvvv5._vv1,_ime_d+".info")) { 
- //BA.debugLineNum = 175;BA.debugLine="Log(\"info postoji!\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("2327697","info postoji!",0);
- //BA.debugLineNum = 176;BA.debugLine="Dim list_info As List";
+ //BA.debugLineNum = 179;BA.debugLine="SetLabelTextSize(lblTitleAutor, lblTitleAutor.Tex";
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(mostCurrent._lbltitleautor,mostCurrent._lbltitleautor.getText(),(float) (14),(float) (8));
+ //BA.debugLineNum = 183;BA.debugLine="If File.Exists(Starter.SourceFolder, ime_d & \".in";
+if (anywheresoftware.b4a.keywords.Common.File.Exists(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._vv1,_ime_d+".info")) { 
+ //BA.debugLineNum = 184;BA.debugLine="Log(\"info postoji!\")";
+anywheresoftware.b4a.keywords.Common.LogImpl("3851985","info postoji!",0);
+ //BA.debugLineNum = 185;BA.debugLine="Dim list_info As List";
 _list_info = new anywheresoftware.b4a.objects.collections.List();
- //BA.debugLineNum = 177;BA.debugLine="list_info.Initialize";
+ //BA.debugLineNum = 186;BA.debugLine="list_info.Initialize";
 _list_info.Initialize();
- //BA.debugLineNum = 178;BA.debugLine="list_info = File.ReadList(Starter.SourceFolder,";
-_list_info = anywheresoftware.b4a.keywords.Common.File.ReadList(mostCurrent._vvvvvvv5._vv1,_ime_d+".info");
- //BA.debugLineNum = 179;BA.debugLine="Dim x As Int = list_info.Get(0)";
+ //BA.debugLineNum = 187;BA.debugLine="list_info = File.ReadList(Starter.SourceFolder,";
+_list_info = anywheresoftware.b4a.keywords.Common.File.ReadList(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._vv1,_ime_d+".info");
+ //BA.debugLineNum = 188;BA.debugLine="Dim x As Int = list_info.Get(0)";
 _x = (int)(BA.ObjectToNumber(_list_info.Get((int) (0))));
- //BA.debugLineNum = 180;BA.debugLine="x = x + 1";
+ //BA.debugLineNum = 189;BA.debugLine="x = x + 1";
 _x = (int) (_x+1);
- //BA.debugLineNum = 181;BA.debugLine="lblInfo.Text = \"Finished: \" & x & \"/\" & list_inf";
+ //BA.debugLineNum = 190;BA.debugLine="lblInfo.Text = \"Finished: \" & x & \"/\" & list_inf";
 mostCurrent._lblinfo.setText(BA.ObjectToCharSequence("Finished: "+BA.NumberToString(_x)+"/"+BA.ObjectToString(_list_info.Get((int) (1)))));
  }else {
- //BA.debugLineNum = 183;BA.debugLine="lblInfo.Text = \"Finished: 0/\" & br";
+ //BA.debugLineNum = 192;BA.debugLine="lblInfo.Text = \"Finished: 0/\" & br";
 mostCurrent._lblinfo.setText(BA.ObjectToCharSequence("Finished: 0/"+_br));
  };
- //BA.debugLineNum = 185;BA.debugLine="SetLabelTextSize(lblInfo, lblInfo.Text, 18, 8)";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3(mostCurrent._lblinfo,mostCurrent._lblinfo.getText(),(float) (18),(float) (8));
- //BA.debugLineNum = 187;BA.debugLine="Return p";
+ //BA.debugLineNum = 194;BA.debugLine="SetLabelTextSize(lblInfo, lblInfo.Text, 18, 8)";
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(mostCurrent._lblinfo,mostCurrent._lblinfo.getText(),(float) (18),(float) (8));
+ //BA.debugLineNum = 196;BA.debugLine="Return p";
 if (true) return _p;
- //BA.debugLineNum = 188;BA.debugLine="End Sub";
+ //BA.debugLineNum = 197;BA.debugLine="End Sub";
 return null;
 }
 public static String  _globals() throws Exception{
- //BA.debugLineNum = 31;BA.debugLine="Sub Globals";
- //BA.debugLineNum = 38;BA.debugLine="Dim arch As Archiver";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = new flm.b4a.archiver.ArchiverForB4A();
- //BA.debugLineNum = 39;BA.debugLine="Private spnLevelsTitleLetter As Spinner";
+ //BA.debugLineNum = 40;BA.debugLine="Sub Globals";
+ //BA.debugLineNum = 47;BA.debugLine="Dim arch As Archiver";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = new flm.b4a.archiver.ArchiverForB4A();
+ //BA.debugLineNum = 48;BA.debugLine="Private spnLevelsTitleLetter As Spinner";
 mostCurrent._spnlevelstitleletter = new anywheresoftware.b4a.objects.SpinnerWrapper();
- //BA.debugLineNum = 40;BA.debugLine="Private clvLevelsWithTitleLetter As CustomListVie";
+ //BA.debugLineNum = 49;BA.debugLine="Private clvLevelsWithTitleLetter As CustomListVie";
 mostCurrent._clvlevelswithtitleletter = new b4a.example3.customlistview();
- //BA.debugLineNum = 41;BA.debugLine="Dim letters As List = Array As String(\"#\", \"A\", \"";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = new anywheresoftware.b4a.objects.collections.List();
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = anywheresoftware.b4a.keywords.Common.ArrayToList(new String[]{"#","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"});
- //BA.debugLineNum = 42;BA.debugLine="Dim Title, Description, Email, Url, Autor, brojRa";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = new anywheresoftware.b4a.objects.collections.List();
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = new anywheresoftware.b4a.objects.collections.List();
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = new anywheresoftware.b4a.objects.collections.List();
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = new anywheresoftware.b4a.objects.collections.List();
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = new anywheresoftware.b4a.objects.collections.List();
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = new anywheresoftware.b4a.objects.collections.List();
- //BA.debugLineNum = 43;BA.debugLine="Dim ime_dat As List";
+ //BA.debugLineNum = 50;BA.debugLine="Dim letters As List = Array As String(\"#\", \"A\", \"";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = new anywheresoftware.b4a.objects.collections.List();
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = anywheresoftware.b4a.keywords.Common.ArrayToList(new String[]{"#","A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"});
+ //BA.debugLineNum = 51;BA.debugLine="Dim Title, Description, Email, Url, Autor, brojRa";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = new anywheresoftware.b4a.objects.collections.List();
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = new anywheresoftware.b4a.objects.collections.List();
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = new anywheresoftware.b4a.objects.collections.List();
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = new anywheresoftware.b4a.objects.collections.List();
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = new anywheresoftware.b4a.objects.collections.List();
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = new anywheresoftware.b4a.objects.collections.List();
+ //BA.debugLineNum = 52;BA.debugLine="Dim ime_dat As List";
 mostCurrent._ime_dat = new anywheresoftware.b4a.objects.collections.List();
- //BA.debugLineNum = 44;BA.debugLine="Dim slovoOdabira As String";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = "";
- //BA.debugLineNum = 45;BA.debugLine="Private lblTitleAutor As Label";
+ //BA.debugLineNum = 53;BA.debugLine="Dim slovoOdabira As String";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = "";
+ //BA.debugLineNum = 54;BA.debugLine="Private lblTitleAutor As Label";
 mostCurrent._lbltitleautor = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 46;BA.debugLine="Private lblInfo As Label";
+ //BA.debugLineNum = 55;BA.debugLine="Private lblInfo As Label";
 mostCurrent._lblinfo = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 47;BA.debugLine="End Sub";
+ //BA.debugLineNum = 56;BA.debugLine="End Sub";
 return "";
 }
 public static String  _imgdelete_click() throws Exception{
@@ -589,65 +586,65 @@ String _bl = "";
 int _res = 0;
 anywheresoftware.b4a.objects.PanelWrapper _pnl = null;
 anywheresoftware.b4a.objects.LabelWrapper _lbl = null;
- //BA.debugLineNum = 190;BA.debugLine="Sub imgDelete_Click";
- //BA.debugLineNum = 191;BA.debugLine="Dim index As Int";
+ //BA.debugLineNum = 199;BA.debugLine="Sub imgDelete_Click";
+ //BA.debugLineNum = 200;BA.debugLine="Dim index As Int";
 _index = 0;
- //BA.debugLineNum = 192;BA.debugLine="Dim curs As Cursor";
+ //BA.debugLineNum = 201;BA.debugLine="Dim curs As Cursor";
 _curs = new anywheresoftware.b4a.sql.SQL.CursorWrapper();
- //BA.debugLineNum = 194;BA.debugLine="index = clvLevelsWithTitleLetter.GetItemFromView(";
+ //BA.debugLineNum = 203;BA.debugLine="index = clvLevelsWithTitleLetter.GetItemFromView(";
 _index = mostCurrent._clvlevelswithtitleletter._getitemfromview((anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(anywheresoftware.b4a.keywords.Common.Sender(mostCurrent.activityBA))));
- //BA.debugLineNum = 195;BA.debugLine="Dim q As String = \"SELECT imeDat, brojRazina FROM";
-_q = "SELECT imeDat, brojRazina FROM "+mostCurrent._vvvvvvv5._v5+" WHERE title = '"+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4.Get(_index))+"'";
- //BA.debugLineNum = 196;BA.debugLine="curs = Starter.upit.ExecQuery(q)";
-_curs.setObject((android.database.Cursor)(mostCurrent._vvvvvvv5._v6.ExecQuery(_q)));
- //BA.debugLineNum = 197;BA.debugLine="If curs.RowCount > 0 Then";
+ //BA.debugLineNum = 204;BA.debugLine="Dim q As String = \"SELECT imeDat, brojRazina FROM";
+_q = "SELECT imeDat, brojRazina FROM "+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._v5+" WHERE title = '"+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Get(_index))+"'";
+ //BA.debugLineNum = 205;BA.debugLine="curs = Starter.upit.ExecQuery(q)";
+_curs.setObject((android.database.Cursor)(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._v6.ExecQuery(_q)));
+ //BA.debugLineNum = 206;BA.debugLine="If curs.RowCount > 0 Then";
 if (_curs.getRowCount()>0) { 
- //BA.debugLineNum = 198;BA.debugLine="For i = 0 To curs.RowCount-1";
+ //BA.debugLineNum = 207;BA.debugLine="For i = 0 To curs.RowCount-1";
 {
 final int step7 = 1;
 final int limit7 = (int) (_curs.getRowCount()-1);
 _i = (int) (0) ;
 for (;_i <= limit7 ;_i = _i + step7 ) {
- //BA.debugLineNum = 199;BA.debugLine="curs.Position = i";
+ //BA.debugLineNum = 208;BA.debugLine="curs.Position = i";
 _curs.setPosition(_i);
- //BA.debugLineNum = 200;BA.debugLine="Dim ime_datoteke As String = curs.GetString(\"im";
+ //BA.debugLineNum = 209;BA.debugLine="Dim ime_datoteke As String = curs.GetString(\"im";
 _ime_datoteke = _curs.GetString("imeDat");
- //BA.debugLineNum = 201;BA.debugLine="Dim bl As String = curs.GetString(\"brojRazina\")";
+ //BA.debugLineNum = 210;BA.debugLine="Dim bl As String = curs.GetString(\"brojRazina\")";
 _bl = _curs.GetString("brojRazina");
  }
 };
  };
- //BA.debugLineNum = 205;BA.debugLine="Dim res As Int = Msgbox2(\"Really delete stats?\",";
+ //BA.debugLineNum = 214;BA.debugLine="Dim res As Int = Msgbox2(\"Really delete stats?\",";
 _res = anywheresoftware.b4a.keywords.Common.Msgbox2(BA.ObjectToCharSequence("Really delete stats?"),BA.ObjectToCharSequence("Warning"),"Yes","","No",(android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.LoadBitmapSample(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"upitnik.png",anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (32)),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (32))).getObject()),mostCurrent.activityBA);
- //BA.debugLineNum = 207;BA.debugLine="If res = DialogResponse.POSITIVE Then";
+ //BA.debugLineNum = 216;BA.debugLine="If res = DialogResponse.POSITIVE Then";
 if (_res==anywheresoftware.b4a.keywords.Common.DialogResponse.POSITIVE) { 
- //BA.debugLineNum = 209;BA.debugLine="If File.Exists(Starter.SourceFolder, ime_datotek";
-if (anywheresoftware.b4a.keywords.Common.File.Exists(mostCurrent._vvvvvvv5._vv1,_ime_datoteke+".info")) { 
- //BA.debugLineNum = 210;BA.debugLine="File.Delete(Starter.SourceFolder, ime_datoteke";
-anywheresoftware.b4a.keywords.Common.File.Delete(mostCurrent._vvvvvvv5._vv1,_ime_datoteke+".info");
- //BA.debugLineNum = 211;BA.debugLine="Dim pnl As Panel";
+ //BA.debugLineNum = 218;BA.debugLine="If File.Exists(Starter.SourceFolder, ime_datotek";
+if (anywheresoftware.b4a.keywords.Common.File.Exists(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._vv1,_ime_datoteke+".info")) { 
+ //BA.debugLineNum = 219;BA.debugLine="File.Delete(Starter.SourceFolder, ime_datoteke";
+anywheresoftware.b4a.keywords.Common.File.Delete(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._vv1,_ime_datoteke+".info");
+ //BA.debugLineNum = 220;BA.debugLine="Dim pnl As Panel";
 _pnl = new anywheresoftware.b4a.objects.PanelWrapper();
- //BA.debugLineNum = 212;BA.debugLine="pnl = clvLevelsWithTitleLetter.GetPanel(index)";
+ //BA.debugLineNum = 221;BA.debugLine="pnl = clvLevelsWithTitleLetter.GetPanel(index)";
 _pnl.setObject((android.view.ViewGroup)(mostCurrent._clvlevelswithtitleletter._getpanel(_index).getObject()));
- //BA.debugLineNum = 213;BA.debugLine="Dim lbl As Label";
+ //BA.debugLineNum = 222;BA.debugLine="Dim lbl As Label";
 _lbl = new anywheresoftware.b4a.objects.LabelWrapper();
- //BA.debugLineNum = 214;BA.debugLine="lbl = pnl.GetView(7)";
+ //BA.debugLineNum = 223;BA.debugLine="lbl = pnl.GetView(7)";
 _lbl.setObject((android.widget.TextView)(_pnl.GetView((int) (7)).getObject()));
- //BA.debugLineNum = 215;BA.debugLine="lbl.Text = \"Finished: 0/\" & bl";
+ //BA.debugLineNum = 224;BA.debugLine="lbl.Text = \"Finished: 0/\" & bl";
 _lbl.setText(BA.ObjectToCharSequence("Finished: 0/"+_bl));
  }else {
- //BA.debugLineNum = 217;BA.debugLine="Msgbox(\"No stats for delete!\", \"Warning\")";
+ //BA.debugLineNum = 226;BA.debugLine="Msgbox(\"No stats for delete!\", \"Warning\")";
 anywheresoftware.b4a.keywords.Common.Msgbox(BA.ObjectToCharSequence("No stats for delete!"),BA.ObjectToCharSequence("Warning"),mostCurrent.activityBA);
  };
  };
- //BA.debugLineNum = 220;BA.debugLine="End Sub";
+ //BA.debugLineNum = 229;BA.debugLine="End Sub";
 return "";
 }
 public static String  _imgdelete_longclick() throws Exception{
- //BA.debugLineNum = 364;BA.debugLine="Sub imgDelete_LongClick";
- //BA.debugLineNum = 365;BA.debugLine="Msgbox(\"Delete stats for all levels\", \"Info\")";
+ //BA.debugLineNum = 373;BA.debugLine="Sub imgDelete_LongClick";
+ //BA.debugLineNum = 374;BA.debugLine="Msgbox(\"Delete stats for all levels\", \"Info\")";
 anywheresoftware.b4a.keywords.Common.Msgbox(BA.ObjectToCharSequence("Delete stats for all levels"),BA.ObjectToCharSequence("Info"),mostCurrent.activityBA);
- //BA.debugLineNum = 366;BA.debugLine="End Sub";
+ //BA.debugLineNum = 375;BA.debugLine="End Sub";
 return "";
 }
 public static String  _imgemail_click() throws Exception{
@@ -655,64 +652,64 @@ int _index = 0;
 String _s = "";
 int _res = 0;
 anywheresoftware.b4a.objects.IntentWrapper _intent1 = null;
- //BA.debugLineNum = 275;BA.debugLine="Sub imgEmail_Click";
- //BA.debugLineNum = 276;BA.debugLine="Dim index As Int";
+ //BA.debugLineNum = 284;BA.debugLine="Sub imgEmail_Click";
+ //BA.debugLineNum = 285;BA.debugLine="Dim index As Int";
 _index = 0;
- //BA.debugLineNum = 278;BA.debugLine="index = clvLevelsWithTitleLetter.GetItemFromView(";
+ //BA.debugLineNum = 287;BA.debugLine="index = clvLevelsWithTitleLetter.GetItemFromView(";
 _index = mostCurrent._clvlevelswithtitleletter._getitemfromview((anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(anywheresoftware.b4a.keywords.Common.Sender(mostCurrent.activityBA))));
- //BA.debugLineNum = 280;BA.debugLine="Dim s As String = Email.Get(index)";
-_s = BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Get(_index));
- //BA.debugLineNum = 281;BA.debugLine="If s.Length > 0 Then";
+ //BA.debugLineNum = 289;BA.debugLine="Dim s As String = Email.Get(index)";
+_s = BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7.Get(_index));
+ //BA.debugLineNum = 290;BA.debugLine="If s.Length > 0 Then";
 if (_s.length()>0) { 
- //BA.debugLineNum = 282;BA.debugLine="Log(Email.Get(index))";
-anywheresoftware.b4a.keywords.Common.LogImpl("2655367",BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Get(_index)),0);
- //BA.debugLineNum = 283;BA.debugLine="Dim res As Int = Msgbox2(\"Send e-mail to author?";
+ //BA.debugLineNum = 291;BA.debugLine="Log(Email.Get(index))";
+anywheresoftware.b4a.keywords.Common.LogImpl("31179655",BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7.Get(_index)),0);
+ //BA.debugLineNum = 292;BA.debugLine="Dim res As Int = Msgbox2(\"Send e-mail to author?";
 _res = anywheresoftware.b4a.keywords.Common.Msgbox2(BA.ObjectToCharSequence("Send e-mail to author?"),BA.ObjectToCharSequence("Question"),"Yes","","No",(android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.LoadBitmapSample(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"upitnik.png",anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (32)),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (32))).getObject()),mostCurrent.activityBA);
- //BA.debugLineNum = 285;BA.debugLine="If res = DialogResponse.POSITIVE Then";
+ //BA.debugLineNum = 294;BA.debugLine="If res = DialogResponse.POSITIVE Then";
 if (_res==anywheresoftware.b4a.keywords.Common.DialogResponse.POSITIVE) { 
- //BA.debugLineNum = 286;BA.debugLine="Dim intent1 As Intent";
+ //BA.debugLineNum = 295;BA.debugLine="Dim intent1 As Intent";
 _intent1 = new anywheresoftware.b4a.objects.IntentWrapper();
- //BA.debugLineNum = 287;BA.debugLine="intent1.Initialize(intent1.ACTION_VIEW, \"mailto";
-_intent1.Initialize(_intent1.ACTION_VIEW,"mailto:"+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Get(_index)));
- //BA.debugLineNum = 288;BA.debugLine="StartActivity(intent1)";
+ //BA.debugLineNum = 296;BA.debugLine="intent1.Initialize(intent1.ACTION_VIEW, \"mailto";
+_intent1.Initialize(_intent1.ACTION_VIEW,"mailto:"+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7.Get(_index)));
+ //BA.debugLineNum = 297;BA.debugLine="StartActivity(intent1)";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(_intent1.getObject()));
  };
  }else {
- //BA.debugLineNum = 291;BA.debugLine="Msgbox(\"No email!\", \"Info\")";
+ //BA.debugLineNum = 300;BA.debugLine="Msgbox(\"No email!\", \"Info\")";
 anywheresoftware.b4a.keywords.Common.Msgbox(BA.ObjectToCharSequence("No email!"),BA.ObjectToCharSequence("Info"),mostCurrent.activityBA);
  };
- //BA.debugLineNum = 293;BA.debugLine="End Sub";
+ //BA.debugLineNum = 302;BA.debugLine="End Sub";
 return "";
 }
 public static String  _imgemail_longclick() throws Exception{
- //BA.debugLineNum = 356;BA.debugLine="Sub imgEmail_LongClick";
- //BA.debugLineNum = 357;BA.debugLine="Msgbox(\"Send email to author\", \"Info\")";
+ //BA.debugLineNum = 365;BA.debugLine="Sub imgEmail_LongClick";
+ //BA.debugLineNum = 366;BA.debugLine="Msgbox(\"Send email to author\", \"Info\")";
 anywheresoftware.b4a.keywords.Common.Msgbox(BA.ObjectToCharSequence("Send email to author"),BA.ObjectToCharSequence("Info"),mostCurrent.activityBA);
- //BA.debugLineNum = 358;BA.debugLine="End Sub";
+ //BA.debugLineNum = 367;BA.debugLine="End Sub";
 return "";
 }
 public static String  _imginfo_click() throws Exception{
 int _index = 0;
 String _s = "";
- //BA.debugLineNum = 343;BA.debugLine="Sub imgInfo_Click";
- //BA.debugLineNum = 344;BA.debugLine="Dim index As Int";
+ //BA.debugLineNum = 352;BA.debugLine="Sub imgInfo_Click";
+ //BA.debugLineNum = 353;BA.debugLine="Dim index As Int";
 _index = 0;
- //BA.debugLineNum = 346;BA.debugLine="index = clvLevelsWithTitleLetter.GetItemFromView(";
+ //BA.debugLineNum = 355;BA.debugLine="index = clvLevelsWithTitleLetter.GetItemFromView(";
 _index = mostCurrent._clvlevelswithtitleletter._getitemfromview((anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(anywheresoftware.b4a.keywords.Common.Sender(mostCurrent.activityBA))));
- //BA.debugLineNum = 347;BA.debugLine="Dim s As String = Description.Get(index)";
-_s = BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.Get(_index));
- //BA.debugLineNum = 348;BA.debugLine="s = s.Replace(CRLF, \" \")";
+ //BA.debugLineNum = 356;BA.debugLine="Dim s As String = Description.Get(index)";
+_s = BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.Get(_index));
+ //BA.debugLineNum = 357;BA.debugLine="s = s.Replace(CRLF, \" \")";
 _s = _s.replace(anywheresoftware.b4a.keywords.Common.CRLF," ");
- //BA.debugLineNum = 349;BA.debugLine="Msgbox(s, \"Levels info\")";
+ //BA.debugLineNum = 358;BA.debugLine="Msgbox(s, \"Levels info\")";
 anywheresoftware.b4a.keywords.Common.Msgbox(BA.ObjectToCharSequence(_s),BA.ObjectToCharSequence("Levels info"),mostCurrent.activityBA);
- //BA.debugLineNum = 350;BA.debugLine="End Sub";
+ //BA.debugLineNum = 359;BA.debugLine="End Sub";
 return "";
 }
 public static String  _imginfo_longclick() throws Exception{
- //BA.debugLineNum = 372;BA.debugLine="Sub imgInfo_LongClick";
- //BA.debugLineNum = 373;BA.debugLine="Msgbox(\"Shows more info about level pack\", \"Info\"";
+ //BA.debugLineNum = 381;BA.debugLine="Sub imgInfo_LongClick";
+ //BA.debugLineNum = 382;BA.debugLine="Msgbox(\"Shows more info about level pack\", \"Info\"";
 anywheresoftware.b4a.keywords.Common.Msgbox(BA.ObjectToCharSequence("Shows more info about level pack"),BA.ObjectToCharSequence("Info"),mostCurrent.activityBA);
- //BA.debugLineNum = 374;BA.debugLine="End Sub";
+ //BA.debugLineNum = 383;BA.debugLine="End Sub";
 return "";
 }
 public static String  _imgplay_click() throws Exception{
@@ -721,89 +718,87 @@ anywheresoftware.b4a.sql.SQL.CursorWrapper _curs = null;
 String _s = "";
 String _q = "";
 int _i = 0;
- //BA.debugLineNum = 314;BA.debugLine="Sub imgPlay_Click";
- //BA.debugLineNum = 315;BA.debugLine="Dim index As Int";
+ //BA.debugLineNum = 323;BA.debugLine="Sub imgPlay_Click";
+ //BA.debugLineNum = 324;BA.debugLine="Dim index As Int";
 _index = 0;
- //BA.debugLineNum = 316;BA.debugLine="Dim curs As Cursor";
+ //BA.debugLineNum = 325;BA.debugLine="Dim curs As Cursor";
 _curs = new anywheresoftware.b4a.sql.SQL.CursorWrapper();
- //BA.debugLineNum = 318;BA.debugLine="index = clvLevelsWithTitleLetter.GetItemFromView(";
+ //BA.debugLineNum = 327;BA.debugLine="index = clvLevelsWithTitleLetter.GetItemFromView(";
 _index = mostCurrent._clvlevelswithtitleletter._getitemfromview((anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(anywheresoftware.b4a.keywords.Common.Sender(mostCurrent.activityBA))));
- //BA.debugLineNum = 319;BA.debugLine="Dim s As String = Title.Get(index)";
-_s = BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4.Get(_index));
- //BA.debugLineNum = 320;BA.debugLine="If s.Contains(\"'\") Then s = s.Replace(\"'\", \"''\")";
+ //BA.debugLineNum = 328;BA.debugLine="Dim s As String = Title.Get(index)";
+_s = BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Get(_index));
+ //BA.debugLineNum = 329;BA.debugLine="If s.Contains(\"'\") Then s = s.Replace(\"'\", \"''\")";
 if (_s.contains("'")) { 
 _s = _s.replace("'","''");};
- //BA.debugLineNum = 321;BA.debugLine="Log(\"odabir -> imgPlay_Click -> Title -> \" & s &";
-anywheresoftware.b4a.keywords.Common.LogImpl("2786439","odabir -> imgPlay_Click -> Title -> "+_s+" by "+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5.Get(_index)),0);
- //BA.debugLineNum = 322;BA.debugLine="zaSolutionIme = s & \" by \" & Autor.Get(index)";
-_vvv0 = _s+" by "+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5.Get(_index));
- //BA.debugLineNum = 323;BA.debugLine="Dim q As String = \"SELECT imeDat, brojRazina, dat";
-_q = "SELECT imeDat, brojRazina, datoteka FROM "+mostCurrent._vvvvvvv5._v5+" WHERE title = '"+_s+"'";
- //BA.debugLineNum = 324;BA.debugLine="curs = Starter.upit.ExecQuery(q)";
-_curs.setObject((android.database.Cursor)(mostCurrent._vvvvvvv5._v6.ExecQuery(_q)));
- //BA.debugLineNum = 325;BA.debugLine="If curs.RowCount > 0 Then";
+ //BA.debugLineNum = 330;BA.debugLine="Log(\"odabir -> imgPlay_Click -> Title -> \" & s &";
+anywheresoftware.b4a.keywords.Common.LogImpl("31310727","odabir -> imgPlay_Click -> Title -> "+_s+" by "+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.Get(_index)),0);
+ //BA.debugLineNum = 331;BA.debugLine="zaSolutionIme = s & \" by \" & Autor.Get(index)";
+_vvv0 = _s+" by "+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.Get(_index));
+ //BA.debugLineNum = 332;BA.debugLine="Dim q As String = \"SELECT imeDat, brojRazina, dat";
+_q = "SELECT imeDat, brojRazina, datoteka FROM "+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._v5+" WHERE title = '"+_s+"'";
+ //BA.debugLineNum = 333;BA.debugLine="curs = Starter.upit.ExecQuery(q)";
+_curs.setObject((android.database.Cursor)(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._v6.ExecQuery(_q)));
+ //BA.debugLineNum = 334;BA.debugLine="If curs.RowCount > 0 Then";
 if (_curs.getRowCount()>0) { 
- //BA.debugLineNum = 326;BA.debugLine="For i = 0 To curs.RowCount-1";
+ //BA.debugLineNum = 335;BA.debugLine="For i = 0 To curs.RowCount-1";
 {
 final int step11 = 1;
 final int limit11 = (int) (_curs.getRowCount()-1);
 _i = (int) (0) ;
 for (;_i <= limit11 ;_i = _i + step11 ) {
- //BA.debugLineNum = 327;BA.debugLine="curs.Position = i";
+ //BA.debugLineNum = 336;BA.debugLine="curs.Position = i";
 _curs.setPosition(_i);
- //BA.debugLineNum = 329;BA.debugLine="brojLevela = curs.GetString(\"brojRazina\")";
-_vvv6 = (int)(Double.parseDouble(_curs.GetString("brojRazina")));
- //BA.debugLineNum = 331;BA.debugLine="datZaParsanjeRazina = curs.GetString(\"datoteka\"";
-_vvv5 = _curs.GetString("datoteka");
- //BA.debugLineNum = 332;BA.debugLine="ime_datoteke_za_info = curs.GetString(\"imeDat\")";
+ //BA.debugLineNum = 340;BA.debugLine="datZaParsanjeRazina = curs.GetString(\"datoteka\"";
+_vvvv1 = _curs.GetString("datoteka");
+ //BA.debugLineNum = 341;BA.debugLine="ime_datoteke_za_info = curs.GetString(\"imeDat\")";
 _ime_datoteke_za_info = _curs.GetString("imeDat");
  }
 };
  }else {
- //BA.debugLineNum = 336;BA.debugLine="Msgbox(\"No levels for choosen letter!\", \"Info\")";
+ //BA.debugLineNum = 345;BA.debugLine="Msgbox(\"No levels for choosen letter!\", \"Info\")";
 anywheresoftware.b4a.keywords.Common.Msgbox(BA.ObjectToCharSequence("No levels for choosen letter!"),BA.ObjectToCharSequence("Info"),mostCurrent.activityBA);
- //BA.debugLineNum = 337;BA.debugLine="Activity.Finish";
+ //BA.debugLineNum = 346;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
  };
- //BA.debugLineNum = 340;BA.debugLine="StartActivity(play)";
-anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._vvvvvvv6.getObject()));
- //BA.debugLineNum = 341;BA.debugLine="End Sub";
+ //BA.debugLineNum = 349;BA.debugLine="StartActivity(play)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0.getObject()));
+ //BA.debugLineNum = 350;BA.debugLine="End Sub";
 return "";
 }
 public static String  _imgplay_longclick() throws Exception{
- //BA.debugLineNum = 360;BA.debugLine="Sub imgPlay_LongClick";
- //BA.debugLineNum = 361;BA.debugLine="Msgbox(\"Start playing levels\", \"Info\")";
+ //BA.debugLineNum = 369;BA.debugLine="Sub imgPlay_LongClick";
+ //BA.debugLineNum = 370;BA.debugLine="Msgbox(\"Start playing levels\", \"Info\")";
 anywheresoftware.b4a.keywords.Common.Msgbox(BA.ObjectToCharSequence("Start playing levels"),BA.ObjectToCharSequence("Info"),mostCurrent.activityBA);
- //BA.debugLineNum = 362;BA.debugLine="End Sub";
+ //BA.debugLineNum = 371;BA.debugLine="End Sub";
 return "";
 }
 public static String  _imgsolution_click() throws Exception{
 int _index = 0;
 String _s = "";
- //BA.debugLineNum = 247;BA.debugLine="Sub imgSolution_Click";
- //BA.debugLineNum = 248;BA.debugLine="Dim index As Int";
+ //BA.debugLineNum = 256;BA.debugLine="Sub imgSolution_Click";
+ //BA.debugLineNum = 257;BA.debugLine="Dim index As Int";
 _index = 0;
- //BA.debugLineNum = 250;BA.debugLine="index = clvLevelsWithTitleLetter.GetItemFromView(";
+ //BA.debugLineNum = 259;BA.debugLine="index = clvLevelsWithTitleLetter.GetItemFromView(";
 _index = mostCurrent._clvlevelswithtitleletter._getitemfromview((anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(anywheresoftware.b4a.keywords.Common.Sender(mostCurrent.activityBA))));
- //BA.debugLineNum = 251;BA.debugLine="Dim s As String = Title.Get(index)";
-_s = BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4.Get(_index));
- //BA.debugLineNum = 252;BA.debugLine="If s.Contains(\"'\") Then s = s.Replace(\"'\", \"''\")";
+ //BA.debugLineNum = 260;BA.debugLine="Dim s As String = Title.Get(index)";
+_s = BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Get(_index));
+ //BA.debugLineNum = 261;BA.debugLine="If s.Contains(\"'\") Then s = s.Replace(\"'\", \"''\")";
 if (_s.contains("'")) { 
 _s = _s.replace("'","''");};
- //BA.debugLineNum = 253;BA.debugLine="Log(\"odabir -> imgSolution_Click -> Title -> \" &";
-anywheresoftware.b4a.keywords.Common.LogImpl("2524294","odabir -> imgSolution_Click -> Title -> "+_s+" by "+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5.Get(_index)),0);
- //BA.debugLineNum = 254;BA.debugLine="zaSolutionIme = s & \" by \" & Autor.Get(index)";
-_vvv0 = _s+" by "+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5.Get(_index));
- //BA.debugLineNum = 256;BA.debugLine="StartActivity(rijesenja)";
-anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._vvvvvvvv1.getObject()));
- //BA.debugLineNum = 257;BA.debugLine="End Sub";
+ //BA.debugLineNum = 262;BA.debugLine="Log(\"odabir -> imgSolution_Click -> Title -> \" &";
+anywheresoftware.b4a.keywords.Common.LogImpl("31048582","odabir -> imgSolution_Click -> Title -> "+_s+" by "+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.Get(_index)),0);
+ //BA.debugLineNum = 263;BA.debugLine="zaSolutionIme = s & \" by \" & Autor.Get(index)";
+_vvv0 = _s+" by "+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.Get(_index));
+ //BA.debugLineNum = 265;BA.debugLine="StartActivity(rijesenja)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.getObject()));
+ //BA.debugLineNum = 266;BA.debugLine="End Sub";
 return "";
 }
 public static String  _imgsolution_longclick() throws Exception{
- //BA.debugLineNum = 376;BA.debugLine="Sub imgSolution_LongClick";
- //BA.debugLineNum = 377;BA.debugLine="Msgbox(\"Check for solution online\", \"Info\")";
+ //BA.debugLineNum = 385;BA.debugLine="Sub imgSolution_LongClick";
+ //BA.debugLineNum = 386;BA.debugLine="Msgbox(\"Check for solution online\", \"Info\")";
 anywheresoftware.b4a.keywords.Common.Msgbox(BA.ObjectToCharSequence("Check for solution online"),BA.ObjectToCharSequence("Info"),mostCurrent.activityBA);
- //BA.debugLineNum = 378;BA.debugLine="End Sub";
+ //BA.debugLineNum = 387;BA.debugLine="End Sub";
 return "";
 }
 public static String  _imgvideo_click() throws Exception{
@@ -812,57 +807,57 @@ anywheresoftware.b4a.sql.SQL.CursorWrapper _curs = null;
 String _s = "";
 String _q = "";
 int _i = 0;
- //BA.debugLineNum = 222;BA.debugLine="Sub imgVideo_Click";
- //BA.debugLineNum = 223;BA.debugLine="Dim index As Int";
+ //BA.debugLineNum = 231;BA.debugLine="Sub imgVideo_Click";
+ //BA.debugLineNum = 232;BA.debugLine="Dim index As Int";
 _index = 0;
- //BA.debugLineNum = 224;BA.debugLine="Dim curs As Cursor";
+ //BA.debugLineNum = 233;BA.debugLine="Dim curs As Cursor";
 _curs = new anywheresoftware.b4a.sql.SQL.CursorWrapper();
- //BA.debugLineNum = 226;BA.debugLine="index = clvLevelsWithTitleLetter.GetItemFromView(";
+ //BA.debugLineNum = 235;BA.debugLine="index = clvLevelsWithTitleLetter.GetItemFromView(";
 _index = mostCurrent._clvlevelswithtitleletter._getitemfromview((anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(anywheresoftware.b4a.keywords.Common.Sender(mostCurrent.activityBA))));
- //BA.debugLineNum = 227;BA.debugLine="Dim s As String = Title.Get(index)";
-_s = BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4.Get(_index));
- //BA.debugLineNum = 228;BA.debugLine="If s.Contains(\"'\") Then s = s.Replace(\"'\", \"''\")";
+ //BA.debugLineNum = 236;BA.debugLine="Dim s As String = Title.Get(index)";
+_s = BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Get(_index));
+ //BA.debugLineNum = 237;BA.debugLine="If s.Contains(\"'\") Then s = s.Replace(\"'\", \"''\")";
 if (_s.contains("'")) { 
 _s = _s.replace("'","''");};
- //BA.debugLineNum = 229;BA.debugLine="Dim q As String = \"SELECT imeDat FROM \" & Starter";
-_q = "SELECT imeDat FROM "+mostCurrent._vvvvvvv5._v5+" WHERE title = '"+_s+"'";
- //BA.debugLineNum = 230;BA.debugLine="curs = Starter.upit.ExecQuery(q)";
-_curs.setObject((android.database.Cursor)(mostCurrent._vvvvvvv5._v6.ExecQuery(_q)));
- //BA.debugLineNum = 231;BA.debugLine="If curs.RowCount > 0 Then";
+ //BA.debugLineNum = 238;BA.debugLine="Dim q As String = \"SELECT imeDat FROM \" & Starter";
+_q = "SELECT imeDat FROM "+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._v5+" WHERE title = '"+_s+"'";
+ //BA.debugLineNum = 239;BA.debugLine="curs = Starter.upit.ExecQuery(q)";
+_curs.setObject((android.database.Cursor)(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._v6.ExecQuery(_q)));
+ //BA.debugLineNum = 240;BA.debugLine="If curs.RowCount > 0 Then";
 if (_curs.getRowCount()>0) { 
- //BA.debugLineNum = 232;BA.debugLine="For i = 0 To curs.RowCount-1";
+ //BA.debugLineNum = 241;BA.debugLine="For i = 0 To curs.RowCount-1";
 {
 final int step9 = 1;
 final int limit9 = (int) (_curs.getRowCount()-1);
 _i = (int) (0) ;
 for (;_i <= limit9 ;_i = _i + step9 ) {
- //BA.debugLineNum = 233;BA.debugLine="curs.Position = i";
+ //BA.debugLineNum = 242;BA.debugLine="curs.Position = i";
 _curs.setPosition(_i);
- //BA.debugLineNum = 234;BA.debugLine="ime_dat_za_video = curs.GetString(\"imeDat\")";
+ //BA.debugLineNum = 243;BA.debugLine="ime_dat_za_video = curs.GetString(\"imeDat\")";
 _ime_dat_za_video = _curs.GetString("imeDat");
  }
 };
- //BA.debugLineNum = 236;BA.debugLine="ime_dat_za_video = ime_dat_za_video.SubString2(0";
+ //BA.debugLineNum = 245;BA.debugLine="ime_dat_za_video = ime_dat_za_video.SubString2(0";
 _ime_dat_za_video = _ime_dat_za_video.substring((int) (0),_ime_dat_za_video.indexOf("."));
  };
- //BA.debugLineNum = 239;BA.debugLine="OtvoriVideoDat";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5();
- //BA.debugLineNum = 240;BA.debugLine="If listaDatZaVideo.Size > 0 Then";
-if (_vvv7.getSize()>0) { 
- //BA.debugLineNum = 241;BA.debugLine="StartActivity(video)";
-anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._vvvvvvv0.getObject()));
+ //BA.debugLineNum = 248;BA.debugLine="OtvoriVideoDat";
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1();
+ //BA.debugLineNum = 249;BA.debugLine="If listaDatZaVideo.Size > 0 Then";
+if (_vvv6.getSize()>0) { 
+ //BA.debugLineNum = 250;BA.debugLine="StartActivity(video)";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.getObject()));
  }else {
- //BA.debugLineNum = 243;BA.debugLine="Msgbox(\"No video files!\", \"Info\")";
+ //BA.debugLineNum = 252;BA.debugLine="Msgbox(\"No video files!\", \"Info\")";
 anywheresoftware.b4a.keywords.Common.Msgbox(BA.ObjectToCharSequence("No video files!"),BA.ObjectToCharSequence("Info"),mostCurrent.activityBA);
  };
- //BA.debugLineNum = 245;BA.debugLine="End Sub";
+ //BA.debugLineNum = 254;BA.debugLine="End Sub";
 return "";
 }
 public static String  _imgvideo_longclick() throws Exception{
- //BA.debugLineNum = 368;BA.debugLine="Sub imgVideo_LongClick";
- //BA.debugLineNum = 369;BA.debugLine="Msgbox(\"Watch saved video\", \"Info\")";
+ //BA.debugLineNum = 377;BA.debugLine="Sub imgVideo_LongClick";
+ //BA.debugLineNum = 378;BA.debugLine="Msgbox(\"Watch saved video\", \"Info\")";
 anywheresoftware.b4a.keywords.Common.Msgbox(BA.ObjectToCharSequence("Watch saved video"),BA.ObjectToCharSequence("Info"),mostCurrent.activityBA);
- //BA.debugLineNum = 370;BA.debugLine="End Sub";
+ //BA.debugLineNum = 379;BA.debugLine="End Sub";
 return "";
 }
 public static String  _imgwww_click() throws Exception{
@@ -870,137 +865,137 @@ int _index = 0;
 anywheresoftware.b4a.phone.Phone.PhoneIntents _p = null;
 String _s = "";
 int _res = 0;
- //BA.debugLineNum = 295;BA.debugLine="Sub imgWWW_Click";
- //BA.debugLineNum = 296;BA.debugLine="Dim index As Int";
+ //BA.debugLineNum = 304;BA.debugLine="Sub imgWWW_Click";
+ //BA.debugLineNum = 305;BA.debugLine="Dim index As Int";
 _index = 0;
- //BA.debugLineNum = 297;BA.debugLine="Dim p As PhoneIntents";
+ //BA.debugLineNum = 306;BA.debugLine="Dim p As PhoneIntents";
 _p = new anywheresoftware.b4a.phone.Phone.PhoneIntents();
- //BA.debugLineNum = 299;BA.debugLine="index = clvLevelsWithTitleLetter.GetItemFromView(";
+ //BA.debugLineNum = 308;BA.debugLine="index = clvLevelsWithTitleLetter.GetItemFromView(";
 _index = mostCurrent._clvlevelswithtitleletter._getitemfromview((anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(anywheresoftware.b4a.keywords.Common.Sender(mostCurrent.activityBA))));
- //BA.debugLineNum = 301;BA.debugLine="Dim s As String = Url.Get(index)";
-_s = BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4.Get(_index));
- //BA.debugLineNum = 302;BA.debugLine="If s.Length > 0 Then";
+ //BA.debugLineNum = 310;BA.debugLine="Dim s As String = Url.Get(index)";
+_s = BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0.Get(_index));
+ //BA.debugLineNum = 311;BA.debugLine="If s.Length > 0 Then";
 if (_s.length()>0) { 
- //BA.debugLineNum = 303;BA.debugLine="Dim res As Int = Msgbox2(\"Open in browser?\", \"Qu";
+ //BA.debugLineNum = 312;BA.debugLine="Dim res As Int = Msgbox2(\"Open in browser?\", \"Qu";
 _res = anywheresoftware.b4a.keywords.Common.Msgbox2(BA.ObjectToCharSequence("Open in browser?"),BA.ObjectToCharSequence("Question"),"Yes","","No",(android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.LoadBitmapSample(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"upitnik.png",anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (32)),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (32))).getObject()),mostCurrent.activityBA);
- //BA.debugLineNum = 305;BA.debugLine="If res = DialogResponse.POSITIVE Then";
+ //BA.debugLineNum = 314;BA.debugLine="If res = DialogResponse.POSITIVE Then";
 if (_res==anywheresoftware.b4a.keywords.Common.DialogResponse.POSITIVE) { 
- //BA.debugLineNum = 306;BA.debugLine="Log(Url.Get(index))";
-anywheresoftware.b4a.keywords.Common.LogImpl("2720907",BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4.Get(_index)),0);
- //BA.debugLineNum = 307;BA.debugLine="StartActivity(p.OpenBrowser(Url.Get(index)))";
-anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(_p.OpenBrowser(BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4.Get(_index)))));
+ //BA.debugLineNum = 315;BA.debugLine="Log(Url.Get(index))";
+anywheresoftware.b4a.keywords.Common.LogImpl("31245195",BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0.Get(_index)),0);
+ //BA.debugLineNum = 316;BA.debugLine="StartActivity(p.OpenBrowser(Url.Get(index)))";
+anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(_p.OpenBrowser(BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0.Get(_index)))));
  };
  }else {
- //BA.debugLineNum = 310;BA.debugLine="Msgbox(\"No URL!\", \"Info\")";
+ //BA.debugLineNum = 319;BA.debugLine="Msgbox(\"No URL!\", \"Info\")";
 anywheresoftware.b4a.keywords.Common.Msgbox(BA.ObjectToCharSequence("No URL!"),BA.ObjectToCharSequence("Info"),mostCurrent.activityBA);
  };
- //BA.debugLineNum = 312;BA.debugLine="End Sub";
+ //BA.debugLineNum = 321;BA.debugLine="End Sub";
 return "";
 }
 public static String  _imgwww_longclick() throws Exception{
- //BA.debugLineNum = 352;BA.debugLine="Sub imgWWW_LongClick";
- //BA.debugLineNum = 353;BA.debugLine="Msgbox(\"Author website\", \"Info\")";
+ //BA.debugLineNum = 361;BA.debugLine="Sub imgWWW_LongClick";
+ //BA.debugLineNum = 362;BA.debugLine="Msgbox(\"Author website\", \"Info\")";
 anywheresoftware.b4a.keywords.Common.Msgbox(BA.ObjectToCharSequence("Author website"),BA.ObjectToCharSequence("Info"),mostCurrent.activityBA);
- //BA.debugLineNum = 354;BA.debugLine="End Sub";
+ //BA.debugLineNum = 363;BA.debugLine="End Sub";
 return "";
 }
-public static String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0() throws Exception{
+public static String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4() throws Exception{
 anywheresoftware.b4a.sql.SQL.CursorWrapper _curs = null;
 String _q = "";
 int _i = 0;
- //BA.debugLineNum = 113;BA.debugLine="Sub OtvoriIzBaze";
- //BA.debugLineNum = 114;BA.debugLine="Dim curs As Cursor";
+ //BA.debugLineNum = 122;BA.debugLine="Sub OtvoriIzBaze";
+ //BA.debugLineNum = 123;BA.debugLine="Dim curs As Cursor";
 _curs = new anywheresoftware.b4a.sql.SQL.CursorWrapper();
- //BA.debugLineNum = 116;BA.debugLine="Title.Clear";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4.Clear();
- //BA.debugLineNum = 117;BA.debugLine="Description.Clear";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.Clear();
- //BA.debugLineNum = 118;BA.debugLine="Email.Clear";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Clear();
- //BA.debugLineNum = 119;BA.debugLine="Url.Clear";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4.Clear();
- //BA.debugLineNum = 120;BA.debugLine="Autor.Clear";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5.Clear();
- //BA.debugLineNum = 121;BA.debugLine="brojRazina.Clear";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.Clear();
- //BA.debugLineNum = 122;BA.debugLine="ime_dat.Clear";
+ //BA.debugLineNum = 125;BA.debugLine="Title.Clear";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Clear();
+ //BA.debugLineNum = 126;BA.debugLine="Description.Clear";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.Clear();
+ //BA.debugLineNum = 127;BA.debugLine="Email.Clear";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7.Clear();
+ //BA.debugLineNum = 128;BA.debugLine="Url.Clear";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0.Clear();
+ //BA.debugLineNum = 129;BA.debugLine="Autor.Clear";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.Clear();
+ //BA.debugLineNum = 130;BA.debugLine="brojRazina.Clear";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.Clear();
+ //BA.debugLineNum = 131;BA.debugLine="ime_dat.Clear";
 mostCurrent._ime_dat.Clear();
- //BA.debugLineNum = 125;BA.debugLine="If slovoOdabira.StartsWith(\"#\") Then";
-if (mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7.startsWith("#")) { 
- //BA.debugLineNum = 126;BA.debugLine="Dim q As String = \"SELECT title, autor, desc, em";
-_q = "SELECT title, autor, desc, email, url, brojRazina, imeDat FROM "+mostCurrent._vvvvvvv5._v5+" WHERE imeDat GLOB '[1-9]*'";
+ //BA.debugLineNum = 134;BA.debugLine="If slovoOdabira.StartsWith(\"#\") Then";
+if (mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.startsWith("#")) { 
+ //BA.debugLineNum = 135;BA.debugLine="Dim q As String = \"SELECT title, autor, desc, em";
+_q = "SELECT title, autor, desc, email, url, brojRazina, imeDat FROM "+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._v5+" WHERE imeDat GLOB '[1-9]*'";
  }else {
- //BA.debugLineNum = 129;BA.debugLine="Dim q As String = \"SELECT title, autor, desc, em";
-_q = "SELECT title, autor, desc, email, url, brojRazina, imeDat FROM "+mostCurrent._vvvvvvv5._v5+" WHERE imeDat LIKE '"+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7+"%'";
+ //BA.debugLineNum = 138;BA.debugLine="Dim q As String = \"SELECT title, autor, desc, em";
+_q = "SELECT title, autor, desc, email, url, brojRazina, imeDat FROM "+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._v5+" WHERE imeDat LIKE '"+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3+"%'";
  };
- //BA.debugLineNum = 131;BA.debugLine="curs = Starter.upit.ExecQuery(q)";
-_curs.setObject((android.database.Cursor)(mostCurrent._vvvvvvv5._v6.ExecQuery(_q)));
- //BA.debugLineNum = 132;BA.debugLine="If curs.RowCount > 0 Then";
+ //BA.debugLineNum = 140;BA.debugLine="curs = Starter.upit.ExecQuery(q)";
+_curs.setObject((android.database.Cursor)(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._v6.ExecQuery(_q)));
+ //BA.debugLineNum = 141;BA.debugLine="If curs.RowCount > 0 Then";
 if (_curs.getRowCount()>0) { 
- //BA.debugLineNum = 133;BA.debugLine="For i = 0 To curs.RowCount-1";
+ //BA.debugLineNum = 142;BA.debugLine="For i = 0 To curs.RowCount-1";
 {
 final int step16 = 1;
 final int limit16 = (int) (_curs.getRowCount()-1);
 _i = (int) (0) ;
 for (;_i <= limit16 ;_i = _i + step16 ) {
- //BA.debugLineNum = 134;BA.debugLine="curs.Position = i";
+ //BA.debugLineNum = 143;BA.debugLine="curs.Position = i";
 _curs.setPosition(_i);
- //BA.debugLineNum = 135;BA.debugLine="Title.Add(curs.GetString(\"title\"))";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4.Add((Object)(_curs.GetString("title")));
- //BA.debugLineNum = 136;BA.debugLine="Autor.Add(curs.GetString(\"autor\"))";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5.Add((Object)(_curs.GetString("autor")));
- //BA.debugLineNum = 137;BA.debugLine="Description.Add(curs.GetString(\"desc\"))";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.Add((Object)(_curs.GetString("desc")));
- //BA.debugLineNum = 138;BA.debugLine="Email.Add(curs.GetString(\"email\"))";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Add((Object)(_curs.GetString("email")));
- //BA.debugLineNum = 139;BA.debugLine="Url.Add(curs.GetString(\"url\"))";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4.Add((Object)(_curs.GetString("url")));
- //BA.debugLineNum = 140;BA.debugLine="brojRazina.Add(curs.GetString(\"brojRazina\"))";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.Add((Object)(_curs.GetString("brojRazina")));
- //BA.debugLineNum = 141;BA.debugLine="ime_dat.Add(curs.GetString(\"imeDat\"))";
+ //BA.debugLineNum = 144;BA.debugLine="Title.Add(curs.GetString(\"title\"))";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Add((Object)(_curs.GetString("title")));
+ //BA.debugLineNum = 145;BA.debugLine="Autor.Add(curs.GetString(\"autor\"))";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.Add((Object)(_curs.GetString("autor")));
+ //BA.debugLineNum = 146;BA.debugLine="Description.Add(curs.GetString(\"desc\"))";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.Add((Object)(_curs.GetString("desc")));
+ //BA.debugLineNum = 147;BA.debugLine="Email.Add(curs.GetString(\"email\"))";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7.Add((Object)(_curs.GetString("email")));
+ //BA.debugLineNum = 148;BA.debugLine="Url.Add(curs.GetString(\"url\"))";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0.Add((Object)(_curs.GetString("url")));
+ //BA.debugLineNum = 149;BA.debugLine="brojRazina.Add(curs.GetString(\"brojRazina\"))";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.Add((Object)(_curs.GetString("brojRazina")));
+ //BA.debugLineNum = 150;BA.debugLine="ime_dat.Add(curs.GetString(\"imeDat\"))";
 mostCurrent._ime_dat.Add((Object)(_curs.GetString("imeDat")));
  }
 };
  }else {
- //BA.debugLineNum = 144;BA.debugLine="Msgbox(\"No level packs!\", \"Info\")";
+ //BA.debugLineNum = 153;BA.debugLine="Msgbox(\"No level packs!\", \"Info\")";
 anywheresoftware.b4a.keywords.Common.Msgbox(BA.ObjectToCharSequence("No level packs!"),BA.ObjectToCharSequence("Info"),mostCurrent.activityBA);
- //BA.debugLineNum = 145;BA.debugLine="Activity.Finish";
+ //BA.debugLineNum = 154;BA.debugLine="Activity.Finish";
 mostCurrent._activity.Finish();
  };
- //BA.debugLineNum = 148;BA.debugLine="UbaciUListu";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6();
- //BA.debugLineNum = 149;BA.debugLine="End Sub";
+ //BA.debugLineNum = 157;BA.debugLine="UbaciUListu";
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2();
+ //BA.debugLineNum = 158;BA.debugLine="End Sub";
 return "";
 }
-public static String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5() throws Exception{
+public static String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1() throws Exception{
 anywheresoftware.b4a.objects.collections.List _tmplist = null;
 int _i = 0;
 String _s = "";
- //BA.debugLineNum = 259;BA.debugLine="Sub OtvoriVideoDat";
- //BA.debugLineNum = 260;BA.debugLine="Dim tmpList As List";
+ //BA.debugLineNum = 268;BA.debugLine="Sub OtvoriVideoDat";
+ //BA.debugLineNum = 269;BA.debugLine="Dim tmpList As List";
 _tmplist = new anywheresoftware.b4a.objects.collections.List();
- //BA.debugLineNum = 262;BA.debugLine="listaDatZaVideo.Clear";
-_vvv7.Clear();
- //BA.debugLineNum = 264;BA.debugLine="tmpList.Initialize";
+ //BA.debugLineNum = 271;BA.debugLine="listaDatZaVideo.Clear";
+_vvv6.Clear();
+ //BA.debugLineNum = 273;BA.debugLine="tmpList.Initialize";
 _tmplist.Initialize();
- //BA.debugLineNum = 265;BA.debugLine="tmpList = File.ListFiles(Starter.SourceFolder)";
-_tmplist = anywheresoftware.b4a.keywords.Common.File.ListFiles(mostCurrent._vvvvvvv5._vv1);
- //BA.debugLineNum = 266;BA.debugLine="For i = 0 To tmpList.Size - 1";
+ //BA.debugLineNum = 274;BA.debugLine="tmpList = File.ListFiles(Starter.SourceFolder)";
+_tmplist = anywheresoftware.b4a.keywords.Common.File.ListFiles(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._vv1);
+ //BA.debugLineNum = 275;BA.debugLine="For i = 0 To tmpList.Size - 1";
 {
 final int step5 = 1;
 final int limit5 = (int) (_tmplist.getSize()-1);
 _i = (int) (0) ;
 for (;_i <= limit5 ;_i = _i + step5 ) {
- //BA.debugLineNum = 267;BA.debugLine="Dim s As String = tmpList.Get(i)";
+ //BA.debugLineNum = 276;BA.debugLine="Dim s As String = tmpList.Get(i)";
 _s = BA.ObjectToString(_tmplist.Get(_i));
- //BA.debugLineNum = 268;BA.debugLine="If s.StartsWith(ime_dat_za_video) And s.EndsWith";
+ //BA.debugLineNum = 277;BA.debugLine="If s.StartsWith(ime_dat_za_video) And s.EndsWith";
 if (_s.startsWith(_ime_dat_za_video) && _s.endsWith(".mp4")) { 
- //BA.debugLineNum = 269;BA.debugLine="listaDatZaVideo.Add(s)";
-_vvv7.Add((Object)(_s));
+ //BA.debugLineNum = 278;BA.debugLine="listaDatZaVideo.Add(s)";
+_vvv6.Add((Object)(_s));
  };
  }
 };
- //BA.debugLineNum = 273;BA.debugLine="End Sub";
+ //BA.debugLineNum = 282;BA.debugLine="End Sub";
 return "";
 }
 
@@ -1013,7 +1008,6 @@ public static void initializeProcessGlobals() {
 main._process_globals();
 starter._process_globals();
 play._process_globals();
-odabir._process_globals();
 video._process_globals();
 rijesenja._process_globals();
 opcije._process_globals();
@@ -1023,86 +1017,84 @@ opcije._process_globals();
 		}
     }
 }public static String  _process_globals() throws Exception{
- //BA.debugLineNum = 16;BA.debugLine="Sub Process_Globals";
- //BA.debugLineNum = 21;BA.debugLine="Dim slc_parse As SaxParser";
+ //BA.debugLineNum = 25;BA.debugLine="Sub Process_Globals";
+ //BA.debugLineNum = 30;BA.debugLine="Dim slc_parse As SaxParser";
 _slc_parse = new anywheresoftware.b4a.objects.SaxParser();
- //BA.debugLineNum = 22;BA.debugLine="Dim listaDatZaVideo As List";
-_vvv7 = new anywheresoftware.b4a.objects.collections.List();
- //BA.debugLineNum = 23;BA.debugLine="Dim imeLevela As Map";
-_vvv4 = new anywheresoftware.b4a.objects.collections.Map();
- //BA.debugLineNum = 24;BA.debugLine="Dim zaSolutionIme As String";
+ //BA.debugLineNum = 31;BA.debugLine="Dim listaDatZaVideo As List";
+_vvv6 = new anywheresoftware.b4a.objects.collections.List();
+ //BA.debugLineNum = 32;BA.debugLine="Dim imeLevela As Map";
+_vvv7 = new anywheresoftware.b4a.objects.collections.Map();
+ //BA.debugLineNum = 33;BA.debugLine="Dim zaSolutionIme As String";
 _vvv0 = "";
- //BA.debugLineNum = 25;BA.debugLine="Dim ime_dat_za_video As String";
+ //BA.debugLineNum = 34;BA.debugLine="Dim ime_dat_za_video As String";
 _ime_dat_za_video = "";
- //BA.debugLineNum = 26;BA.debugLine="Dim datZaParsanjeRazina As String";
-_vvv5 = "";
- //BA.debugLineNum = 27;BA.debugLine="Dim brojLevela As Int = 0";
-_vvv6 = (int) (0);
- //BA.debugLineNum = 28;BA.debugLine="Dim ime_datoteke_za_info As String";
+ //BA.debugLineNum = 35;BA.debugLine="Dim datZaParsanjeRazina As String";
+_vvvv1 = "";
+ //BA.debugLineNum = 37;BA.debugLine="Dim ime_datoteke_za_info As String";
 _ime_datoteke_za_info = "";
- //BA.debugLineNum = 29;BA.debugLine="End Sub";
+ //BA.debugLineNum = 38;BA.debugLine="End Sub";
 return "";
 }
-public static String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1() throws Exception{
- //BA.debugLineNum = 388;BA.debugLine="Sub RaspakirajSkinoveIzArhive";
- //BA.debugLineNum = 389;BA.debugLine="arch.UnZip(Starter.SourceFolder, \"skins.zip\", Sta";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4.UnZip(processBA,mostCurrent._vvvvvvv5._vv1,"skins.zip",mostCurrent._vvvvvvv5._vv1,"anzip");
- //BA.debugLineNum = 390;BA.debugLine="End Sub";
+public static String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5() throws Exception{
+ //BA.debugLineNum = 397;BA.debugLine="Sub RaspakirajSkinoveIzArhive";
+ //BA.debugLineNum = 398;BA.debugLine="arch.UnZip(Starter.SourceFolder, \"skins.zip\", Sta";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0.UnZip(processBA,mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._vv1,"skins.zip",mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._vv1,"anzip");
+ //BA.debugLineNum = 399;BA.debugLine="End Sub";
 return "";
 }
-public static String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3(anywheresoftware.b4a.objects.LabelWrapper _lbl,String _txt,float _maxfontsize,float _minfontsize) throws Exception{
+public static String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(anywheresoftware.b4a.objects.LabelWrapper _lbl,String _txt,float _maxfontsize,float _minfontsize) throws Exception{
 float _fontsize = 0f;
 int _height = 0;
 anywheresoftware.b4a.objects.StringUtils _stu = null;
- //BA.debugLineNum = 440;BA.debugLine="Sub SetLabelTextSize(lbl As Label, txt As String,";
- //BA.debugLineNum = 441;BA.debugLine="Dim FontSize = MaxFontSize As Float";
+ //BA.debugLineNum = 449;BA.debugLine="Sub SetLabelTextSize(lbl As Label, txt As String,";
+ //BA.debugLineNum = 450;BA.debugLine="Dim FontSize = MaxFontSize As Float";
 _fontsize = _maxfontsize;
- //BA.debugLineNum = 442;BA.debugLine="Dim Height As Int";
+ //BA.debugLineNum = 451;BA.debugLine="Dim Height As Int";
 _height = 0;
- //BA.debugLineNum = 443;BA.debugLine="Dim stu As StringUtils";
+ //BA.debugLineNum = 452;BA.debugLine="Dim stu As StringUtils";
 _stu = new anywheresoftware.b4a.objects.StringUtils();
- //BA.debugLineNum = 445;BA.debugLine="lbl.TextSize = FontSize";
+ //BA.debugLineNum = 454;BA.debugLine="lbl.TextSize = FontSize";
 _lbl.setTextSize(_fontsize);
- //BA.debugLineNum = 446;BA.debugLine="Height = stu.MeasureMultilineTextHeight(lbl, txt)";
+ //BA.debugLineNum = 455;BA.debugLine="Height = stu.MeasureMultilineTextHeight(lbl, txt)";
 _height = _stu.MeasureMultilineTextHeight((android.widget.TextView)(_lbl.getObject()),BA.ObjectToCharSequence(_txt));
- //BA.debugLineNum = 447;BA.debugLine="Do While Height > lbl.Height And FontSize > MinFo";
+ //BA.debugLineNum = 456;BA.debugLine="Do While Height > lbl.Height And FontSize > MinFo";
 while (_height>_lbl.getHeight() && _fontsize>_minfontsize) {
- //BA.debugLineNum = 448;BA.debugLine="FontSize = FontSize - 1";
+ //BA.debugLineNum = 457;BA.debugLine="FontSize = FontSize - 1";
 _fontsize = (float) (_fontsize-1);
- //BA.debugLineNum = 449;BA.debugLine="lbl.TextSize = FontSize";
+ //BA.debugLineNum = 458;BA.debugLine="lbl.TextSize = FontSize";
 _lbl.setTextSize(_fontsize);
- //BA.debugLineNum = 450;BA.debugLine="Height = stu.MeasureMultilineTextHeight(lbl, txt";
+ //BA.debugLineNum = 459;BA.debugLine="Height = stu.MeasureMultilineTextHeight(lbl, txt";
 _height = _stu.MeasureMultilineTextHeight((android.widget.TextView)(_lbl.getObject()),BA.ObjectToCharSequence(_txt));
  }
 ;
- //BA.debugLineNum = 452;BA.debugLine="End Sub";
+ //BA.debugLineNum = 461;BA.debugLine="End Sub";
 return "";
 }
 public static String  _spnlevelstitleletter_itemclick(int _position,Object _value) throws Exception{
- //BA.debugLineNum = 425;BA.debugLine="Sub spnLevelsTitleLetter_ItemClick (Position As In";
- //BA.debugLineNum = 426;BA.debugLine="clvLevelsWithTitleLetter.Clear";
+ //BA.debugLineNum = 434;BA.debugLine="Sub spnLevelsTitleLetter_ItemClick (Position As In";
+ //BA.debugLineNum = 435;BA.debugLine="clvLevelsWithTitleLetter.Clear";
 mostCurrent._clvlevelswithtitleletter._clear();
- //BA.debugLineNum = 427;BA.debugLine="slovoOdabira = letters.Get(Position)'spnLevelsTit";
-mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.Get(_position));
- //BA.debugLineNum = 428;BA.debugLine="OtvoriIzBaze";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0();
- //BA.debugLineNum = 430;BA.debugLine="End Sub";
+ //BA.debugLineNum = 436;BA.debugLine="slovoOdabira = letters.Get(Position)'spnLevelsTit";
+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5.Get(_position));
+ //BA.debugLineNum = 437;BA.debugLine="OtvoriIzBaze";
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4();
+ //BA.debugLineNum = 439;BA.debugLine="End Sub";
 return "";
 }
-public static String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6() throws Exception{
+public static String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2() throws Exception{
 int _i = 0;
- //BA.debugLineNum = 151;BA.debugLine="Sub UbaciUListu";
- //BA.debugLineNum = 152;BA.debugLine="For i = 0 To Title.Size - 1";
+ //BA.debugLineNum = 160;BA.debugLine="Sub UbaciUListu";
+ //BA.debugLineNum = 161;BA.debugLine="For i = 0 To Title.Size - 1";
 {
 final int step1 = 1;
-final int limit1 = (int) (mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4.getSize()-1);
+final int limit1 = (int) (mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.getSize()-1);
 _i = (int) (0) ;
 for (;_i <= limit1 ;_i = _i + step1 ) {
- //BA.debugLineNum = 153;BA.debugLine="clvLevelsWithTitleLetter.Add(CreateListItem(Titl";
-mostCurrent._clvlevelswithtitleletter._add((anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2(BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4.Get(_i))+" by "+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5.Get(_i)),BA.ObjectToString(mostCurrent._ime_dat.Get(_i)),BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6.Get(_i)),mostCurrent._clvlevelswithtitleletter._asview().getWidth(),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (102))).getObject())),(Object)(""));
+ //BA.debugLineNum = 162;BA.debugLine="clvLevelsWithTitleLetter.Add(CreateListItem(Titl";
+mostCurrent._clvlevelswithtitleletter._add((anywheresoftware.b4a.objects.B4XViewWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.objects.B4XViewWrapper(), (java.lang.Object)(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6(BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Get(_i))+" by "+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.Get(_i)),BA.ObjectToString(mostCurrent._ime_dat.Get(_i)),BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.Get(_i)),mostCurrent._clvlevelswithtitleletter._asview().getWidth(),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (102))).getObject())),(Object)(""));
  }
 };
- //BA.debugLineNum = 155;BA.debugLine="End Sub";
+ //BA.debugLineNum = 164;BA.debugLine="End Sub";
 return "";
 }
 }

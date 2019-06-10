@@ -24,28 +24,27 @@ public class b4xlongtexttemplate extends B4AClass.ImplB4AClass implements BA.Sub
     }
 
  public anywheresoftware.b4a.keywords.Common __c = null;
-public anywheresoftware.b4a.objects.B4XViewWrapper.XUI _vvvvvvvvvvvv6 = null;
-public anywheresoftware.b4a.objects.B4XViewWrapper _vvvvvvvvvvvv5 = null;
+public anywheresoftware.b4a.objects.B4XViewWrapper.XUI _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = null;
+public anywheresoftware.b4a.objects.B4XViewWrapper _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = null;
 public b4a.example3.customlistview _customlistview1 = null;
-public Object _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = null;
-public b4a.example.dateutils _vvvvvvv3 = null;
-public com.stanks.andsokoban_full.main _vvvvvvv4 = null;
-public com.stanks.andsokoban_full.starter _vvvvvvv5 = null;
-public com.stanks.andsokoban_full.play _vvvvvvv6 = null;
-public com.stanks.andsokoban_full.odabir _vvvvvvv7 = null;
-public com.stanks.andsokoban_full.video _vvvvvvv0 = null;
-public com.stanks.andsokoban_full.rijesenja _vvvvvvvv1 = null;
-public com.stanks.andsokoban_full.opcije _vvvvvvvv2 = null;
+public Object _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = null;
+public b4a.example.dateutils _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = null;
+public com.stanks.andsokoban_full.main _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = null;
+public com.stanks.andsokoban_full.starter _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = null;
+public com.stanks.andsokoban_full.play _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = null;
+public com.stanks.andsokoban_full.video _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = null;
+public com.stanks.andsokoban_full.rijesenja _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = null;
+public com.stanks.andsokoban_full.opcije _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = null;
 public String  _class_globals() throws Exception{
  //BA.debugLineNum = 1;BA.debugLine="Sub Class_Globals";
  //BA.debugLineNum = 2;BA.debugLine="Private xui As XUI";
-_vvvvvvvvvvvv6 = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = new anywheresoftware.b4a.objects.B4XViewWrapper.XUI();
  //BA.debugLineNum = 3;BA.debugLine="Public mBase As B4XView";
-_vvvvvvvvvvvv5 = new anywheresoftware.b4a.objects.B4XViewWrapper();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = new anywheresoftware.b4a.objects.B4XViewWrapper();
  //BA.debugLineNum = 4;BA.debugLine="Public CustomListView1 As CustomListView";
 _customlistview1 = new b4a.example3.customlistview();
  //BA.debugLineNum = 5;BA.debugLine="Public Text As Object";
-_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4 = new Object();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = new Object();
  //BA.debugLineNum = 6;BA.debugLine="End Sub";
 return "";
 }
@@ -57,7 +56,7 @@ return "";
 public anywheresoftware.b4a.objects.B4XViewWrapper  _getpanel(com.stanks.andsokoban_full.b4xdialog _dialog) throws Exception{
  //BA.debugLineNum = 29;BA.debugLine="Public Sub GetPanel (Dialog As B4XDialog) As B4XVi";
  //BA.debugLineNum = 30;BA.debugLine="Return mBase";
-if (true) return _vvvvvvvvvvvv5;
+if (true) return _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2;
  //BA.debugLineNum = 31;BA.debugLine="End Sub";
 return null;
 }
@@ -65,28 +64,28 @@ public String  _initialize(anywheresoftware.b4a.BA _ba) throws Exception{
 innerInitialize(_ba);
  //BA.debugLineNum = 8;BA.debugLine="Public Sub Initialize";
  //BA.debugLineNum = 9;BA.debugLine="mBase = xui.CreatePanel(\"mBase\")";
-_vvvvvvvvvvvv5 = _vvvvvvvvvvvv6.CreatePanel(ba,"mBase");
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.CreatePanel(ba,"mBase");
  //BA.debugLineNum = 10;BA.debugLine="mBase.SetLayoutAnimated(0, 0, 0, 300dip, 300dip)";
-_vvvvvvvvvvvv5.SetLayoutAnimated((int) (0),(int) (0),(int) (0),__c.DipToCurrent((int) (300)),__c.DipToCurrent((int) (300)));
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.SetLayoutAnimated((int) (0),(int) (0),(int) (0),__c.DipToCurrent((int) (300)),__c.DipToCurrent((int) (300)));
  //BA.debugLineNum = 11;BA.debugLine="mBase.LoadLayout(\"LongTextTemplate\")";
-_vvvvvvvvvvvv5.LoadLayout("LongTextTemplate",ba);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.LoadLayout("LongTextTemplate",ba);
  //BA.debugLineNum = 12;BA.debugLine="mBase.SetColorAndBorder(xui.Color_Transparent, 0,";
-_vvvvvvvvvvvv5.SetColorAndBorder(_vvvvvvvvvvvv6.Color_Transparent,(int) (0),(int) (0),(int) (0));
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.SetColorAndBorder(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Color_Transparent,(int) (0),(int) (0),(int) (0));
  //BA.debugLineNum = 13;BA.debugLine="CustomListView1.sv.SetColorAndBorder(xui.Color_Tr";
-_customlistview1._sv.SetColorAndBorder(_vvvvvvvvvvvv6.Color_Transparent,(int) (0),(int) (0),(int) (0));
+_customlistview1._sv.SetColorAndBorder(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Color_Transparent,(int) (0),(int) (0),(int) (0));
  //BA.debugLineNum = 14;BA.debugLine="CustomListView1.DefaultTextBackgroundColor = 0xFF";
 _customlistview1._defaulttextbackgroundcolor = (int) (0xff555555);
  //BA.debugLineNum = 15;BA.debugLine="CustomListView1.DefaultTextColor = xui.Color_Whit";
-_customlistview1._defaulttextcolor = _vvvvvvvvvvvv6.Color_White;
+_customlistview1._defaulttextcolor = _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Color_White;
  //BA.debugLineNum = 16;BA.debugLine="CustomListView1.sv.Color = 0xFF464646";
 _customlistview1._sv.setColor((int) (0xff464646));
  //BA.debugLineNum = 21;BA.debugLine="End Sub";
 return "";
 }
-public String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2(int _width,int _height) throws Exception{
+public String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1(int _width,int _height) throws Exception{
  //BA.debugLineNum = 23;BA.debugLine="Public Sub Resize(Width As Int, Height As Int)";
  //BA.debugLineNum = 24;BA.debugLine="mBase.SetLayoutAnimated(0, 0, 0, Width, Height)";
-_vvvvvvvvvvvv5.SetLayoutAnimated((int) (0),(int) (0),(int) (0),_width,_height);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2.SetLayoutAnimated((int) (0),(int) (0),(int) (0),_width,_height);
  //BA.debugLineNum = 25;BA.debugLine="CustomListView1.Base_Resize(Width, Height)";
 _customlistview1._base_resize(_width,_height);
  //BA.debugLineNum = 26;BA.debugLine="End Sub";
@@ -97,11 +96,11 @@ public String  _show(com.stanks.andsokoban_full.b4xdialog _dialog) throws Except
  //BA.debugLineNum = 34;BA.debugLine="CustomListView1.Clear";
 _customlistview1._clear();
  //BA.debugLineNum = 35;BA.debugLine="CustomListView1.AddTextItem(Text, \"\")";
-_customlistview1._addtextitem(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4,(Object)(""));
+_customlistview1._addtextitem(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3,(Object)(""));
  //BA.debugLineNum = 36;BA.debugLine="CustomListView1.GetPanel(0).GetView(0).SetTextAli";
 _customlistview1._getpanel((int) (0)).GetView((int) (0)).SetTextAlignment("TOP","LEFT");
  //BA.debugLineNum = 37;BA.debugLine="Dialog.InternalAddStubToCLVIfNeeded(CustomListVie";
-_dialog._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0(_customlistview1,_customlistview1._defaulttextbackgroundcolor);
+_dialog._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(_customlistview1,_customlistview1._defaulttextbackgroundcolor);
  //BA.debugLineNum = 38;BA.debugLine="End Sub";
 return "";
 }

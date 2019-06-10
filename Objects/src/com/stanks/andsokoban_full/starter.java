@@ -130,13 +130,12 @@ public static anywheresoftware.b4a.sql.SQL _v6 = null;
 public static com.stanks.andsokoban_full.keyvaluestore _v7 = null;
 public static anywheresoftware.b4a.objects.RuntimePermissions _v0 = null;
 public static String _vv1 = "";
-public b4a.example.dateutils _vvvvvvv3 = null;
-public com.stanks.andsokoban_full.main _vvvvvvv4 = null;
-public com.stanks.andsokoban_full.play _vvvvvvv6 = null;
-public com.stanks.andsokoban_full.odabir _vvvvvvv7 = null;
-public com.stanks.andsokoban_full.video _vvvvvvv0 = null;
-public com.stanks.andsokoban_full.rijesenja _vvvvvvvv1 = null;
-public com.stanks.andsokoban_full.opcije _vvvvvvvv2 = null;
+public b4a.example.dateutils _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = null;
+public com.stanks.andsokoban_full.main _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = null;
+public com.stanks.andsokoban_full.play _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = null;
+public com.stanks.andsokoban_full.video _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = null;
+public com.stanks.andsokoban_full.rijesenja _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = null;
+public com.stanks.andsokoban_full.opcije _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = null;
 public static boolean  _application_error(anywheresoftware.b4a.objects.B4AException _error,String _stacktrace) throws Exception{
  //BA.debugLineNum = 33;BA.debugLine="Sub Application_Error (Error As Exception, StackTr";
  //BA.debugLineNum = 34;BA.debugLine="Return True";
@@ -149,7 +148,7 @@ public static String  _process_globals() throws Exception{
  //BA.debugLineNum = 9;BA.debugLine="Dim DBFileName As String			: DBFileName = \"db\"";
 _v5 = "";
  //BA.debugLineNum = 9;BA.debugLine="Dim DBFileName As String			: DBFileName = \"db\"";
-_v5 = BA.__b (new byte[] {52,33}, 419369);
+_v5 = BA.__b (new byte[] {53,33}, 858048);
  //BA.debugLineNum = 11;BA.debugLine="Dim upit As SQL";
 _v6 = new anywheresoftware.b4a.sql.SQL();
  //BA.debugLineNum = 12;BA.debugLine="Dim kvs As KeyValueStore";

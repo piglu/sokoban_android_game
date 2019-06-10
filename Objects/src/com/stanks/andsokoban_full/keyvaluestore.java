@@ -24,31 +24,30 @@ public class keyvaluestore extends B4AClass.ImplB4AClass implements BA.SubDelega
     }
 
  public anywheresoftware.b4a.keywords.Common __c = null;
-public anywheresoftware.b4a.sql.SQL _vvvvvv0 = null;
-public String _vvvvvvv1 = "";
-public String _vvvvvvv2 = "";
-public b4a.example.dateutils _vvvvvvv3 = null;
-public com.stanks.andsokoban_full.main _vvvvvvv4 = null;
-public com.stanks.andsokoban_full.starter _vvvvvvv5 = null;
-public com.stanks.andsokoban_full.play _vvvvvvv6 = null;
-public com.stanks.andsokoban_full.odabir _vvvvvvv7 = null;
-public com.stanks.andsokoban_full.video _vvvvvvv0 = null;
-public com.stanks.andsokoban_full.rijesenja _vvvvvvvv1 = null;
-public com.stanks.andsokoban_full.opcije _vvvvvvvv2 = null;
+public anywheresoftware.b4a.sql.SQL _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = null;
+public String _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = "";
+public String _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = "";
+public b4a.example.dateutils _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = null;
+public com.stanks.andsokoban_full.main _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6 = null;
+public com.stanks.andsokoban_full.starter _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = null;
+public com.stanks.andsokoban_full.play _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = null;
+public com.stanks.andsokoban_full.video _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = null;
+public com.stanks.andsokoban_full.rijesenja _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = null;
+public com.stanks.andsokoban_full.opcije _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = null;
 public String  _class_globals() throws Exception{
  //BA.debugLineNum = 2;BA.debugLine="Sub Class_Globals";
  //BA.debugLineNum = 3;BA.debugLine="Private sql1 As SQL";
-_vvvvvv0 = new anywheresoftware.b4a.sql.SQL();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = new anywheresoftware.b4a.sql.SQL();
  //BA.debugLineNum = 4;BA.debugLine="Private tempFolder = File.DirInternalCache, tempF";
-_vvvvvvv1 = __c.File.getDirInternalCache();
-_vvvvvvv2 = "key_value_temp.dat";
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = __c.File.getDirInternalCache();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = "key_value_temp.dat";
  //BA.debugLineNum = 5;BA.debugLine="End Sub";
 return "";
 }
-public String  _vvvv3() throws Exception{
+public String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4() throws Exception{
  //BA.debugLineNum = 157;BA.debugLine="Public Sub Close";
  //BA.debugLineNum = 158;BA.debugLine="sql1.Close";
-_vvvvvv0.Close();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.Close();
  //BA.debugLineNum = 159;BA.debugLine="End Sub";
 return "";
 }
@@ -57,42 +56,42 @@ public boolean  _complete(boolean _success) throws Exception{
  //BA.debugLineNum = 201;BA.debugLine="If success Then";
 if (_success) { 
  //BA.debugLineNum = 202;BA.debugLine="sql1.TransactionSuccessful";
-_vvvvvv0.TransactionSuccessful();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.TransactionSuccessful();
  }else {
  //BA.debugLineNum = 204;BA.debugLine="Log(\"Error saving object: \" & LastException)";
-__c.LogImpl("29371652","Error saving object: "+BA.ObjectToString(__c.LastException(getActivityBA())),0);
+__c.LogImpl("318284548","Error saving object: "+BA.ObjectToString(__c.LastException(getActivityBA())),0);
  };
  //BA.debugLineNum = 206;BA.debugLine="sql1.EndTransaction";
-_vvvvvv0.EndTransaction();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.EndTransaction();
  //BA.debugLineNum = 207;BA.debugLine="Return success";
 if (true) return _success;
  //BA.debugLineNum = 208;BA.debugLine="End Sub";
 return false;
 }
-public boolean  _vvvv4(String _key) throws Exception{
+public boolean  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5(String _key) throws Exception{
  //BA.debugLineNum = 89;BA.debugLine="Public Sub ContainsKey(Key As String) As Boolean";
  //BA.debugLineNum = 90;BA.debugLine="Return sql1.ExecQuerySingleResult2(\"SELECT count(";
-if (true) return (double)(Double.parseDouble(_vvvvvv0.ExecQuerySingleResult2("SELECT count(key) FROM main WHERE key = ?",new String[]{_key})))>0;
+if (true) return (double)(Double.parseDouble(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.ExecQuerySingleResult2("SELECT count(key) FROM main WHERE key = ?",new String[]{_key})))>0;
  //BA.debugLineNum = 92;BA.debugLine="End Sub";
 return false;
 }
-public String  _vvvv5() throws Exception{
+public String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6() throws Exception{
  //BA.debugLineNum = 191;BA.debugLine="Private Sub CreateTable";
  //BA.debugLineNum = 192;BA.debugLine="sql1.ExecNonQuery(\"CREATE TABLE IF NOT EXISTS mai";
-_vvvvvv0.ExecNonQuery("CREATE TABLE IF NOT EXISTS main(key TEXT PRIMARY KEY, value NONE)");
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.ExecNonQuery("CREATE TABLE IF NOT EXISTS main(key TEXT PRIMARY KEY, value NONE)");
  //BA.debugLineNum = 193;BA.debugLine="End Sub";
 return "";
 }
-public String  _vvvv6() throws Exception{
+public String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7() throws Exception{
  //BA.debugLineNum = 95;BA.debugLine="Public Sub DeleteAll";
  //BA.debugLineNum = 96;BA.debugLine="sql1.ExecNonQuery(\"DROP TABLE main\")";
-_vvvvvv0.ExecNonQuery("DROP TABLE main");
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.ExecNonQuery("DROP TABLE main");
  //BA.debugLineNum = 97;BA.debugLine="CreateTable";
-_vvvv5();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6();
  //BA.debugLineNum = 98;BA.debugLine="End Sub";
 return "";
 }
-public anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper  _vvvv7(String _key) throws Exception{
+public anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0(String _key) throws Exception{
 anywheresoftware.b4a.sql.SQL.CursorWrapper _c = null;
 anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper _b = null;
 byte[] _buffer = null;
@@ -100,7 +99,7 @@ anywheresoftware.b4a.objects.streams.File.InputStreamWrapper _in = null;
  //BA.debugLineNum = 129;BA.debugLine="Public Sub GetBitmap(Key As String) As Bitmap";
  //BA.debugLineNum = 130;BA.debugLine="Dim c As Cursor = getCursor(Key)";
 _c = new anywheresoftware.b4a.sql.SQL.CursorWrapper();
-_c = _vvvv0(_key);
+_c = _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1(_key);
  //BA.debugLineNum = 131;BA.debugLine="Dim b As Bitmap";
 _b = new anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper();
  //BA.debugLineNum = 132;BA.debugLine="If c.RowCount = 0 Then";
@@ -129,28 +128,28 @@ if (true) return _b;
  //BA.debugLineNum = 144;BA.debugLine="End Sub";
 return null;
 }
-public anywheresoftware.b4a.sql.SQL.CursorWrapper  _vvvv0(String _key) throws Exception{
+public anywheresoftware.b4a.sql.SQL.CursorWrapper  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1(String _key) throws Exception{
  //BA.debugLineNum = 182;BA.debugLine="Private Sub getCursor(Key As String) As Cursor";
  //BA.debugLineNum = 183;BA.debugLine="Return sql1.ExecQuery2(\"SELECT value FROM main WH";
-if (true) return (anywheresoftware.b4a.sql.SQL.CursorWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.sql.SQL.CursorWrapper(), (android.database.Cursor)(_vvvvvv0.ExecQuery2("SELECT value FROM main WHERE key = ?",new String[]{_key})));
+if (true) return (anywheresoftware.b4a.sql.SQL.CursorWrapper) anywheresoftware.b4a.AbsObjectWrapper.ConvertToWrapper(new anywheresoftware.b4a.sql.SQL.CursorWrapper(), (android.database.Cursor)(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.ExecQuery2("SELECT value FROM main WHERE key = ?",new String[]{_key})));
  //BA.debugLineNum = 184;BA.debugLine="End Sub";
 return null;
 }
-public Object  _vvvvv1(String _key,String _password) throws Exception{
+public Object  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2(String _key,String _password) throws Exception{
  //BA.debugLineNum = 152;BA.debugLine="Public Sub GetEncryptedObject(Key As String, Passw";
  //BA.debugLineNum = 153;BA.debugLine="Return getObjectInternal(Key, True, Password)";
-if (true) return _vvvvv4(_key,__c.True,_password);
+if (true) return _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5(_key,__c.True,_password);
  //BA.debugLineNum = 154;BA.debugLine="End Sub";
 return null;
 }
-public anywheresoftware.b4a.objects.streams.File.InputStreamWrapper  _vvvvv2(String _key) throws Exception{
+public anywheresoftware.b4a.objects.streams.File.InputStreamWrapper  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3(String _key) throws Exception{
 anywheresoftware.b4a.sql.SQL.CursorWrapper _c = null;
 byte[] _buffer = null;
 anywheresoftware.b4a.objects.streams.File.InputStreamWrapper _in = null;
  //BA.debugLineNum = 114;BA.debugLine="Public Sub GetInputStream(Key As String) As InputS";
  //BA.debugLineNum = 115;BA.debugLine="Dim c As Cursor = getCursor(Key)";
 _c = new anywheresoftware.b4a.sql.SQL.CursorWrapper();
-_c = _vvvv0(_key);
+_c = _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1(_key);
  //BA.debugLineNum = 116;BA.debugLine="If c.RowCount = 0 Then";
 if (_c.getRowCount()==0) { 
  //BA.debugLineNum = 117;BA.debugLine="c.Close";
@@ -173,14 +172,14 @@ if (true) return _in;
  //BA.debugLineNum = 126;BA.debugLine="End Sub";
 return null;
 }
-public Object  _vvvvv3(String _key) throws Exception{
+public Object  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4(String _key) throws Exception{
  //BA.debugLineNum = 147;BA.debugLine="Public Sub GetObject(Key As String) As Object";
  //BA.debugLineNum = 148;BA.debugLine="Return getObjectInternal(Key, False, \"\")";
-if (true) return _vvvvv4(_key,__c.False,"");
+if (true) return _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5(_key,__c.False,"");
  //BA.debugLineNum = 149;BA.debugLine="End Sub";
 return null;
 }
-public Object  _vvvvv4(String _key,boolean _decrypt,String _password) throws Exception{
+public Object  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5(String _key,boolean _decrypt,String _password) throws Exception{
 anywheresoftware.b4a.sql.SQL.CursorWrapper _c = null;
 byte[] _buffer = null;
 anywheresoftware.b4a.randomaccessfile.RandomAccessFile _raf = null;
@@ -188,7 +187,7 @@ Object _res = null;
  //BA.debugLineNum = 161;BA.debugLine="Private Sub getObjectInternal(Key As String, decry";
  //BA.debugLineNum = 162;BA.debugLine="Dim c As Cursor = getCursor(Key)";
 _c = new anywheresoftware.b4a.sql.SQL.CursorWrapper();
-_c = _vvvv0(_key);
+_c = _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1(_key);
  //BA.debugLineNum = 163;BA.debugLine="If c.RowCount = 0 Then";
 if (_c.getRowCount()==0) { 
  //BA.debugLineNum = 164;BA.debugLine="c.Close";
@@ -223,13 +222,13 @@ if (true) return _res;
  //BA.debugLineNum = 180;BA.debugLine="End Sub";
 return null;
 }
-public String  _vvvvv5(String _key) throws Exception{
+public String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6(String _key) throws Exception{
 anywheresoftware.b4a.sql.SQL.CursorWrapper _c = null;
 String _res = "";
  //BA.debugLineNum = 101;BA.debugLine="Public Sub GetSimple(Key As String) As String";
  //BA.debugLineNum = 102;BA.debugLine="Dim c As Cursor = getCursor(Key)";
 _c = new anywheresoftware.b4a.sql.SQL.CursorWrapper();
-_c = _vvvv0(_key);
+_c = _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1(_key);
  //BA.debugLineNum = 103;BA.debugLine="If c.RowCount = 0 Then";
 if (_c.getRowCount()==0) { 
  //BA.debugLineNum = 104;BA.debugLine="c.Close";
@@ -252,30 +251,30 @@ public String  _initialize(anywheresoftware.b4a.BA _ba,String _dir,String _filen
 innerInitialize(_ba);
  //BA.debugLineNum = 8;BA.debugLine="Public Sub Initialize (Dir As String, FileName As";
  //BA.debugLineNum = 9;BA.debugLine="If sql1.IsInitialized Then sql1.Close";
-if (_vvvvvv0.IsInitialized()) { 
-_vvvvvv0.Close();};
+if (_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.IsInitialized()) { 
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.Close();};
  //BA.debugLineNum = 10;BA.debugLine="sql1.Initialize(Dir, FileName, True)";
-_vvvvvv0.Initialize(_dir,_filename,__c.True);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.Initialize(_dir,_filename,__c.True);
  //BA.debugLineNum = 11;BA.debugLine="CreateTable";
-_vvvv5();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6();
  //BA.debugLineNum = 12;BA.debugLine="End Sub";
 return "";
 }
-public String  _vvvvv6(String _key,Object _value) throws Exception{
+public String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(String _key,Object _value) throws Exception{
  //BA.debugLineNum = 186;BA.debugLine="Private Sub insertQuery(Key As String, Value As Ob";
  //BA.debugLineNum = 187;BA.debugLine="sql1.ExecNonQuery2(\"INSERT INTO main VALUES(?, ?)";
-_vvvvvv0.ExecNonQuery2("INSERT INTO main VALUES(?, ?)",anywheresoftware.b4a.keywords.Common.ArrayToList(new Object[]{(Object)(_key),_value}));
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.ExecNonQuery2("INSERT INTO main VALUES(?, ?)",anywheresoftware.b4a.keywords.Common.ArrayToList(new Object[]{(Object)(_key),_value}));
  //BA.debugLineNum = 188;BA.debugLine="End Sub";
 return "";
 }
-public anywheresoftware.b4a.objects.collections.List  _vvvvv7() throws Exception{
+public anywheresoftware.b4a.objects.collections.List  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0() throws Exception{
 anywheresoftware.b4a.sql.SQL.CursorWrapper _c = null;
 anywheresoftware.b4a.objects.collections.List _res = null;
 int _row = 0;
  //BA.debugLineNum = 77;BA.debugLine="Public Sub ListKeys As List";
  //BA.debugLineNum = 78;BA.debugLine="Dim c As Cursor = sql1.ExecQuery(\"SELECT key FROM";
 _c = new anywheresoftware.b4a.sql.SQL.CursorWrapper();
-_c.setObject((android.database.Cursor)(_vvvvvv0.ExecQuery("SELECT key FROM main")));
+_c.setObject((android.database.Cursor)(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.ExecQuery("SELECT key FROM main")));
  //BA.debugLineNum = 79;BA.debugLine="Dim res As List";
 _res = new anywheresoftware.b4a.objects.collections.List();
  //BA.debugLineNum = 80;BA.debugLine="res.Initialize";
@@ -297,13 +296,13 @@ if (true) return _res;
  //BA.debugLineNum = 86;BA.debugLine="End Sub";
 return null;
 }
-public boolean  _vvvvv0(String _key,anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper _value) throws Exception{
+public boolean  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1(String _key,anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper _value) throws Exception{
 anywheresoftware.b4a.objects.streams.File.OutputStreamWrapper _out = null;
 anywheresoftware.b4a.objects.drawable.CanvasWrapper.BitmapWrapper _b = null;
  //BA.debugLineNum = 40;BA.debugLine="Public Sub PutBitmap(Key As String, Value As Bitma";
  //BA.debugLineNum = 41;BA.debugLine="Try";
 try { //BA.debugLineNum = 42;BA.debugLine="start(Key)";
-_vvvvvv7(_key);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0(_key);
  //BA.debugLineNum = 43;BA.debugLine="Dim out As OutputStream";
 _out = new anywheresoftware.b4a.objects.streams.File.OutputStreamWrapper();
  //BA.debugLineNum = 44;BA.debugLine="out.InitializeToBytesArray(100)";
@@ -314,7 +313,7 @@ _b = _value;
  //BA.debugLineNum = 46;BA.debugLine="b.WriteToStream(out, 100, \"PNG\")";
 _b.WriteToStream((java.io.OutputStream)(_out.getObject()),(int) (100),BA.getEnumFromString(android.graphics.Bitmap.CompressFormat.class,"PNG"));
  //BA.debugLineNum = 47;BA.debugLine="insertQuery(Key, out.ToBytesArray)";
-_vvvvv6(_key,(Object)(_out.ToBytesArray()));
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(_key,(Object)(_out.ToBytesArray()));
  //BA.debugLineNum = 48;BA.debugLine="out.Close";
 _out.Close();
  //BA.debugLineNum = 49;BA.debugLine="Return complete(True)";
@@ -327,19 +326,19 @@ if (true) return _complete(__c.False);
  //BA.debugLineNum = 53;BA.debugLine="End Sub";
 return false;
 }
-public boolean  _vvvvvv1(String _key,Object _value,String _password) throws Exception{
+public boolean  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2(String _key,Object _value,String _password) throws Exception{
  //BA.debugLineNum = 35;BA.debugLine="Public Sub PutEncyptedObject(Key As String, Value";
  //BA.debugLineNum = 36;BA.debugLine="Return putObjectInternal(Key, Value, True, Passwo";
-if (true) return _vvvvvv4(_key,_value,__c.True,_password);
+if (true) return _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5(_key,_value,__c.True,_password);
  //BA.debugLineNum = 37;BA.debugLine="End Sub";
 return false;
 }
-public boolean  _vvvvvv2(String _key,anywheresoftware.b4a.objects.streams.File.InputStreamWrapper _value) throws Exception{
+public boolean  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3(String _key,anywheresoftware.b4a.objects.streams.File.InputStreamWrapper _value) throws Exception{
 anywheresoftware.b4a.objects.streams.File.OutputStreamWrapper _out = null;
  //BA.debugLineNum = 56;BA.debugLine="Public Sub PutInputStream(Key As String, Value As";
  //BA.debugLineNum = 57;BA.debugLine="Try";
 try { //BA.debugLineNum = 58;BA.debugLine="start(Key)";
-_vvvvvv7(_key);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0(_key);
  //BA.debugLineNum = 59;BA.debugLine="Dim out As OutputStream";
 _out = new anywheresoftware.b4a.objects.streams.File.OutputStreamWrapper();
  //BA.debugLineNum = 60;BA.debugLine="out.InitializeToBytesArray(100)";
@@ -349,7 +348,7 @@ __c.File.Copy2((java.io.InputStream)(_value.getObject()),(java.io.OutputStream)(
  //BA.debugLineNum = 62;BA.debugLine="Value.Close";
 _value.Close();
  //BA.debugLineNum = 63;BA.debugLine="insertQuery(Key, out.ToBytesArray)";
-_vvvvv6(_key,(Object)(_out.ToBytesArray()));
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(_key,(Object)(_out.ToBytesArray()));
  //BA.debugLineNum = 64;BA.debugLine="out.Close";
 _out.Close();
  //BA.debugLineNum = 65;BA.debugLine="Return complete(True)";
@@ -362,26 +361,26 @@ if (true) return _complete(__c.False);
  //BA.debugLineNum = 69;BA.debugLine="End Sub";
 return false;
 }
-public boolean  _vvvvvv3(String _key,Object _value) throws Exception{
+public boolean  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4(String _key,Object _value) throws Exception{
  //BA.debugLineNum = 30;BA.debugLine="Public Sub PutObject(Key As String, Value As Objec";
  //BA.debugLineNum = 31;BA.debugLine="Return putObjectInternal(Key, Value, False, \"\")";
-if (true) return _vvvvvv4(_key,_value,__c.False,"");
+if (true) return _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5(_key,_value,__c.False,"");
  //BA.debugLineNum = 32;BA.debugLine="End Sub";
 return false;
 }
-public boolean  _vvvvvv4(String _key,Object _value,boolean _encrypt,String _password) throws Exception{
+public boolean  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5(String _key,Object _value,boolean _encrypt,String _password) throws Exception{
 anywheresoftware.b4a.randomaccessfile.RandomAccessFile _raf = null;
 byte[] _buffer = null;
  //BA.debugLineNum = 210;BA.debugLine="Private Sub putObjectInternal(Key As String, Value";
  //BA.debugLineNum = 211;BA.debugLine="Try";
 try { //BA.debugLineNum = 212;BA.debugLine="start(Key)";
-_vvvvvv7(_key);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0(_key);
  //BA.debugLineNum = 213;BA.debugLine="Dim raf As RandomAccessFile";
 _raf = new anywheresoftware.b4a.randomaccessfile.RandomAccessFile();
  //BA.debugLineNum = 214;BA.debugLine="File.Delete(tempFolder, tempFile)";
-__c.File.Delete(_vvvvvvv1,_vvvvvvv2);
+__c.File.Delete(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2,_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3);
  //BA.debugLineNum = 215;BA.debugLine="raf.Initialize(tempFolder, tempFile, False)";
-_raf.Initialize(_vvvvvvv1,_vvvvvvv2,__c.False);
+_raf.Initialize(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2,_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3,__c.False);
  //BA.debugLineNum = 216;BA.debugLine="If encrypt Then";
 if (_encrypt) { 
  //BA.debugLineNum = 217;BA.debugLine="raf.WriteEncryptedObject(Value, password, raf.C";
@@ -400,7 +399,7 @@ _raf.ReadBytes(_buffer,(int) (0),_buffer.length,(long) (0));
  //BA.debugLineNum = 224;BA.debugLine="raf.Close";
 _raf.Close();
  //BA.debugLineNum = 225;BA.debugLine="insertQuery(Key, buffer)";
-_vvvvv6(_key,(Object)(_buffer));
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(_key,(Object)(_buffer));
  //BA.debugLineNum = 226;BA.debugLine="Return complete(True)";
 if (true) return _complete(__c.True);
  } 
@@ -411,13 +410,13 @@ if (true) return _complete(__c.False);
  //BA.debugLineNum = 230;BA.debugLine="End Sub";
 return false;
 }
-public boolean  _vvvvvv5(String _key,Object _value) throws Exception{
+public boolean  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6(String _key,Object _value) throws Exception{
  //BA.debugLineNum = 16;BA.debugLine="Public Sub PutSimple(Key As String, Value As Objec";
  //BA.debugLineNum = 17;BA.debugLine="Try";
 try { //BA.debugLineNum = 18;BA.debugLine="start(Key)";
-_vvvvvv7(_key);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0(_key);
  //BA.debugLineNum = 19;BA.debugLine="insertQuery(Key, Value)";
-_vvvvv6(_key,_value);
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(_key,_value);
  //BA.debugLineNum = 20;BA.debugLine="Return complete(True)";
 if (true) return _complete(__c.True);
  } 
@@ -428,19 +427,19 @@ if (true) return _complete(__c.False);
  //BA.debugLineNum = 24;BA.debugLine="End Sub";
 return false;
 }
-public String  _vvvvvv6(String _key) throws Exception{
+public String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(String _key) throws Exception{
  //BA.debugLineNum = 72;BA.debugLine="Public Sub Remove(Key As String)";
  //BA.debugLineNum = 73;BA.debugLine="sql1.ExecNonQuery2(\"DELETE FROM main WHERE key =";
-_vvvvvv0.ExecNonQuery2("DELETE FROM main WHERE key = ?",anywheresoftware.b4a.keywords.Common.ArrayToList(new Object[]{(Object)(_key)}));
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.ExecNonQuery2("DELETE FROM main WHERE key = ?",anywheresoftware.b4a.keywords.Common.ArrayToList(new Object[]{(Object)(_key)}));
  //BA.debugLineNum = 74;BA.debugLine="End Sub";
 return "";
 }
-public String  _vvvvvv7(String _key) throws Exception{
+public String  _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0(String _key) throws Exception{
  //BA.debugLineNum = 195;BA.debugLine="Private Sub start (Key As String)";
  //BA.debugLineNum = 196;BA.debugLine="sql1.BeginTransaction";
-_vvvvvv0.BeginTransaction();
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.BeginTransaction();
  //BA.debugLineNum = 197;BA.debugLine="sql1.ExecNonQuery2(\"DELETE FROM main WHERE key =";
-_vvvvvv0.ExecNonQuery2("DELETE FROM main WHERE key = ?",anywheresoftware.b4a.keywords.Common.ArrayToList(new Object[]{(Object)(_key)}));
+_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.ExecNonQuery2("DELETE FROM main WHERE key = ?",anywheresoftware.b4a.keywords.Common.ArrayToList(new Object[]{(Object)(_key)}));
  //BA.debugLineNum = 198;BA.debugLine="End Sub";
 return "";
 }
