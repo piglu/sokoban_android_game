@@ -1,45 +1,44 @@
 ﻿Build1=Default,com.stanks.andsokoban_full,Full
 File1=#.png
 File10=c10.png
-File100=sort_asc.png
-File101=sort_desc.png
-File102=stavka.bal
-File103=strelica_dole.png
-File104=t.png
-File105=t1.png
-File106=t2.png
-File107=t3.png
-File108=t4.png
-File109=t5.png
+File100=sort_desc.png
+File101=stavka.bal
+File102=strelica_dole.png
+File103=t.png
+File104=t1.png
+File105=t2.png
+File106=t3.png
+File107=t4.png
+File108=t5.png
+File109=tajmer.png
 File11=c11.png
-File110=tajmer.png
-File111=tid
-File112=title
-File113=u.png
-File114=upitnik.png
-File115=url
-File116=v.png
-File117=video.png
-File118=w.png
-File119=win.mp3
+File110=tid
+File111=title
+File112=u.png
+File113=upitnik.png
+File114=url
+File115=v.png
+File116=video.png
+File117=w.png
+File118=win.mp3
+File119=www.png
 File12=c12.png
-File120=www.png
-File121=www_btn.png
-File122=x.png
-File123=y.png
-File124=z.png
-File125=z_desno.png
-File126=z_desno2.png
-File127=z_dole2.png
-File128=z_gore2.png
-File129=z_lijevo.png
+File120=www_btn.png
+File121=x.png
+File122=y.png
+File123=z.png
+File124=z_desno.png
+File125=z_desno2.png
+File126=z_dole2.png
+File127=z_gore2.png
+File128=z_lijevo.png
+File129=z_lijevo2.png
 File13=c13.png
-File130=z_lijevo2.png
-File131=z_plus_meni.ico
-File132=z_reset.png
-File133=z_undo.png
-File134=zid.mp3
-File135=zid_2.png
+File130=z_plus_meni.ico
+File131=z_reset.png
+File132=z_undo.png
+File133=zid.mp3
+File134=zid_2.png
 File14=c14.png
 File15=c15.png
 File16=c16.png
@@ -97,43 +96,43 @@ File62=l.png
 File63=l_ikona.png
 File64=l_plava_ikona.png
 File65=level_finished.gif
-File66=lista.bal
-File67=lvl.mp3
-File68=lvl_finished.gif
-File69=m.png
+File66=lvl.mp3
+File67=lvl_finished.gif
+File68=m.png
+File69=mejn.bal
 File7=b.png
-File70=mejn.bal
-File71=meni4.png
-File72=menu.png
-File73=n.png
-File74=na_mjestu.mp3
-File75=natrag_pl.png
-File76=o.png
-File77=off.png
-File78=on.png
-File79=opc.png
+File70=meni4.png
+File71=menu.png
+File72=n.png
+File73=na_mjestu.mp3
+File74=natrag_pl.png
+File75=o.png
+File76=off.png
+File77=on.png
+File78=opc.png
+File79=opcije.png
 File8=c.png
-File80=opcije.png
-File81=opcije1.png
-File82=opcije3.bal
-File83=p.png
-File84=play.png
-File85=plus.png
-File86=pod.png
-File87=q.png
-File88=r.png
-File89=reset_pl.png
+File80=opcije1.png
+File81=opcije3.bal
+File82=p.png
+File83=play.png
+File84=plus.png
+File85=pod.png
+File86=q.png
+File87=r.png
+File88=reset_pl.png
+File89=reset_ze.png
 File9=c1.png
-File90=reset_ze.png
-File91=s.png
-File92=s_off.png
-File93=s_on.png
-File94=sb.png
-File95=skins.zip
-File96=sokoban.png
-File97=sokoban_2.png
-File98=sokoban_2_na_mjestu.png
-File99=solution.png
+File90=s.png
+File91=s_off.png
+File92=s_on.png
+File93=sb.png
+File94=skins.zip
+File95=sokoban.png
+File96=sokoban_2.png
+File97=sokoban_2_na_mjestu.png
+File98=solution.png
+File99=sort_asc.png
 FileGroup1=Default Group
 FileGroup10=Default Group
 FileGroup100=Default Group
@@ -174,7 +173,6 @@ FileGroup131=Default Group
 FileGroup132=Default Group
 FileGroup133=Default Group
 FileGroup134=Default Group
-FileGroup135=Default Group
 FileGroup14=Default Group
 FileGroup15=Default Group
 FileGroup16=Default Group
@@ -275,11 +273,10 @@ Library1=core
 Library10=archiver
 Library11=gifdecoder
 Library12=randomaccessfile
-Library13=animation
-Library14=xcustomlistview
-Library15=runtimepermissions
-Library16=javaobject
-Library17=xui views
+Library13=xcustomlistview
+Library14=runtimepermissions
+Library15=javaobject
+Library16=xui views
 Library2=phone
 Library3=xmlsax
 Library4=reflection
@@ -291,21 +288,20 @@ Library9=screenrecorder
 ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: http://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="14" android:targetSdkVersion="26"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~'End of default text.~\n~'AddApplicationText(<activity android:name="anywheresoftware.b4a.objects.preferenceactivity"/>)~\n~'AddApplicationText(<activity~\n~'android:name="com.dropbox.core.android.AuthActivity"~\n~'android:configChanges="orientation|keyboard"~\n~'android:launchMode="singleTask" >~\n~'<intent-filter>~\n~'<data android:scheme="db-ea41vz8owssfdhq" />~\n~'<action android:name="android.intent.action.VIEW" />~\n~'<category android:name="android.intent.category.BROWSABLE" />~\n~'<category android:name="android.intent.category.DEFAULT" />~\n~'</intent-filter>~\n~'</activity>)~\n~'************ Google Play Services Base ************~\n~'AddApplicationText(~\n~'  <activity android:name="com.google.android.gms.common.api.GoogleApiActivity"~\n~'  android:theme="@android:style/Theme.Translucent.NoTitleBar"~\n~'  android:exported="false"/>~\n~'  <meta-data~\n~'  android:name="com.google.android.gms.version"~\n~'  android:value="@integer/google_play_services_version" />~\n~')~\n~'************ Google Play Services Base (end) ************~\n~'************ Firebase Ads ************~\n~'AddApplicationText(~\n~'  <activity~\n~'  android:name="com.google.android.gms.ads.AdActivity"~\n~'  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"~\n~'  android:theme="@android:style/Theme.Translucent" />~\n~'  <activity android:name="com.google.android.gms.ads.purchase.InAppPurchaseActivity"~\n~'  android:theme="@style/Theme.IAPTheme"/>~\n~')~\n~'************ Firebase Ads (end) ************~\n~AddPermission(android.permission.ACCESS_NETWORK_STATE)~\n~AddPermission(android.permission.INTERNET)
 Module1=Starter
 Module2=play
-Module3=odabir
-Module4=video
-Module5=rijesenja
-Module6=opcije
+Module3=video
+Module4=rijesenja
+Module5=opcije
+Module6=Table
 Module7=KeyValueStore
-Module8=Table
-NumberOfFiles=135
-NumberOfLibraries=17
-NumberOfModules=8
+NumberOfFiles=134
+NumberOfLibraries=16
+NumberOfModules=7
 Version=8.8
 @EndOfDesignText@
 #Region  Project Attributes 
 	#ApplicationLabel: andSokoban
-	#VersionCode: 2
-	#VersionName: 1.0b2
+	#VersionCode: 3
+	#VersionName: 1.0b3
 	'SupportedOrientations possible values: unspecified, landscape or portrait.
 	#SupportedOrientations: portrait
 	#CanInstallToExternalStorage: False
@@ -316,6 +312,15 @@ Version=8.8
 	#FullScreen: False
 	#IncludeTitle: True
 #End Region
+
+'
+'
+' To Do
+'
+' - provjeriti varijablu slijedeći/prethodni za case "Next" level i "Prev" level (Play -> btn_Click)
+' - VratiPotez ne radi kako bi trebala (Play)
+'
+'
 
 Sub Process_Globals
 	'These global variables will be declared once when the application starts.
@@ -328,7 +333,7 @@ Sub Process_Globals
 	Dim zaSolutionIme As String
 	Dim ime_dat_za_video As String
 	Dim datZaParsanjeRazina As String
-	Dim brojLevela As Int = 0
+'	Dim brojLevela As Int = 0
 	Dim ime_datoteke_za_info As String
 End Sub
 
@@ -630,7 +635,7 @@ Sub imgPlay_Click
 		For i = 0 To curs.RowCount-1
 			curs.Position = i
 '			Log(curs.GetString("brojRazina"))
-			brojLevela = curs.GetString("brojRazina")
+'			brojLevela = curs.GetString("brojRazina")
 '			Log(curs.GetString("datoteka"))
 			datZaParsanjeRazina = curs.GetString("datoteka")
 			ime_datoteke_za_info = curs.GetString("imeDat")

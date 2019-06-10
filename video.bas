@@ -27,12 +27,12 @@ Sub Globals
 '	Dim dbxFiles As DbxUserFilesRequests
 '	Dim dbxSharing As DbxUserSharingRequests
 '	Dim dbxUsers As DbxUserUsersRequests
-	Dim token As String
+'	Dim token As String
 '	Dim client As DbxClientV2
-	Dim DropboxEnabled As Boolean
-	Private downloadrunning As Boolean
+'	Dim DropboxEnabled As Boolean
+'	Private downloadrunning As Boolean
 '	Dim Dropbox As DropboxV2
-	Dim aploud As Boolean
+'	Dim aploud As Boolean
 End Sub
 
 Sub Activity_Create(FirstTime As Boolean)
@@ -43,7 +43,7 @@ Sub Activity_Create(FirstTime As Boolean)
 
 	spn.Initialize("spn1")
 	Activity.AddView(spn, 0, 0, 30%x, 10%x)
-	spn.AddAll(odabir.listaDatZaVideo)
+	spn.AddAll(Main.listaDatZaVideo)
 
 	btn1.Initialize("delete")
 	btn1.Text = "Delete selected video"

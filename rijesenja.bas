@@ -26,10 +26,10 @@ Sub Globals
 '	Dim dbxFiles As DbxUserFilesRequests
 '	Dim dbxSharing As DbxUserSharingRequests
 '	Dim dbxUsers As DbxUserUsersRequests
-	Dim token As String
+'	Dim token As String
 '	Dim client As DbxClientV2
-	Dim DropboxEnabled As Boolean
-	Private downloadrunning As Boolean
+'	Dim DropboxEnabled As Boolean
+'	Private downloadrunning As Boolean
 '	Dim Dropbox As DropboxV2
 End Sub
 

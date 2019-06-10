@@ -103,7 +103,7 @@ Sub Globals
 	Dim ref As Reflector
 '	Dim stariX As Int
 '	Dim stariY As Int
-	Private ACTION_DOWN, ACTION_MOVE, ACTION_UP As Int
+	Private ACTION_DOWN As Int 'ACTION_MOVE, ACTION_UP
 '	Dim koordinate As Map
 	Dim velicinaRetka As List
 	Private ImageView1 As ImageView
@@ -1096,57 +1096,57 @@ Sub btn_Click
 '			btnInfo_Click
 
 		' slijedeća razina
-'		Case "next"
-'			slijedeci = True
-''			If Activity.NumberOfViews > 0 Then Activity.RemoveAllViews
-'			If razina < ukupno_razina-1 Then
-'				Log("razina|ukupno razina: " & razina & "|" & ukupno_razina)
-''				pokusaj = 0
-'				razina = razina + 1
-'				ParsajRazine(odabir.datZaParsanjeRazina)
-'				Dim od As Int = 0
-'				For i = 0 To razina - 1
-'					od = od + hLevel.Get(i)
-'				Next
-'				Dim doo As Int = 0
-'				For i = 0 To razina
-'					doo = doo + hLevel.Get(i)
-'				Next
-'				izgRazineOdIndeksaPoc = od
-'				izgRazineDoIndeksaKraj = doo - 1
-'
-'				KreirajNivo
-''			Else
-''				Msgbox("All levels solved", "Congratulations")
-''				Msgbox("Zadnja razina!", "Info")
-'			End If
-'			slijedeci = False
-'
-'		Case "prev"
-'			prethodni = True
-''			If Activity.NumberOfViews > 0 Then Activity.RemoveAllViews
-'			If razina < ukupno_razina And razina > 0 Then
-'				Log("razina|ukupno razina: " & razina & "|" & ukupno_razina)
-''				pokusaj = 0
-'				razina = razina - 1
-'				ParsajRazine(odabir.datZaParsanjeRazina)
-'				Dim od As Int = 0
-'				For i = 0 To razina - 1
-'					od = od + hLevel.Get(i)
-'				Next
-'				Dim doo As Int = 0
-'				For i = 0 To razina
-'					doo = doo + hLevel.Get(i)
-'				Next
-'				izgRazineOdIndeksaPoc = od
-'				izgRazineDoIndeksaKraj = doo - 1
-'				KreirajNivo
-'
-''			Else if razina = ukupno_razina Then
-''				Msgbox("All levels solved", "Congratulations")
-''				Msgbox("Zadnja razina!", "Info")
-'			End If
-'			prethodni = False
+		Case "next"
+			slijedeci = True
+'			If Activity.NumberOfViews > 0 Then Activity.RemoveAllViews
+			If razina < ukupno_razina-1 Then
+				Log("razina|ukupno razina: " & razina & "|" & ukupno_razina)
+'				pokusaj = 0
+				razina = razina + 1
+				ParsajRazine(Main.datZaParsanjeRazina)
+				Dim od As Int = 0
+				For i = 0 To razina - 1
+					od = od + hLevel.Get(i)
+				Next
+				Dim doo As Int = 0
+				For i = 0 To razina
+					doo = doo + hLevel.Get(i)
+				Next
+				izgRazineOdIndeksaPoc = od
+				izgRazineDoIndeksaKraj = doo - 1
+
+				KreirajNivo
+'			Else
+'				Msgbox("All levels solved", "Congratulations")
+'				Msgbox("Zadnja razina!", "Info")
+			End If
+			slijedeci = False
+
+		Case "prev"
+			prethodni = True
+'			If Activity.NumberOfViews > 0 Then Activity.RemoveAllViews
+			If razina < ukupno_razina And razina > 0 Then
+				Log("razina|ukupno razina: " & razina & "|" & ukupno_razina)
+'				pokusaj = 0
+				razina = razina - 1
+				ParsajRazine(Main.datZaParsanjeRazina)
+				Dim od As Int = 0
+				For i = 0 To razina - 1
+					od = od + hLevel.Get(i)
+				Next
+				Dim doo As Int = 0
+				For i = 0 To razina
+					doo = doo + hLevel.Get(i)
+				Next
+				izgRazineOdIndeksaPoc = od
+				izgRazineDoIndeksaKraj = doo - 1
+				KreirajNivo
+
+'			Else if razina = ukupno_razina Then
+'				Msgbox("All levels solved", "Congratulations")
+'				Msgbox("Zadnja razina!", "Info")
+			End If
+			prethodni = False
 
 '		Case "tajmer"
 '			If igraPocela And Timer4.Enabled Then
