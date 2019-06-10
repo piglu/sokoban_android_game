@@ -2,8 +2,106 @@
 Group=Default Group
 ModulesStructureVersion=1
 Type=Class
-Version=6.8
+Version=7.3
 @EndOfDesignText@
+'Table CustomView
+'Version 3.00
+'Amended SetColumnColors and SetTextColors
+'Removed Reflection library dependency
+'
+'Version 2.29
+'Added SaveTableToCSV2 with a user defined separator character
+'
+'Version 2.28
+'Added SetHeaderTypeFaces
+'Added SortRemoveAccents property
+'
+'Version 2.27
+'set the two variables sortedCol and sortingDir to Public instaed of Private
+'added RemoveAccent routine for sorting with accented characters
+' 
+'Version 2.26
+'added the LoadSQLiteDB3 method using SQL.ExecQuery2 instead of SQL.ExecQuery
+
+'Version 2.25
+'added the UpdateCell method
+
+'Version 2.24
+'amended a minor error
+
+'Version 2.22
+'improved JumpToRowAndSelect scrolls horizontally to the selected column
+
+'Version 2.21
+'improved setHeaderHeight
+
+'Version 2.20
+'added padding for status bar Label
+
+'Version 2.19
+'replaced DoEvents by Sleep(0)
+'
+'Version 2.18
+'amended error in setHeaderAlignment, missing Private cHeaderAlignments(mNumberOfColumns) As Int
+'
+'Version 2.17
+'Amended an error
+'
+'Version 2.16
+'Amended an error
+'
+'Version 2.15
+'#Event: CellClick(row As Int, col As Int) to #Event: CellClick(col As Int, row As Int)
+'#Event: CellLongClick(row As Int, col As Int) to #Event: CellLongClick(col As Int, row As Int)
+'
+'Version 2.14 Added NumberOfColumns and NumberOfRow as readable properties
+'Amended Header_Click error
+
+'Version 2.13
+'Amended initialization problem 
+
+'Version 2.12
+'Added an array with column data types, this is useful for sorting columns with numbers.
+'Added two methods: 
+'SetColumnDataType(Col As Int, DataType As String)
+'SetColumnDataTypes(DataType() As String)
+'Changed Private Sub refreshTable to Public Sub RefreshTable
+
+'Version 2.11
+'Added a Scale routine allowing to scale the Table 
+'Added Panel property
+'Changed the Designer default values the same as the original default values
+'TextAlignment and HeaderTextAlignment LEFT becomes CENTER
+'TextSize  18 becomes 14
+'LineWidth  2 becomes 1
+
+'Version 2.10
+'Amended problem with TextAlignmet and HeaderTextAlignment properties
+
+'Version 2.00
+'Added CustomView support
+
+'Changes between the previous versions and version 2.00
+
+'For a Table added in the Designer, this is new
+'No need to initialize nor add it onto a parent view
+
+'For a Table added in the code
+'The Initialize routine has been splittend into two routines
+'New:  
+'	Initialize (CallBack As Object, EventName As String)
+' InitializeTable (vNumberOfColumns As Int, cellAlignement As Int, showStatusL As Boolean)
+'Example:
+'	Table1.Initialize(Me, "Table1")
+'	Table1.InitializeTable(5, Gravity.CENTER_HORIZONTAL, True)
+
+'Old:
+'Initialize(CallBack As Object, EventName As String, vNumberOfColumns As Int, cellAlignement As Int, showStatusL As Boolean)
+'Example:
+'	Table1.InitializeTable(Me, "Table1", 5, Gravity.CENTER_HORIZONTAL, True)
+
+
+'Version history
 'Version 1.43
 'The modifications in LoadSQLiteDB were not OK for all cases
 'Reset LoadSQLiteDB like in version 1.40
@@ -135,7 +233,38 @@ Version=6.8
 ' with ScrollView2 instead of ScrollView
 ' with highlighting of the selected cell
 
-' example of how to use the table class.
+
+' these Event lines are useful for a library compilation for the IDE autocompletion
+#Event: CellClick(col As Int, row As Int)
+#Event: CellLongClick(col As Int, row As Int)
+#Event: HeaderClick(col As Int)
+#Event: HeaderLongClick(col As Int)
+#Event: ScrollChanged(PosX As Int, PosY As Int)
+' these RaisesSynchronousEvents lines are useful for a library compilation
+#RaisesSynchronousEvents: CellClick
+#RaisesSynchronousEvents: CellLongClick
+#RaisesSynchronousEvents: HeaderClick
+#RaisesSynchronousEvents: HeaderLongClick
+#RaisesSynchronousEvents: ScrollChanged
+
+'custom properties
+#DesignerProperty: Key: NumberOfColumns, DisplayName: Number of columns, FieldType: Int, DefaultValue: 3, Description: Number of columns.
+#DesignerProperty: Key: RowHeight, DisplayName: Row height, FieldType: Int, DefaultValue: 40, Description: Row height.
+#DesignerProperty: Key: HeaderHeight, DisplayName: Header height, FieldType: Int, DefaultValue: 40, Description: Header height.
+#DesignerProperty: Key: LineWidth, DisplayName: LineWidth, FieldType: Int, DefaultValue: 1, MinRange: 1, MaxRange: 10, Description: Line width in dips.
+#DesignerProperty: Key: TextSize, DisplayName: Text size, FieldType: Int, DefaultValue: 14, Description: Text size.
+#DesignerProperty: Key: TextAlignment, DisplayName: Text Alignment, FieldType: String, DefaultValue: CENTER, List: LEFT|CENTER|RIGHT, Description: Set the text alignment.
+#DesignerProperty: Key: HeaderTextAlignment, DisplayName: Header text Alignment, FieldType: String, DefaultValue: CENTER, List: LEFT|CENTER|RIGHT, Description: Set the header text alignment.
+#DesignerProperty: Key: HeaderColor, DisplayName: Header color, FieldType: Color, DefaultValue: 0xFF808080, Description: Header background color.
+#DesignerProperty: Key: TableColor, DisplayName: Table color, FieldType: Color, DefaultValue: 0xFFD3D3D3, Description: Table background color.
+#DesignerProperty: Key: HeaderTextColor, DisplayName: Header text color, FieldType: Color, DefaultValue: 0xFFFFFFFF, Description: Table background color.
+#DesignerProperty: Key:	CellTextColor, DisplayName: Cell text color, FieldType: Color, DefaultValue: 0xFF000000, Description: Table background color.
+#DesignerProperty: Key:	Row1Color, DisplayName: Row 1 color, FieldType: Color, DefaultValue: 0xFFFFFFFF, Description: Row1 background color.
+#DesignerProperty: Key:	Row2Color, DisplayName: Row 2 color, FieldType: Color, DefaultValue: 0xFF98F5FF, Description: Row2 background color.
+#DesignerProperty: Key:	SelectedRowColor, DisplayName: Selected row color, FieldType: Color, DefaultValue: 0xFF007FFF, Description: Selected row background color.
+#DesignerProperty: Key:	SelectedCellColor, DisplayName: Selected cell color, FieldType: Color, DefaultValue: 0xFFFC8EAC, Description: Selected row background color.
+#DesignerProperty: Key:	ShowStatusLine, DisplayName: ShowStatusLine, FieldType: Boolean, DefaultValue: True, Description: Shows or hides the status line.
+#DesignerProperty: Key:	SortRemoveAccents, DisplayName: SortRemoveAccents, FieldType: Boolean, DefaultValue: False, Description: Sorts without accented characters. Removes the accents for a correct sorting. This can slow down the sorting.
 
 Sub Class_Globals
 	Private StringUtils1 As StringUtils
@@ -143,17 +272,19 @@ Sub Class_Globals
 	Private pnlTable As Panel
 	Private Header As Panel
 	Private lblStatusLine As Label
-	Private Callback As Object
-	Private Event As String
+	Private cCallBack As Object
+	Private cEventName As String
+	Private cLeft, cTop , cWidth, cHeight As Int
 	Public HeaderNames As List
 	Public SelectedRows As List ' selected rows ' convert to map!!!
 	Private SelectedCol As Int 
-	Private Data As List
+	Public Data As List
 	Private LabelsCache As List
 	Private minVisibleRow, maxVisibleRow As Int
 	Private IsVisible As Boolean
 	Public visibleRows As Map
-	Private NumberOfColumns, ColumnWidths(), cColumnColors(), cTextColors(), cHeaderColors(), cHeaderTextColors(), DataWidths(), HeaderWidths() As Int
+	Private mNumberOfColumns, ColumnWidths(), cColumnColors(), cTextColors(), cHeaderColors(), cHeaderTextColors(), DataWidths(), HeaderWidths() As Int
+	Private cColumnDataType() As String
 	Private cRowHeight, cHeaderColor, cTableColor, cTextColor, cHeaderHeight, cHeaderTextColor As Int
 	Private cAutomaticWidths = False As Boolean
 	Private cTextSize As Float
@@ -169,6 +300,9 @@ Sub Class_Globals
 	Private MultiTypeFace = False As Boolean
 	Private cTypeFace = Typeface.DEFAULT As Typeface
 	Private cTypeFaces() As Typeface
+	Private HeaderMultiTypeFace = False As Boolean
+	Private cHeaderTypeFace = Typeface.DEFAULT As Typeface
+	Private cHeaderTypeFaces() As Typeface
 	Private cLineWidth = Max(1, 1dip) As Int
 	Private ExtraWidth = 12dip + cLineWidth	As Int
 	Private SelectedDrawable(), Drawable1(), Drawable2() As Object
@@ -176,6 +310,7 @@ Sub Class_Globals
 	Private cRowColor1, cRowColor2, cSelectedRowColor, cSelectedCellColor As Int
 	Private cSortColumn = True As Boolean
 	Private cUseColumnColors = False As Boolean
+	Private cSortRemoveAccents = False As Boolean
 	
 	Private bmp As Bitmap		' used for the canvas below
 	Private cvs As Canvas		' used to measure string widths in the LoadSQLiteDB routine
@@ -199,54 +334,192 @@ Sub Class_Globals
 	Private IsMultiSelect As Boolean = False
 	Private cAllowSelection = True As Boolean
 	Private SavedWidths() As Int' to keep the user set widths for columns
-	Private showStatusLine As Boolean =True
+	Private cShowStatusLine As Boolean =True
 
 	Private internalPanel As Panel
 
-	Private sortingDir As Int = 0 ' -1,0,1 as acc, unsorted, dec
-	Private sortedCol As Int = -1' hold the sorted column -1 for none
+	Public sortingDir As Int = 0 ' -1,0,1 as acc, unsorted, dec
+	Public sortedCol As Int = -1' hold the sorted column -1 for none
 	Private sortingView As Panel
 
 	Dim debug_counter As Long
 	Private enableStatusLineAutoFill As Boolean = True
+	
+	Public TableObject As Table
 End Sub
 
-' Initialize
-' CallbackModule, the object that will listent to cell/ header click / long click events
-' eventName the prefix of the events
-' vNumberOfColumns = number of columns including hidden ones
-'                    enter 1 if you use either LoadSQLiteDB, LoadTableFromCSV or LoadTableFromCSV2
-' cellAlignment Gravity.* the cell alignments of all cells text
-' showStatusL. if to show status line on the bottom of the table or not, to be able to show text to the user
-Public Sub Initialize (CallbackModule As Object, EventName As String, vNumberOfColumns As Int, cellAlignement As Int, showStatusL As Boolean)
+Public Sub Initialize (CallBack As Object, EventName As String)
+	cEventName = EventName
+	cCallBack = CallBack
+End Sub
+
+Public Sub DesignerCreateView (Base As Panel, Lbl As Label, Props As Map)
+	pnlTable = Base
+	cLeft = Base.Left
+	cTop = Base.Top
+	cWidth = Base.Width
+	cHeight = Base.Height
+	pnlTable.Color = Colors.Transparent
+	
+	'sets the text alignment property
+	Select Props.Get("TextAlignment")
+	Case "LEFT"
+		cAlignment = Bit.Or(Gravity.CENTER_VERTICAL, Gravity.LEFT)
+	Case "CENTER"
+		cAlignment = Gravity.CENTER
+	Case "RIGHT"
+		cAlignment = Bit.Or(Gravity.CENTER_VERTICAL, Gravity.RIGHT)
+	End Select
+
+	'sets the header text alignment property	
+	Select Props.Get("HeaderTextAlignment")
+	Case "LEFT"
+		cHeaderAlignment = Bit.Or(Gravity.CENTER_VERTICAL, Gravity.LEFT)
+	Case "CENTER"
+		cHeaderAlignment = Gravity.CENTER
+	Case "RIGHT"
+		cHeaderAlignment = Bit.Or(Gravity.CENTER_VERTICAL, Gravity.RIGHT)
+	End Select
+	
+	cLineWidth = DipToCurrent(Props.Get("LineWidth"))
+	
+	mNumberOfColumns = Props.Get("NumberOfColumns")
+	cHeaderColor = Props.Get("HeaderColor")
+	cTableColor = Props.Get("TableColor")
+	cHeaderTextColor = Props.Get("HeaderTextColor")
+	cTextColor = Props.Get("CellTextColor")
+	cRowColor1 = Props.Get("Row1Color")
+	cRowColor2 = Props.Get("Row2Color")
+	cSelectedRowColor = Props.Get("SelectedRowColor")
+	cSelectedCellColor = Props.Get("SelectedCellColor")
+	
+	cTextSize = Props.Get("TextSize")
+	
+	cRowHeight = DipToCurrent(Props.Get("RowHeight"))
+	cHeaderHeight = DipToCurrent(Props.Get("HeaderHeight"))
+	cShowStatusLine = Props.Get("ShowStatusLine")
+	cSortRemoveAccents = Props.Get("SortRemoveAccents")
+	InitTable
+End Sub
+
+' add the table to a view of your choice (panel, activity, etc)
+' v as the view 
+' Left, Top as the start point of the table in that view
+' width and height as the width and height of the table in the view, note this include empty space in case not enough lines exists - 
+' but the table will take the whole area.
+Public Sub AddToView(v As View, Left As Int, Top As Int, Width As Int, Height As Int)
+	AddToActivity(v,Left,Top,Width,Height)
+End Sub
+
+' add the table to an Activity
+' Act is the Activity 
+' Left, Top as the start point of the table in that view
+' width and height as the width and height of the table in the view, note this include empty space in case not enough lines exists - 
+' but the table will take the whole area.
+Public Sub AddToActivity(Act As Activity, Left As Int, Top As Int, Width As Int, Height As Int)
+	cLeft = Left
+	cTop = Top
+	cWidth = Width
+	cHeight = Height
+	
+	pnlTable.Initialize("")
+	pnlTable.Color = Colors.Transparent
+	Act.AddView(pnlTable, cLeft, cTop , cWidth, cHeight)
+	
+	InitTable	
+End Sub
+
+Private Sub InitTable
+	Data.Initialize
+	visibleRows.Initialize	
+	
+	pnlTable.Tag = "Table"
+	TableObject = Me
+	
 	SV.Initialize(0, 0, "SV")
 	internalPanel.Initialize("IP")
-	showStatusLine = showStatusL
-	SelectedRows.Initialize
-	cAlignment = cellAlignement
-'	SV.Panel.Color = cTableColor
-	Callback = CallbackModule
-	Event = EventName
-	
-'	innerClearAll(vNumberOfColumns)
+	innerClearAll(mNumberOfColumns)
 
-	NumberOfColumns = vNumberOfColumns
-'	Dim Drawable1(NumberOfColumns) As Object
-'	Dim Drawable2(NumberOfColumns) As Object
-'	Dim SelectedDrawable(NumberOfColumns) As Object
-'	Dim cAlignments(NumberOfColumns) As Int
-	Data.Initialize
+	SV.Panel.Color = cTableColor
+	IsVisible = True
+	Header.Initialize("")
+	Header.Color = cTableColor	
+	
+	pnlTable.AddView(Header, 0, 0 , cWidth, cHeaderHeight)
+	
+	' add status line
+	lblStatusLine.Initialize("")
+	lblStatusLine.Color = Colors.Transparent ' is it really ?	
+	internalPanel.Color = Colors.Transparent 'TODO uncomment this	
+	If (cShowStatusLine = True) Then
+		pnlTable.AddView(SV, 0, Header.Height, cWidth, cHeight - Header.Height - cRowHeight)
+		pnlTable.AddView(lblStatusLine,0, SV.Top + SV.Height, cWidth, cRowHeight)		
+	Else
+		pnlTable.AddView(SV, 0, Header.Height, cWidth, cHeight - Header.Height)
+		pnlTable.AddView(lblStatusLine,0, SV.Top + SV.Height, 0, 0)		
+	End If
+	lblStatusLine.Padding = Array As Int(4dip, 2dip, 4dip, 2dip)
+
+	pnlTable.AddView(internalPanel, 0, 0, cWidth, 0)
+	updateIPLocation
+
+	Dim ColumnWidths(mNumberOfColumns) As Int
+	Dim HeaderWidths(mNumberOfColumns) As Int
+	Dim DataWidths(mNumberOfColumns) As Int
+	Dim SavedWidths(mNumberOfColumns) As Int
+	Dim cColumnDataType(mNumberOfColumns) As String
+	For i = 0 To mNumberOfColumns - 1
+		ColumnWidths(i) = SV.Width / mNumberOfColumns
+		HeaderWidths(i) = ColumnWidths(i)
+		DataWidths(i) = ColumnWidths(i)
+		SavedWidths(i) = ColumnWidths(i)
+		cColumnDataType(i) = "TEXT"
+	Next 
+	SV.Panel.Width = SV.Width
+	SV_ScrollChanged(0, 0)
+	If (lblStatusLine.IsInitialized And enableStatusLineAutoFill=True) Then setStatusLine(Data.Size & " rows") ' should this be automatic ?
 
 	sortingView.Initialize("")
 	
 	' used for string width measuements in the LoadSQLiteDB routine
 	bmp.InitializeMutable(2dip, 2dip)	
-	cvs.Initialize2(bmp)
+	cvs.Initialize2(bmp)	
+End Sub
+
+' InitializeTable
+' vNumberOfColumns = number of columns including hidden ones
+'                    enter 1 if you use either LoadSQLiteDB, LoadTableFromCSV or LoadTableFromCSV2
+' cellAlignment Gravity.* the cell alignments of all cells text
+' showStatusL. if to show status line on the bottom of the table or not, to be able to show text to the user
+Public Sub InitializeTable (NumberOfColumns As Int, cellAlignement As Int, showStatusLine As Boolean)
+'	Initialize(CallbackModule, EventName)
+
+
+	cShowStatusLine = showStatusLine
+	SelectedRows.Initialize
+	cAlignment = cellAlignement
+
+	mNumberOfColumns = NumberOfColumns
+	Data.Initialize	'needed 
+	
+	Dim ColumnWidths(mNumberOfColumns) As Int
+	Dim HeaderWidths(mNumberOfColumns) As Int
+	Dim DataWidths(mNumberOfColumns) As Int
+	Dim SavedWidths(mNumberOfColumns) As Int
+	Dim cColumnDataType(mNumberOfColumns) As String
+	For i = 0 To mNumberOfColumns - 1
+		ColumnWidths(i) = SV.Width / mNumberOfColumns
+		HeaderWidths(i) = ColumnWidths(i)
+		DataWidths(i) = ColumnWidths(i)
+		SavedWidths(i) = ColumnWidths(i)
+	Next
+	
+	innerClearAll(mNumberOfColumns)
 End Sub
 
 'Clears the table
 Public Sub ClearAll
-	innerClearAll(NumberOfColumns)
+	innerClearAll(mNumberOfColumns)
 	updateIPLocation
 End Sub
 
@@ -304,13 +577,13 @@ End Sub
 Private Sub innerClearAll(vNumberOfColumns As Int)
 	SelectedRows.Initialize
 	SV.Panel.RemoveAllViews
-	NumberOfColumns = vNumberOfColumns
-	Dim Drawable1(NumberOfColumns) As Object
-	Dim Drawable2(NumberOfColumns) As Object
-	Dim SelectedDrawable(NumberOfColumns) As Object
-	Dim cAlignments(NumberOfColumns) As Int
+	mNumberOfColumns = vNumberOfColumns
+	Dim Drawable1(mNumberOfColumns) As Object
+	Dim Drawable2(mNumberOfColumns) As Object
+	Dim SelectedDrawable(mNumberOfColumns) As Object
+	Dim cAlignments(mNumberOfColumns) As Int
 	If cUseColumnColors = False Then
-		For i = 0 To NumberOfColumns - 1
+		For i = 0 To mNumberOfColumns - 1
 			Dim cd1, cd2, cd3 As ColorDrawable
 			cd1.Initialize(cRowColor1, 0)
 			cd2.Initialize(cRowColor2, 0)
@@ -318,14 +591,14 @@ Private Sub innerClearAll(vNumberOfColumns As Int)
 			Drawable1(i) = cd1
 			Drawable2(i) = cd2
 			SelectedDrawable(i) = cd3
-			If MultiAlignments = False Then
+			If MultiAlignments = False Or cAlignments0.Length < mNumberOfColumns Then
 				cAlignments(i) = cAlignment
 			Else
 				cAlignments(i) = cAlignments0(i)
 			End If
 		Next
 	Else
-		For i = 0 To NumberOfColumns - 1
+		For i = 0 To mNumberOfColumns - 1
 			Dim cd1, cd2, cd3 As ColorDrawable
 			cd1.Initialize(cColumnColors(i), 0)
 			cd2.Initialize(cColumnColors(i), 0)
@@ -355,15 +628,13 @@ Private Sub innerClearAll(vNumberOfColumns As Int)
 	LabelsCache.Initialize
 	visibleRows.Initialize
 	SV.VerticalScrollPosition = 0
-	DoEvents
-	SV.VerticalScrollPosition = 0
 	For i = 1 To 80 'fill the cache to avoid delay on the first touch
 		LabelsCache.Add(CreateNewLabels)
 	Next
 	If IsVisible Then
 		SV_ScrollChanged(0, 0)		
 	End If
-	If (lblStatusLine.IsInitialized AND enableStatusLineAutoFill = True) Then setStatusLine(Data.Size & " rows") ' should this be automatic ?
+	If (lblStatusLine.IsInitialized And enableStatusLineAutoFill = True) Then setStatusLine(Data.Size & " rows") ' should this be automatic ?
 	
 End Sub
 
@@ -401,60 +672,11 @@ Private Sub SV_ScrollChanged(PosX As Int, PosY As Int)
 	lblStatusLine.Left = - PosX
 End Sub
 
-' add the table to a view of your choice (panel, activity, etc)
-' v as the view 
-' Left, Top as the start point of the table in that view
-' width and height as the width and height of the table in the view, note this include empty space in case not enough lines exists - 
-' but the table will take the whole area.
-Public Sub AddToView(v As View, Left As Int, Top As Int, Width As Int, Height As Int)
-	AddToActivity(v,Left,Top,Width,Height)
-End Sub
-
-Public Sub AddToActivity(Act As Activity, Left As Int, Top As Int, Width As Int, Height As Int)
-	innerClearAll(NumberOfColumns)
-
-	SV.Panel.Color = cTableColor
-	IsVisible = True
-	Header.Initialize("")
-	pnlTable.Initialize("")
-	Header.Color = cTableColor	
-	Act.AddView(pnlTable, Left, Top , Width, Height)
-	pnlTable.AddView(Header, 0, 0 , Width, cHeaderHeight)
-	
-	' add status line
-	lblStatusLine.Initialize("")
-	lblStatusLine.Color = Colors.Transparent ' is it really ?	
-	internalPanel.Color = Colors.Transparent 'TODO uncomment this	
-	If (showStatusLine = True) Then
-		pnlTable.AddView(SV, 0, Header.Height, Width, Height - Header.Height - cRowHeight)
-		pnlTable.AddView(lblStatusLine,0, SV.Top + SV.Height, Width, cRowHeight)		
-	Else
-		pnlTable.AddView(SV, 0, Header.Height, Width, Height - Header.Height)
-		pnlTable.AddView(lblStatusLine,0, SV.Top + SV.Height, 0, 0)		
-	End If
-	pnlTable.AddView(internalPanel,0,0,Width,0)
-	updateIPLocation
-	
-	Dim ColumnWidths(NumberOfColumns) As Int
-	Dim HeaderWidths(NumberOfColumns) As Int
-	Dim DataWidths(NumberOfColumns) As Int
-	Dim SavedWidths(NumberOfColumns) As Int
-	For i = 0 To NumberOfColumns - 1
-		ColumnWidths(i) = SV.Width / NumberOfColumns
-		HeaderWidths(i) = ColumnWidths(i)
-		DataWidths(i) = ColumnWidths(i)
-		SavedWidths(i) = ColumnWidths(i)
-	Next 
-	SV.Panel.Width = SV.Width
-	SV_ScrollChanged(0, 0)
-	If (lblStatusLine.IsInitialized AND enableStatusLineAutoFill=True) Then setStatusLine(Data.Size & " rows") ' should this be automatic ?
-End Sub
-
 'Adds a row to the table
 'Example:<code>Table1.AddRow(Array As String("aaa", "ccc", "ddd", "eee"))</code>
 Public Sub AddRow(Values() As String)
-	If Values.Length <> NumberOfColumns Then
-		Log("Wrong number of values =" & Values.Length & " col=" & NumberOfColumns)
+	If Values.Length <> mNumberOfColumns Then
+		Log("Wrong number of values =" & Values.Length & " col=" & mNumberOfColumns)
 		Return
 	End If
 	Data.Add(Values)
@@ -465,14 +687,14 @@ Public Sub AddRow(Values() As String)
 	End If
 	SV.Panel.Height = Data.Size * cRowHeight
 	updateIPLocation
-	If (lblStatusLine.IsInitialized AND enableStatusLineAutoFill=True) Then setStatusLine(Data.Size & " rows") ' should this be automatic ?
+	If (lblStatusLine.IsInitialized And enableStatusLineAutoFill=True) Then setStatusLine(Data.Size & " rows") ' should this be automatic ?
 End Sub
 
-'Adds a row to the table
+'Adds a row to the table with automatic widths
 'Example:<code>Table1.AddRow(Array As String("aaa", "ccc", "ddd", "eee"))</code>
 Public Sub AddRowAutomaticWidth(Values() As String)
-	If Values.Length <> NumberOfColumns Then
-		Log("Wrong number of values =" & Values.Length & " col=" & NumberOfColumns)
+	If Values.Length <> mNumberOfColumns Then
+		Log("Wrong number of values =" & Values.Length & " col=" & mNumberOfColumns)
 		Return
 	End If
 	Data.Add(Values)
@@ -481,7 +703,7 @@ Public Sub AddRowAutomaticWidth(Values() As String)
 	
 	Dim changed = False As Boolean
 	Dim width As Int
-	For I = 0 To NumberOfColumns - 1
+	For I = 0 To mNumberOfColumns - 1
 		If MultiTypeFace = False Then
 '			width = cvs.MeasureStringWidth(Values(I), cTypeFaces(0), cTextSize) + ExtraWidth
 			width = cvs.MeasureStringWidth(Values(I), cTypeFace, cTextSize) + ExtraWidth
@@ -506,7 +728,7 @@ Public Sub AddRowAutomaticWidth(Values() As String)
 	End If
 	SV.Panel.Height = Data.Size * cRowHeight
 	updateIPLocation
-	If (lblStatusLine.IsInitialized AND enableStatusLineAutoFill=True) Then setStatusLine(Data.Size & " rows") ' should this be automatic ?
+	If (lblStatusLine.IsInitialized And enableStatusLineAutoFill=True) Then setStatusLine(Data.Size & " rows") ' should this be automatic ?
 End Sub
 
 ' draw a Row, now col is hidden (width <2)
@@ -544,7 +766,7 @@ Private Sub ShowRow(Row As Int)
 	Next
 End Sub
 
-Private Sub IsRowVisible(Row As Int) As Boolean
+Private Sub IsRowVisible(Row As Int) As Boolean		'ignore
 	Return Row < (SV.VerticalScrollPosition + SV.Height) / (cRowHeight + 1) And _
 		Row > SV.VerticalScrollPosition / cRowHeight
 End Sub
@@ -582,8 +804,8 @@ Private Sub GetLabels(Row As Int) As Label()
 End Sub
 
 Private Sub CreateNewLabels As Label()
-	Dim lbls(NumberOfColumns) As Label
-	For i = 0 To NumberOfColumns - 1
+	Dim lbls(mNumberOfColumns) As Label
+	For i = 0 To mNumberOfColumns - 1
 		Dim rc As RowCol
 		rc.Col = i
 		Dim L As Label
@@ -602,14 +824,13 @@ Private Sub CreateNewLabels As Label()
 		Else
 			L.Typeface = cTypeFaces(i)
 		End If
-
-		SetPadding(L, 4dip, 2dip, 4dip, 2dip)
+		L.Padding = Array As Int(4dip, 2dip, 4dip, 2dip)
 
 		' added by nir, make each label single line
 		If cSingleLine Then 
-			Dim ref As Reflector
-			ref.Target = L
-			ref.RunMethod2("setSingleLine", True, "java.lang.boolean")
+			Private jo As JavaObject
+			jo = L
+			jo.RunMethod("setSingleLine", Array(True))
 		End If
 		L.Tag = rc
 		lbls(i) = L
@@ -629,7 +850,7 @@ Public Sub SetHeader(Values() As String)
 '	Dim Left = cLineWidth As Int
 	Dim Change = 0 As Int
 	Dim w As Int
-	For col = 0 To NumberOfColumns - 1
+	For col = 0 To mNumberOfColumns - 1
 		Dim L As Label
 		L.Initialize("header")
 		If HeaderMultiAlignments = False Then
@@ -637,9 +858,17 @@ Public Sub SetHeader(Values() As String)
 		Else
 			L.Gravity = cHeaderAlignments(col)
 		End If
+		
+		If HeaderMultiTypeFace = False Then
+			L.Typeface = cHeaderTypeFace
+		Else
+			L.Typeface = cHeaderTypeFaces(col)
+		End If
+		
 		L.TextSize = cTextSize
-		SetPadding(L, 4dip, 2dip, 4dip, 2dip)
-		If cUseColumnColors = False Then
+		L.Padding = Array As Int(4dip, 2dip, 4dip, 2dip)
+
+		If cUseColumnColors = False Or cHeaderTextColors.Length <> mNumberOfColumns Then
 			L.Color = cHeaderColor
 			L.TextColor = cHeaderTextColor
 		Else
@@ -663,7 +892,7 @@ Public Sub SetHeader(Values() As String)
 			Else
 				HeaderWidths(col) = cvs.MeasureStringWidth(Values(col), L.Typeface, cTextSize)  + ExtraWidth
 			End If
-			If HeaderWidths(col) > ColumnWidths(col) Or HeaderWidths(col) > ColumnWidths(col) Then
+			If HeaderWidths(col) > ColumnWidths(col) Then 
 				Change = 1
 				ColumnWidths(col) = Max(HeaderWidths(col), ColumnWidths(col))
 			Else If ColumnWidths(col) > HeaderWidths(col) And ColumnWidths(col) > DataWidths(col) Then
@@ -687,8 +916,8 @@ Private Sub Cell_LongClick
 	L = Sender
 	rc = L.Tag
 	'SelectRow(rc)
-	If SubExists(Callback, Event & "_CellLongClick") Then
-		CallSub3(Callback, Event & "_CellLongClick", rc.Col, rc.Row)
+	If SubExists(cCallBack, cEventName & "_CellLongClick") Then
+		CallSub3(cCallBack, cEventName & "_CellLongClick", rc.Col, rc.Row)
 	End If
 End Sub
 
@@ -698,8 +927,8 @@ Private Sub Header_LongClick
 	Dim col As Int
 	L = Sender
 	col = L.Tag
-	If SubExists(Callback, Event & "_HeaderLongClick") Then
-		CallSub2(Callback, Event & "_HeaderLongClick", col)
+	If SubExists(cCallBack, cEventName & "_HeaderLongClick") Then
+		CallSub2(cCallBack, cEventName & "_HeaderLongClick", col)
 	End If	
 End Sub
 
@@ -708,10 +937,11 @@ Private Sub Cell_Click
 	Dim L As Label
 	L = Sender
 	rc = L.Tag
+
 '	SelectRow(rc.Row)
 	SelectRow(rc)
-	If SubExists(Callback, Event & "_CellClick") Then
-		CallSub3(Callback, Event & "_CellClick", rc.Col, rc.Row)
+	If SubExists(cCallBack, cEventName & "_CellClick") Then
+		CallSub3(cCallBack, cEventName & "_CellClick", rc.Col, rc.Row)
 	End If
 End Sub
 
@@ -741,7 +971,7 @@ Public Sub SelectRow(rc As RowCol)
 	Dim prev As Int ' if we select an alreday selected row, prev will be rc.row, else will be -1
 	
 	prevIndex = SelectedRows.indexof(rc.Row)	 ' -1 if selecting not a selected row	
-	If (prevIndex <> -1 AND IsMultiSelect = False) Then
+	If (prevIndex <> -1 And IsMultiSelect = False) Then
 		' if IsMultiSelect = True no column change, only if IsMultiSelect = False
 		SelectedCol = rc.col
 		If visibleRows.ContainsKey(rc.Row) Then
@@ -753,14 +983,14 @@ Public Sub SelectRow(rc As RowCol)
 	
 	If (prevIndex = -1) Then
 		If (IsMultiSelect) Then 
-			SelectedRows.add(rc.Row) 'Select the new row
+			SelectedRows.Add(rc.Row) 'Select the new row
 			prev = -1
 		Else ' set selected to the new one
 			' hide / show all selected rows		
 			'Log ("get at zero: " & SelectedRows)
 			If (SelectedRows.Size <> 0) Then 
 				prev = SelectedRows.get(0) ' there should be only one here ever!!!, keep the unselected row in prev
-				SelectedRows.set(0,rc.Row) ' change it to the new one
+				SelectedRows.set(0, rc.Row) ' change it to the new one
 			Else 
 				prev = -1
 				SelectedRows.Add(rc.Row)
@@ -786,25 +1016,50 @@ Public Sub SelectRow(rc As RowCol)
 	End If
 End Sub
 
-'Makes the given row visible.
-Public Sub JumpToRow(Row As Int)
-	SV.VerticalScrollPosition = Row * cRowHeight
-	DoEvents
-	SV.VerticalScrollPosition = Row * cRowHeight
-	DoEvents
+'Unselects the row for the given index
+Public Sub UnselectRow(rc As RowCol)
+	If Not(cAllowSelection) Then Return
+	
+	Dim prevIndex As Int
+	
+	prevIndex = SelectedRows.indexof(rc.Row)	 ' -1 if selecting not a selected row
+	If (prevIndex <> -1 And IsMultiSelect = False) Then
+		' if IsMultiSelect = True no column change, only if IsMultiSelect = False
+		SelectedCol = rc.col
+		If visibleRows.ContainsKey(rc.Row) Then
+			HideRow(rc.Row)
+			ShowRow(rc.Row)
+		End If
+		Return	' comment this line if you want to unselect a line
+	End If
 End Sub
 
-'Makes the given row visible and det it's row and colum as selected.
+'Makes the given row visible.
+Public Sub JumpToRow(Row As Int)
+	Sleep(0)
+	SV.VerticalScrollPosition = Row * cRowHeight
+End Sub
+
+'Makes the given row visible and set it's row and colum as selected.
 Public Sub JumpToRowAndSelect(Row As Int, Col As Int)
+	Log("You may get this warning:")
+	Log("Unexpected event (missing RaiseSynchronousEvents): sv_scrollchanged")
+	Log("Ignore it, it is NOT harmful !")
 	Dim rc As RowCol
 	
 	rc.Row = Row
 	rc.Col = Col
 	SelectRow(rc)
+	Sleep(0)
+
 	SV.VerticalScrollPosition = Row * cRowHeight
-	DoEvents
-	SV.VerticalScrollPosition = Row * cRowHeight
-	DoEvents
+	Private i, Left As Int
+	If Col > 0 Then
+		For i = 0 To Col - 1
+			Left = Left + ColumnWidths(i)			
+		Next	
+	End If
+	SV.HorizontalScrollPosition = Left
 End Sub
 
 'Clears the previous table and loads the CSV file to the table.
@@ -833,11 +1088,13 @@ Public Sub LoadTableFromCSV(Dir As String, Filename As String, HeadersExist As B
 		Next
 	End If
 	innerClearAll(h.Length)
-	Dim ColumnWidths(NumberOfColumns) As Int
-	Dim HeaderWidths(NumberOfColumns) As Int
-	Dim DataWidths(NumberOfColumns) As Int
-	For i = 0 To NumberOfColumns - 1
-		ColumnWidths(i) = SV.Width / NumberOfColumns
+	Dim ColumnWidths(mNumberOfColumns) As Int
+	Dim HeaderWidths(mNumberOfColumns) As Int
+	Dim DataWidths(mNumberOfColumns) As Int
+	Dim cColumnDataType(mNumberOfColumns) As String
+	For i = 0 To mNumberOfColumns - 1
+		cColumnDataType(i) = "TEXT"
+		ColumnWidths(i) = SV.Width / mNumberOfColumns
 		HeaderWidths(i) = ColumnWidths(i)	
 		DataWidths(i) = ColumnWidths(i)
 	Next
@@ -880,33 +1137,42 @@ Public Sub LoadTableFromCSV2(Dir As String, Filename As String, HeadersExist As 
 		Next
 	End If
 	innerClearAll(h.Length)
-	Dim ColumnWidths(NumberOfColumns) As Int
-	Dim HeaderWidths(NumberOfColumns) As Int
-	Dim DataWidths(NumberOfColumns) As Int
+	Dim ColumnWidths(mNumberOfColumns) As Int
+	Dim HeaderWidths(mNumberOfColumns) As Int
+	Dim DataWidths(mNumberOfColumns) As Int
+	Dim cColumnDataType(mNumberOfColumns) As String
 	
 	Dim col, Row As Int
 	If AutomaticWidths = False Then
-		For col = 0 To NumberOfColumns - 1
-			ColumnWidths(col) = SV.Width / NumberOfColumns
+		For col = 0 To mNumberOfColumns - 1
+			cColumnDataType(col) = "TEXT"
+			ColumnWidths(col) = SV.Width / mNumberOfColumns
 			HeaderWidths(col) = ColumnWidths(col)
 			DataWidths(col) = ColumnWidths(col)
 		Next
 	Else
 		If HeadersExist Then
-			Dim strRow(NumberOfColumns) As String
+			Dim strRow(mNumberOfColumns) As String
 			strRow = List1.get(col)
-			For col = 0 To NumberOfColumns - 1
-				HeaderWidths(col) = cvs.MeasureStringWidth(headers.get(col), Typeface.DEFAULT, cTextSize)  + ExtraWidth
-			Next
+			If HeaderMultiTypeFace = False Then
+				For col = 0 To mNumberOfColumns - 1
+					HeaderWidths(col) = cvs.MeasureStringWidth(headers.get(col), cHeaderTypeFace, cTextSize)  + ExtraWidth
+				Next
+			Else
+				For col = 0 To mNumberOfColumns - 1
+					HeaderWidths(col) = cvs.MeasureStringWidth(headers.get(col), cHeaderTypeFaces(col), cTextSize)  + ExtraWidth
+				Next
+			End If
 		End If
 		For Row = 0 To List1.Size - 1
-			Dim strRow(NumberOfColumns) As String
+			Dim strRow(mNumberOfColumns) As String
 			strRow = List1.get(Row)
-			For col = 0 To NumberOfColumns - 1
+			For col = 0 To mNumberOfColumns - 1
 				DataWidths(col) = Max(DataWidths(col), cvs.MeasureStringWidth(strRow(col), Typeface.DEFAULT, cTextSize) + ExtraWidth)
 			Next
 		Next
-		For col = 0 To NumberOfColumns - 1
+		For col = 0 To mNumberOfColumns - 1
+			cColumnDataType(col) = "TEXT"
 			ColumnWidths(col) = Max(HeaderWidths(col), DataWidths(col))
 		Next
 	End If
@@ -923,7 +1189,7 @@ End Sub
 
 'Saves the table to a CSV file.
 Public Sub SaveTableToCSV(Dir As String, Filename As String)
-	Dim headers(NumberOfColumns) As String
+	Dim headers(mNumberOfColumns) As String
 	For i = 0 To headers.Length - 1
 		Dim L As Label
 		L = Header.GetView(i)
@@ -932,11 +1198,22 @@ Public Sub SaveTableToCSV(Dir As String, Filename As String)
 	StringUtils1.SaveCSV2(Dir, Filename, ",", Data, headers)
 End Sub
 
+'Saves the table to a CSV file with a given separator character.
+Public Sub SaveTableToCSV2(Dir As String, Filename As String, SeparatorChar As String)
+	Dim headers(mNumberOfColumns) As String
+	For i = 0 To headers.Length - 1
+		Dim L As Label
+		L = Header.GetView(i)
+		headers(i) = L.Text
+	Next
+	StringUtils1.SaveCSV2(Dir, Filename, SeparatorChar, Data, headers)
+End Sub
+
 ' new functunality added by nir -->
 ' remove a row
 'row is the row number
 Public Sub RemoveRow(Row As Int)	
-	If (Row <0 OR Row > Data.Size-1) Then Return ' cant remove row outside of the table scope
+	If (Row <0 Or Row > Data.Size-1) Then Return ' cant remove row outside of the table scope
 	
 	SV_ScrollChanged(SV.HorizontalScrollPosition,SV.VerticalScrollPosition) ' this strange call will set min/max visible area
 	'Dim sr As Int ' to keep the previos selected row (in case IsMultiSelect is off)
@@ -985,14 +1262,14 @@ Public Sub RemoveRow(Row As Int)
 	updateIPLocation	
 	
 	SV_ScrollChanged(SV.HorizontalScrollPosition,Min(SV.VerticalScrollPosition, SV.Panel.Height))
-	If (lblStatusLine.IsInitialized AND enableStatusLineAutoFill=True) Then setStatusLine(Data.Size & " rows") ' should this be automatic ?	
+	If (lblStatusLine.IsInitialized And enableStatusLineAutoFill=True) Then setStatusLine(Data.Size & " rows") ' should this be automatic ?	
 End Sub
 
 ' return array of strings hold all the values for a row.
 Public Sub GetValues(Row As Int ) As String()
 	Dim rowData() As String  = Data.get(Row) ' will throw an excpetion if row is not correct
-	Dim tmp(NumberOfColumns) As String
-	For i=0 To NumberOfColumns-1 ' copy the array
+	Dim tmp(mNumberOfColumns) As String
+	For i=0 To mNumberOfColumns-1 ' copy the array
 		tmp(i) =  rowData(i)
 	Next
 	Return tmp
@@ -1033,16 +1310,16 @@ Public Sub insertRowAt (Row As Int, Values() As String) As Boolean
 	SV.Panel.Height = Data.Size * cRowHeight
 	updateIPLocation	
 	SV_ScrollChanged(SV.HorizontalScrollPosition,Min(SV.VerticalScrollPosition, SV.Panel.Height))	
-	If (lblStatusLine.IsInitialized AND enableStatusLineAutoFill = True) Then setStatusLine(Data.Size & " rows") ' should this be automatic ?
+	If (lblStatusLine.IsInitialized And enableStatusLineAutoFill = True) Then setStatusLine(Data.Size & " rows") ' should this be automatic ?
 	Return False
 End Sub
 
 ' update a row in the table
 ' row is the row number to update, Values is an array of string at the size of the number of columns
-' return true is worked out, false if failed
+' return true if worked out, false if failed
 Public Sub UpdateRow(Row As Int, Values () As String) As Boolean
 	Dim i As Int
-	If (Values.Length <> NumberOfColumns OR Row <0 OR Row>Data.Size-1) Then
+	If (Values.Length <> mNumberOfColumns Or Row <0 Or Row>Data.Size-1) Then
 		Return False
 	End If
 	For i=0 To Values.Length-1
@@ -1051,14 +1328,25 @@ Public Sub UpdateRow(Row As Int, Values () As String) As Boolean
 	Return True
 End Sub
 
+' update a cell in the table
+' col is the columne index and row is the row index of the cell to update, Value is the cell content string
+' return true if worked out, false if failed
+Public Sub UpdateCell(Col As Int, Row As Int, Value As String) As Boolean
+	If (Col < 0 Or Col > mNumberOfColumns - 1 Or Row < 0 Or Row>Data.Size-1) Then
+		Return False
+	End If
+	SetValue(Col, Row, Value)
+	Return True
+End Sub
+
 Public Sub clearSelection
     'SV_ScrollChanged(SV.HorizontalScrollPosition,SV.VerticalScrollPosition) ' this strange call will set min/max visible area	
 	SelectedRows.Clear
-	refreshTable
+	RefreshTable
 End Sub
 
 ' refresh / redraw the visible part of the table
-Private Sub refreshTable
+Public Sub RefreshTable
 	SV_ScrollChanged(SV.HorizontalScrollPosition,SV.VerticalScrollPosition) ' this strange call will set min/max visible area	
 	For i = minVisibleRow To maxVisibleRow ' hide all visible rows
 		HideRow(i)
@@ -1131,8 +1419,8 @@ End Sub
 
 Private Sub IP_Click
 '	Log ("panel clicked!")
-	If SubExists(Callback, Event & "_HeaderClick") Then
-		CallSub2(Callback, Event & "_HeaderClick", -1)
+	If SubExists(cCallBack, cEventName & "_HeaderClick") Then
+		CallSub2(cCallBack, cEventName & "_HeaderClick", -1)
 	End If
 End Sub
 
@@ -1153,7 +1441,8 @@ End Sub
 
 'Gets or sets the Table Left property
 Public Sub setLeft(Left As Int)
-   pnlTable.Left = Left
+	cLeft = Left
+  pnlTable.Left = Left
 End Sub
 
 Public Sub getLeft As Int
@@ -1162,35 +1451,38 @@ End Sub
 
 'Gets or sets the Table Left property
 Public Sub setTop(Top As Int)
-   pnlTable.Top = Top
+	cTop = Top
+	pnlTable.Top = Top
 End Sub
 
 Public Sub getTop As Int
-   Return pnlTable.Top
+	Return pnlTable.Top
 End Sub
 
 'Gets or sets the Table Width property
 Public Sub setWidth(Width As Int)
-   pnlTable.Width = Width
-   SV.Width = Width
-   internalPanel.Width = Width
-   updateIPLocation
+	cWidth = Width
+	pnlTable.Width = Width
+	SV.Width = Width
+	internalPanel.Width = Width
+	updateIPLocation
 End Sub   
 
 Public Sub getWidth As Int
-   Return pnlTable.Width
+	Return pnlTable.Width
 End Sub
 
 'Gets or sets the Table Height property
 Public Sub setHeight(Height As Int)
-   pnlTable.Height = Height
-   If (showStatusLine = True) Then
-     SV.Height = Height - cRowHeight - cHeaderHeight
-   Else
-     SV.Height = Height - cHeaderHeight 
-   End If
-   lblStatusLine.Top = SV.Top + SV.Height
-   updateIPLocation
+	cHeight = Height
+	pnlTable.Height = Height
+	If (cShowStatusLine = True) Then
+		SV.Height = Height - cRowHeight - cHeaderHeight
+	Else
+		SV.Height = Height - cHeaderHeight 
+	End If
+	lblStatusLine.Top = SV.Top + SV.Height
+	updateIPLocation
 End Sub
 
 Public Sub getHeight As Int
@@ -1208,11 +1500,11 @@ End Sub
 
 'Gets or sets the grid line wisth
 Public Sub setLineWidth(LineWidth As Int)
-   cLineWidth = LineWidth
+	cLineWidth = LineWidth
 End Sub
 
 Public Sub getLineWidth As Int
-   Return cLineWidth
+	Return cLineWidth
 End Sub
 
 Private Sub Header_Click
@@ -1220,8 +1512,8 @@ Private Sub Header_Click
 	Dim col As Int
 	L = Sender
 	col = L.Tag
-	'If SubExists(Callback, Event & "_HeaderClick") Then
-	'	CallSub2(Callback, Event & "_HeaderClick", col)
+	'If SubExists(cCallback, cEventName & "_HeaderClick") Then
+	'	CallSub2(cCallback, cEventName & "_HeaderClick", col)
 	'End If
 	
 	If cSortColumn = True Then
@@ -1237,22 +1529,20 @@ Private Sub Header_Click
 		End If
 		sortedCol = col
 		sortingDir = dir	
-		sortTable(col,dir <=0)
+		If cColumnDataType(col) = "TEXT" Then
+			sortTable(col,dir <=0)
+		Else
+			sortTableNum(col,dir <=0)
+		End If
 		showHeaderSorting(col, dir)	
 	End If
 	
-	If SubExists(Callback, Event & "_HeaderClick") Then
-		CallSub2(Callback, Event & "_HeaderClick", col)
+	If SubExists(cCallBack, cEventName & "_HeaderClick") Then
+		CallSub2(cCallBack, cEventName & "_HeaderClick", col)
 	End If
 End Sub
 
 Public Sub showHeaderSorting(col As Int,dir As Int)
-	'For i = 0 To NumberOfColumns-1
-	'	Dim v As View 
-	'	v = Header.GetView(i)
-	'	
-	'Next
-	
 	Dim ll As Int = 40
 	sortingView.RemoveView
 	If (dir = 0) Then Return ' remove the view only
@@ -1284,26 +1574,46 @@ Public Sub sortTable(col As Int, dir As Boolean)
 	debug_counter = 0
 	'QuickSort(0,Data.Size-1, col, dir) ' TODO add dir
 	SelectionSort(col, dir)
-	refreshTable
+	RefreshTable
 End Sub
 
 Public Sub SelectionSort (col As Int, dir As Boolean) 
 	Dim minIndex As Int
-	For i = 0 To Data.Size- 1
-		minIndex = i
-		For j = i + 1 To Data.Size - 1
-			Dim values1() As String = Data.get(j)
-			Dim s1 As String = values1(col)
-			Dim values2() As String = Data.get(minIndex)
-			Dim s2 As String = values2(col)
-			If (dir) Then
+	If cSortRemoveAccents = False Then
+		For i = 0 To Data.Size- 1
+			minIndex = i
+			For j = i + 1 To Data.Size - 1
+				Dim values1() As String = Data.get(j)
+				Dim s1 As String = values1(col)
+				Dim values2() As String = Data.get(minIndex)
+				Dim s2 As String = values2(col)
+				If (dir) Then
 				If s1.CompareTo(s2) < 0 Then minIndex = j
-			Else 
+				Else
 				If s1.CompareTo(s2) > 0 Then minIndex = j
-			End If
+				End If
+			Next
+			SwapList(i, minIndex)
 		Next
-		SwapList(i, minIndex)
-	Next
+	Else
+		'removes the accents from accented characters for sorting
+		For i = 0 To Data.Size- 1
+			minIndex = i
+			For j = i + 1 To Data.Size - 1
+				Dim values1() As String = Data.get(j)
+				Dim s1 As String = values1(col)
+				Dim values2() As String = Data.get(minIndex)
+				Dim s2 As String = values2(col)
+				If (dir) Then
+					If s1.CompareTo(RemoveAccents(s2)) < 0 Then minIndex = j
+				Else
+					If s1.CompareTo(RemoveAccents(s2)) > 0 Then minIndex = j
+				End If
+			Next
+			SwapList(i, minIndex)
+		Next
+	End If
+
 End Sub
 
 ' code for sorting
@@ -1311,14 +1621,14 @@ End Sub
 
 ' sort the table by column number and direction
 ' col is the column number starting with 0
-' dir as direction true = acc, false = dec
+' dir as direction true = asc, false = dec
 Public Sub sortTableNum(col As Int, dir As Boolean)
 '	Log ("sorting table for col:" & col)
 	clearSelection
 	debug_counter = 0
 	'QuickSort(0,Data.Size-1, col, dir) ' TODO add dir
 	SelectionSortNum(col, dir)
-	refreshTable
+	RefreshTable
 End Sub
 
 Public Sub SelectionSortNum (col As Int,dir As Boolean) 
@@ -1345,17 +1655,6 @@ Public Sub SwapList(index1 As Int, index2 As Int)
 	temp = Data.get(index1)
 	Data.set(index1,Data.get(index2))
 	Data.set(index2,temp)
-'	Dim addindex1 As Boolean = False  ' add after transfer selction to map
-'	Dim addindex2 As Boolean = False
-'	If (SelectedRows.containKey(index1)) Then addindex2 = True
-'	If (SelectedRows.containKey(index2)) Then addindex1 = True
-'	If (addindex1 <> addindex2 AND addindex1 = True) Then 
-'		SelectedRows.Remove(addindex2)
-'		SelectedRows.put(addindex1,addindex1)
-'	Else If (addindex1 <> addindex2 AND addindex2 = True) Then 
-'		SelectedRows.Remove(addindex1)
-'		SelectedRows.put(addindex2,addindex2)	
-'	End If 
 End Sub
 
 ' True to automatically show number of rows in status line, false to turn it off
@@ -1411,21 +1710,21 @@ End Sub
 Public Sub SetCellAlignments(Alignments() As Int)
 	Dim i As Int
 	
-	If Alignments.Length <> NumberOfColumns Then
+	If Alignments.Length <> mNumberOfColumns Then
 		ToastMessageShow("The number of aligments is not equal to the number of columns.", False)
 		Return
 	End If
 	
 	Dim i As Int
-	Dim cAlignments0(NumberOfColumns) As Int
+	Dim cAlignments0(mNumberOfColumns) As Int
 	
-	For i = 0 To NumberOfColumns - 1
+	For i = 0 To mNumberOfColumns - 1
 		cAlignments0 = Alignments
 		cAlignments = cAlignments0
 	Next
 	MultiAlignments = True
 	If Data.Size > 0 Then
-		refreshTable
+		RefreshTable
 	End If
 End Sub
 
@@ -1436,13 +1735,13 @@ Public Sub setCellAlignment(Alignment As Int)
 	Dim i As Int
 	
 	cAlignment = Alignment
-	Dim cAlignments(NumberOfColumns) As Int
-	For i = 0 To NumberOfColumns - 1
+	Dim cAlignments(mNumberOfColumns) As Int
+	For i = 0 To mNumberOfColumns - 1
 		cAlignments(i) = cAlignment
 	Next
 	MultiAlignments = False
 	If Data.Size > 0 Then
-		refreshTable
+		RefreshTable
 	End If
 End Sub
 
@@ -1453,15 +1752,15 @@ End Sub
 Public Sub SetHeaderAlignments(Alignments() As Int)
 	Dim i As Int
 	
-	If Alignments.Length <> NumberOfColumns Then
+	If Alignments.Length <> mNumberOfColumns Then
 		ToastMessageShow("The number of aligments is not equal to the number of columns.", False)
 		Return
 	End If
 	
 	Dim i As Int
-	Dim cHeaderAlignments0(NumberOfColumns) As Int
+	Dim cHeaderAlignments0(mNumberOfColumns) As Int
 	
-	For i = 0 To NumberOfColumns - 1
+	For i = 0 To mNumberOfColumns - 1
 		cHeaderAlignments0 = Alignments
 		cHeaderAlignments = cHeaderAlignments0
 		Dim lbl As Label
@@ -1478,7 +1777,12 @@ Public Sub setHeaderAlignment(Alignment As Int)
 	Dim i As Int
 	
 	cHeaderAlignment = Alignment
-	For i = 0 To NumberOfColumns - 1
+
+	If cHeaderAlignments.Length = 0 Then
+		Private cHeaderAlignments(mNumberOfColumns) As Int
+	End If
+	
+	For i = 0 To mNumberOfColumns - 1
 		cHeaderAlignments(i) = cHeaderAlignment
 		Dim lbl As Label
 		lbl = Header.GetView(i)
@@ -1494,10 +1798,15 @@ End Sub
 'sets or gets the header height
 Public Sub setHeaderHeight(Height As Int)
 	cHeaderHeight = Height
-		If Header.IsInitialized Then
+	If Header.IsInitialized Then
 		Header.Height = cHeaderHeight
+		For i = 0 To mNumberOfColumns - 1
+			Dim lbl As Label
+			lbl = Header.GetView(i)
+			lbl.Height = Height
+		Next
 		SV.Top = cHeaderHeight
-		If showStatusLine = True Then
+		If cShowStatusLine = True Then
 			SV.Height = pnlTable.Height - cHeaderHeight - cRowHeight
 		Else
 			SV.Height = pnlTable.Height - cHeaderHeight
@@ -1531,7 +1840,7 @@ End Sub
 Public Sub setRowColor1(Color As Int)
 	cRowColor1 = Color
 	If pnlTable.IsInitialized Then
-		innerClearAll(NumberOfColumns)
+		innerClearAll(mNumberOfColumns)
 	End If
 End Sub
 
@@ -1543,7 +1852,7 @@ End Sub
 Public Sub setRowColor2(Color As Int)
 	cRowColor2 = Color
 	If pnlTable.IsInitialized Then
-		innerClearAll(NumberOfColumns)
+		innerClearAll(mNumberOfColumns)
 	End If
 End Sub
 
@@ -1555,7 +1864,7 @@ End Sub
 Public Sub setSelectedRowColor(Color As Int)
 	cSelectedRowColor = Color
 	If pnlTable.IsInitialized Then
-		innerClearAll(NumberOfColumns)
+		innerClearAll(mNumberOfColumns)
 	End If
 End Sub
 
@@ -1567,7 +1876,7 @@ End Sub
 Public Sub setSelectedCellColor(Color As Int)
 	cSelectedCellColor = Color
 	If pnlTable.IsInitialized Then
-		innerClearAll(NumberOfColumns)
+		innerClearAll(mNumberOfColumns)
 	End If
 End Sub
 
@@ -1578,9 +1887,11 @@ End Sub
 'sets or gets the table color (color of lines between cells)
 Public Sub setTableColor(Color As Int)
 	cTableColor = Color
-	SV.Panel.Color = cTableColor
-	If Header.IsInitialized Then
-		Header.Color = cTableColor
+	If SV.IsInitialized = True Then
+		SV.Panel.Color = cTableColor
+		If Header.IsInitialized Then
+			Header.Color = cTableColor
+		End If
 	End If
 End Sub
 
@@ -1591,12 +1902,14 @@ End Sub
 'sets or gets the cell text color
 Public Sub setTextColor(Color As Int)
 	cTextColor = Color
-	Dim i As Int
-	For i = 0 To SV.Panel.NumberOfViews - 1
-		Dim lbl As Label
-		lbl = SV.Panel.GetView(i)
-		lbl.TextColor = cTextColor
-	Next
+	If SV.IsInitialized = True Then
+		Dim i As Int
+		For i = 0 To SV.Panel.NumberOfViews - 1
+			Dim lbl As Label
+			lbl = SV.Panel.GetView(i)
+			lbl.TextColor = cTextColor
+		Next
+	End If
 End Sub
 
 Public Sub getTextColor As Int
@@ -1606,19 +1919,24 @@ End Sub
 'sets or gets the cell text size
 Public Sub setTextSize(Size As Float)
 	cTextSize = Size
-	Dim i As Int
 	
-	For i = 0 To Header.NumberOfViews - 1
-		Dim lbl As Label
-		lbl = Header.GetView(i)
-		lbl.TextSize = cTextSize
-	Next
+	Private i As Int
+	
+	If Header.IsInitialized Then
+		For i = 0 To Header.NumberOfViews - 1
+			Dim lbl As Label
+			lbl = Header.GetView(i)
+			lbl.TextSize = cTextSize
+		Next
+	End If
 
-	For i = 0 To SV.Panel.NumberOfViews - 1
-		Dim lbl As Label
-		lbl = SV.Panel.GetView(i)
-		lbl.TextSize = cTextSize
-	Next
+	If SV.IsInitialized = True Then
+		For i = 0 To SV.Panel.NumberOfViews - 1
+			Dim lbl As Label
+			lbl = SV.Panel.GetView(i)
+			lbl.TextSize = cTextSize
+		Next
+	End If
 End Sub
 
 Public Sub getTextSize As Float
@@ -1645,7 +1963,7 @@ End Sub
 'tf = Array As Typeface(Typeface.DEFAULT, Typeface.DEFAULT_BOLD, , Typeface.DEFAULT, Typeface.DEFAULT_BOLD)
 'Table1.SetTypeFaces(tf)</code>
 Public Sub SetTypeFaces(TypeFaces() As Typeface)
-	If TypeFaces.Length <> NumberOfColumns Then
+	If TypeFaces.Length <> mNumberOfColumns Then
 		ToastMessageShow("Invalid number of columns", False)
 		Return
 	End If
@@ -1659,7 +1977,20 @@ Public Sub SetTypeFaces(TypeFaces() As Typeface)
 	End If
 	
 	If Data.Size > 0 Then
-		refreshTable
+		Private i, j As Int
+		For i = 0 To LabelsCache.Size - 1
+			Private lbls() As Label
+			lbls = LabelsCache.Get(i)
+			For j = 0 To lbls.Length - 1
+				If MultiTypeFace = True Then
+					lbls(j).Typeface = cTypeFaces(j)
+				Else
+					lbls(j).Typeface = cTypeFace
+				End If
+			Next
+		Next
+		
+		RefreshTable
 	End If
 End Sub
 
@@ -1674,16 +2005,18 @@ Public Sub LoadSQLiteDB(SQLite As SQL, Query As String, AutomaticWidths As Boole
 	Curs = SQLite.ExecQuery(Query)
 	
 	cAutomaticWidths = AutomaticWidths
-	NumberOfColumns = Curs.ColumnCount
-	innerClearAll(NumberOfColumns)
+	mNumberOfColumns = Curs.ColumnCount
+	innerClearAll(mNumberOfColumns)
 	
-	Dim Headers(NumberOfColumns) As String
-	Dim ColumnWidths(NumberOfColumns) As Int
-	Dim HeaderWidths(NumberOfColumns) As Int
-	Dim DataWidths(NumberOfColumns) As Int
+	Dim Headers(mNumberOfColumns) As String
+	Dim ColumnWidths(mNumberOfColumns) As Int
+	Dim HeaderWidths(mNumberOfColumns) As Int
+	Dim DataWidths(mNumberOfColumns) As Int
+	Dim cColumnDataType(mNumberOfColumns) As String
 	Dim col, row As Int
 	Dim str As String
-	For col = 0 To NumberOfColumns - 1
+	For col = 0 To mNumberOfColumns - 1
+		cColumnDataType(col) = "TEXT"
 		Headers(col) = Curs.GetColumnName(col)
 		If AutomaticWidths = False Then
 			ColumnWidths(col) = 130dip
@@ -1706,8 +2039,8 @@ Public Sub LoadSQLiteDB(SQLite As SQL, Query As String, AutomaticWidths As Boole
 	SetColumnsWidths(ColumnWidths)
 	
 	For row = 0 To Curs.RowCount - 1
-		Dim R(NumberOfColumns), str As String
-		For col = 0 To NumberOfColumns - 1
+		Dim R(mNumberOfColumns), str As String
+		For col = 0 To mNumberOfColumns - 1
 			Curs.Position = row
 			str = Curs.GetString2(col)
 			If str <> Null Then
@@ -1720,6 +2053,8 @@ Public Sub LoadSQLiteDB(SQLite As SQL, Query As String, AutomaticWidths As Boole
 	Next
 	
 	Curs.Close
+	
+'	Log(Data.Size)
 End Sub
 
 'load data from a SQLite database
@@ -1731,24 +2066,30 @@ End Sub
 '		"R" = REAL
 '		"T" = TEXT
 'Example:
-'<Table1.LoadSQLiteDB2(SQL1, "SELECT * FROM Test", True, Array As String("I", "T", "R", "I"))\>
+'<code>Table1.LoadSQLiteDB2(SQL1, "SELECT * FROM Test", True, Array As String("I", "T", "R", "I"))</code>
 Public Sub LoadSQLiteDB2(SQLite As SQL, Query As String, AutomaticWidths As Boolean, ColumnDataTypes() As String)
 	Dim Curs As Cursor
 	Curs = SQLite.ExecQuery(Query)
 	
 	cAutomaticWidths = AutomaticWidths
-	NumberOfColumns = Curs.ColumnCount
-	innerClearAll(NumberOfColumns)
+	mNumberOfColumns = Curs.ColumnCount
+	innerClearAll(mNumberOfColumns)
 	
-	Dim Headers(NumberOfColumns) As String
-	Dim ColumnWidths(NumberOfColumns) As Int
-	Dim HeaderWidths(NumberOfColumns) As Int
-	Dim DataWidths(NumberOfColumns) As Int
+	Dim Headers(mNumberOfColumns) As String
+	Dim ColumnWidths(mNumberOfColumns) As Int
+	Dim HeaderWidths(mNumberOfColumns) As Int
+	Dim DataWidths(mNumberOfColumns) As Int
+	Dim cColumnDataType(mNumberOfColumns) As String
 	Dim col, row As Int
 	Dim ii As Long
 	Dim dd As Double
 	Dim str As String
-	For col = 0 To NumberOfColumns - 1
+	For col = 0 To mNumberOfColumns - 1
+		If ColumnDataTypes(col) = "T" Then
+			cColumnDataType(col) = "TEXT"
+		Else
+			cColumnDataType(col) = "NUMBER"
+		End If
 		Headers(col) = Curs.GetColumnName(col)
 		If AutomaticWidths = False Then
 			ColumnWidths(col) = 130dip
@@ -1782,8 +2123,8 @@ Public Sub LoadSQLiteDB2(SQLite As SQL, Query As String, AutomaticWidths As Bool
 
 	For row = 0 To Curs.RowCount - 1
 		Curs.Position = row
-		Dim R(NumberOfColumns), str As String
-		For col = 0 To NumberOfColumns - 1
+		Dim R(mNumberOfColumns), str As String
+		For col = 0 To mNumberOfColumns - 1
 			str = Curs.GetString2(col)
 			If str = Null Then
 				R(col) = ""
@@ -1802,20 +2143,78 @@ Public Sub LoadSQLiteDB2(SQLite As SQL, Query As String, AutomaticWidths As Bool
 				End Select
 			End If
 		Next
-		AddRow(R) 
+		AddRow(R)
 	Next
 	
 	Curs.Close
 End Sub
 
+'load data from a SQLite database
+'uses SQL.ExecQuery2, the query can include question marks which will be replaced with the values in the array.
+'SQLite = SQL object
+'Query = SQLite query
+'Values = Array of Strings with the values
+'AutomaticWidths  True > set the column widths automaticaly
+'ATTENTION: if you expect REAL numbers with more than 7 digits you should use LoadSQLiteDB2
+'SQLite limits REAL numbers converted to Strings like Floats (7 digits) not Doubles
+Public Sub LoadSQLiteDB3(SQLite As SQL, Query As String, Values() As String, AutomaticWidths As Boolean)
+	Dim Curs As Cursor
+	Curs = SQLite.ExecQuery2(Query, Values)
+	
+	cAutomaticWidths = AutomaticWidths
+	mNumberOfColumns = Curs.ColumnCount
+	innerClearAll(mNumberOfColumns)
+	
+	Dim Headers(mNumberOfColumns) As String
+	Dim ColumnWidths(mNumberOfColumns) As Int
+	Dim HeaderWidths(mNumberOfColumns) As Int
+	Dim DataWidths(mNumberOfColumns) As Int
+	Dim cColumnDataType(mNumberOfColumns) As String
+	Dim col, row As Int
+	Dim str As String
+	For col = 0 To mNumberOfColumns - 1
+		cColumnDataType(col) = "TEXT"
+		Headers(col) = Curs.GetColumnName(col)
+		If AutomaticWidths = False Then
+			ColumnWidths(col) = 130dip
+			HeaderWidths(col) = 130dip
+			DataWidths(col) = 130dip
+		Else
+			HeaderWidths(col) = cvs.MeasureStringWidth(Headers(col), Typeface.DEFAULT, cTextSize) + ExtraWidth
+			DataWidths(col) = 0
+			For row = 0 To Curs.RowCount - 1
+				Curs.Position = row
+				str = Curs.GetString2(col)
+				If str <> Null Then
+					DataWidths(col) = Max(DataWidths(col), cvs.MeasureStringWidth(str, Typeface.DEFAULT, cTextSize) + ExtraWidth)
+				End If
+			Next
+			ColumnWidths(col) = Max(HeaderWidths(col), DataWidths(col))
+		End If
+	Next
+	SetHeader(Headers)
+	SetColumnsWidths(ColumnWidths)
+	
+	For row = 0 To Curs.RowCount - 1
+		Dim R(mNumberOfColumns), str As String
+		For col = 0 To mNumberOfColumns - 1
+			Curs.Position = row
+			str = Curs.GetString2(col)
+			If str <> Null Then
+				R(col) = str
+			Else
+				R(col) = ""
+			End If
+		Next
+		AddRow(R) 
+	Next
+	
+	Curs.Close
+	
+'	Log(Data.Size)
+End Sub
 Public Sub RemoveView
 	pnlTable.RemoveView
-End Sub
-
-Private Sub SetPadding(v As View, Left As Int, Top As Int, Right As Int, Bottom As Int)
-	Dim r As Reflector
-	r.Target = v
-	r.RunMethod4("setPadding", Array As Object(Left, Top, Right, Bottom), Array As String("java.lang.int", "java.lang.int", "java.lang.int", "java.lang.int"))
 End Sub
 
 'A Header click sorts the selected column If SortColum = True 
@@ -1832,9 +2231,9 @@ Public Sub setUseColumnColors(UseColumnColors As Boolean)
 	cUseColumnColors = UseColumnColors
 	If cColumnColors.Length = 0 Then
 		Dim i As Int
-		Dim cColumnColors(NumberOfColumns) As Int
-		Dim cTextColors(NumberOfColumns) As Int
-		For i = 0 To NumberOfColumns - 1
+		Dim cColumnColors(mNumberOfColumns) As Int
+		Dim cTextColors(mNumberOfColumns) As Int
+		For i = 0 To mNumberOfColumns - 1
 			If i Mod 2 = 0 Then
 				cColumnColors(i) = cRowColor1
 			Else
@@ -1844,11 +2243,11 @@ Public Sub setUseColumnColors(UseColumnColors As Boolean)
 		Next
 	End If
 	
-		If cHeaderColors.Length = 0 Then
+	If cHeaderColors.Length = 0 Then
 		Dim i As Int
-		Dim cHeaderColors(NumberOfColumns) As Int
-		Dim cHeaderTextColors(NumberOfColumns) As Int
-		For i = 0 To NumberOfColumns - 1
+		Dim cHeaderColors(mNumberOfColumns) As Int
+		Dim cHeaderTextColors(mNumberOfColumns) As Int
+		For i = 0 To mNumberOfColumns - 1
 			cHeaderColors(i) = cHeaderColor
 			cHeaderTextColors(i) = cHeaderTextColor
 		Next
@@ -1891,6 +2290,34 @@ Public Sub SetHeaderTextColors(HeaderTextColors() As Int)
 	cHeaderTextColors = HeaderTextColors
 End Sub
 
+'Sets the colors for each Header text
+Public Sub SetHeaderTypeFaces(HeaderTypeFaces() As Typeface)
+	Private col As Int
+	
+	If HeaderTypeFaces.Length <> mNumberOfColumns Then
+		ToastMessageShow("Invalid number of columns", False)
+		Log("SetHeaderTypeFaces: Invalid number of columns")
+		Return
+	End If
+	
+	If HeaderTypeFaces.Length = 1 Then
+		cHeaderTypeFace = HeaderTypeFaces(0)
+		HeaderMultiTypeFace = False
+	Else
+		cHeaderTypeFaces = HeaderTypeFaces
+		HeaderMultiTypeFace = True
+	End If
+	
+	If Header.NumberOfViews > 0 Then
+		For col = 0 To mNumberOfColumns - 1
+			Private lbl As Label
+			lbl = Header.GetView(col)
+			Log(lbl.Text)
+			lbl.Typeface = cHeaderTypeFaces(col)
+		Next		
+	End If
+End Sub
+
 Public Sub GetHeaderTextColors As Int()
 	Return cHeaderTextColors
 End Sub
@@ -1906,12 +2333,12 @@ End Sub
 
 Public Sub SetAutomaticWidths
 	Dim row, col As Int
-	Dim Vals(NumberOfColumns) As String
-	Dim Width, Widths(NumberOfColumns) As Int
+	Dim Vals(mNumberOfColumns) As String
+	Dim Width, Widths(mNumberOfColumns) As Int
 	
 	cAutomaticWidths = True
 	
-	For col = 0 To NumberOfColumns - 1
+	For col = 0 To mNumberOfColumns - 1
 		If MultiTypeFace = False Then
 			Widths(col) = cvs.MeasureStringWidth(HeaderNames.Get(col), cTypeFace, cTextSize) + ExtraWidth
 		Else
@@ -1931,4 +2358,158 @@ Public Sub SetAutomaticWidths
 		Next
 	Next
 	SetColumnsWidths(Widths)
+End Sub
+
+'True shows the status line at the bottom
+Public Sub setShowStatusLine(ShowStatusLine As Boolean)
+	cShowStatusLine = ShowStatusLine
+	If cShowStatusLine = True Then
+		SV.Height = cHeight - Header.Height - cRowHeight
+	Else
+		SV.Height = cHeight - Header.Height
+	End If
+End Sub
+
+Public Sub getShowStatusLine As Boolean
+	Return cShowStatusLine
+End Sub
+
+'Gets the base Panel of the Table
+Public Sub getPanel As Panel
+	Return pnlTable
+End Sub
+
+'Scales the Table with the two scale factors.
+'This routine is useful with Scale Module.
+' It must be called before filling the Table.
+'ScaleX = horizontal sclae factor
+'ScaleY = Vertical sclae factor
+'ScaleAllDone = True if ScaleAll of the Scale Module was already used
+'ScaleAllDone = False if ScaleAll of the Scale Module was not used
+Public Sub ScaleTable(ScaleX As Double, ScaleY As Double, ScaleAllDone As Boolean)
+	If Data.Size > 0 Then
+		ToastMessageShow("Table.ScaleTAble must be called before filling the Table", False) 
+		Log("Table.ScaleTable must be called before filling the Table")
+		Return
+	End If
+
+	cTextSize = cTextSize * Min(ScaleX, ScaleY)
+	cLineWidth = cLineWidth * ScaleX
+	ExtraWidth = ExtraWidth * ScaleX
+	cRowHeight  = cRowHeight * ScaleY
+	cHeaderHeight = cHeaderHeight * ScaleY
+	For i = 0 To mNumberOfColumns - 1
+		ColumnWidths(i) = ColumnWidths(i) * ScaleX
+		DataWidths(i) = DataWidths(i) * ScaleX
+		HeaderWidths(i) = HeaderWidths(i)	* ScaleX
+		SavedWidths(i) = SavedWidths(i)	* ScaleX
+	Next
+		
+	If ScaleAllDone = False Then
+		cLeft = cLeft * ScaleX
+		cTop = cTop * ScaleY
+		cWidth = cWidth * ScaleX
+		cHeight = cHeight * ScaleY
+		
+		pnlTable.Left = cLeft
+		pnlTable.Top = cTop
+		pnlTable.Width = cWidth
+		pnlTable.Height = cHeight
+		Header.Height = cHeaderHeight
+		SV.Width = cWidth
+		SV.Top = cHeaderHeight
+		If (cShowStatusLine = True) Then
+			SV.Height = cHeight - cRowHeight - cHeaderHeight
+		Else
+			SV.Height = cHeight - cHeaderHeight 
+		End If
+		lblStatusLine.TextSize = cTextSize
+		lblStatusLine.Height = cRowHeight
+		lblStatusLine.Top = SV.Top + SV.Height
+	End If
+	CreateNewLabels
+End Sub
+
+'Gets or sets the Table Tag
+Public Sub setTag(Tag As Object)
+	pnlTable.Tag = Tag
+End Sub
+
+Public Sub getTag As Int
+	Return pnlTable.Tag
+End Sub
+
+'sets the data type of a column
+'Col = index of the column
+'DataType can be either "TEXT" or "NUMBER"
+Public Sub SetColumnDataType(Col As Int, DataType As String)
+	If Col < 0 Or Col > mNumberOfColumns - 1 Then
+		ToastMessageShow("Wrong column index", False)
+		Return
+	End If
+
+	If DataType <> "TEXT" And DataType <> "NUMBER" Then
+		ToastMessageShow("Wrong data type only TEXT abd NUMBER are allowed", False)
+		Return		
+	End If
+
+	cColumnDataType(Col) = DataType
+End Sub
+
+'sets the data type of all columns
+'Col = index of the column
+'DataType() array, can be either "TEXT" or "NUMBER"
+'Example:
+'<code>SetColumnDataTypes(Array As String("NUMBER", "TEXT", "TEXT", "TEXT", "NUMBER")</code>
+Public Sub SetColumnDataTypes(DataType() As String)
+	If DataType.Length <> mNumberOfColumns Then
+		ToastMessageShow("Wrong number of columns", False)
+		Return
+	End If
+	
+	For Col = 0 To mNumberOfColumns - 1
+		If DataType(Col) <> "TEXT" And DataType(Col) <> "NUMBER" Then
+			ToastMessageShow("Wrong data type only TEXT abd NUMBER are allowed", False)
+			Return		
+		End If	
+	Next
+	
+	cColumnDataType = DataType
+End Sub
+
+'gets the number of columns, read only
+Public Sub getNumberOfColumns As Int
+	Return mNumberOfColumns
+End Sub
+
+'gets the number of rowsolumns, read only
+Public Sub getNumberOfRows As Int
+	Return Data.Size
+End Sub
+
+'gets or sets the SortRemoveAccents property
+'Sorts without accented characters. 
+'Removes the accents for a correct sorting. 
+'This can slow down the sorting.
+Public Sub getSortRemoveAccents As Boolean
+	Return cSortRemoveAccents
+End Sub
+
+Public Sub setSortRemoveAccents(SortRemoveAccents As Boolean)
+	cSortRemoveAccents = SortRemoveAccents
+End Sub
+
+'returns a new string without accented characters
+Private Sub RemoveAccents(s As String) As String
+	Dim normalizer As JavaObject
+	normalizer.InitializeStatic("java.text.Normalizer")
+	Dim n As String = normalizer.RunMethod("normalize", Array As Object(s, "NFD"))
+	Dim sb As StringBuilder
+	sb.Initialize
+	For i = 0 To n.Length - 1
+		If Regex.IsMatch("\p{InCombiningDiacriticalMarks}", n.CharAt(i)) = False  Then
+			sb.Append(n.CharAt(i))
+		End If
+	Next
+	Return sb.ToString
 End Sub

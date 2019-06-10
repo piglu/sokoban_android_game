@@ -61,7 +61,7 @@ public class main extends Activity implements B4AActivity{
 		setContentView(layout);
 		afterFirstLayout = false;
         WaitForLayout wl = new WaitForLayout();
-        if (anywheresoftware.b4a.objects.ServiceHelper.StarterHelper.startFromActivity(this, processBA, wl, false))
+        if (anywheresoftware.b4a.objects.ServiceHelper.StarterHelper.startFromActivity(processBA, wl, false))
 		    BA.handler.postDelayed(wl, 5);
 
 	}
@@ -526,7 +526,7 @@ _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3(mostCurrent._lbltitleauto
  //BA.debugLineNum = 174;BA.debugLine="If File.Exists(Starter.SourceFolder, ime_d & \".in";
 if (anywheresoftware.b4a.keywords.Common.File.Exists(mostCurrent._vvvvvvv5._vv1,_ime_d+".info")) { 
  //BA.debugLineNum = 175;BA.debugLine="Log(\"info postoji!\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("635192849","info postoji!",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2327697","info postoji!",0);
  //BA.debugLineNum = 176;BA.debugLine="Dim list_info As List";
 _list_info = new anywheresoftware.b4a.objects.collections.List();
  //BA.debugLineNum = 177;BA.debugLine="list_info.Initialize";
@@ -665,7 +665,7 @@ _s = BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
  //BA.debugLineNum = 281;BA.debugLine="If s.Length > 0 Then";
 if (_s.length()>0) { 
  //BA.debugLineNum = 282;BA.debugLine="Log(Email.Get(index))";
-anywheresoftware.b4a.keywords.Common.LogImpl("636044807",BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Get(_index)),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2655367",BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3.Get(_index)),0);
  //BA.debugLineNum = 283;BA.debugLine="Dim res As Int = Msgbox2(\"Send e-mail to author?";
 _res = anywheresoftware.b4a.keywords.Common.Msgbox2(BA.ObjectToCharSequence("Send e-mail to author?"),BA.ObjectToCharSequence("Question"),"Yes","","No",(android.graphics.Bitmap)(anywheresoftware.b4a.keywords.Common.LoadBitmapSample(anywheresoftware.b4a.keywords.Common.File.getDirAssets(),"upitnik.png",anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (32)),anywheresoftware.b4a.keywords.Common.DipToCurrent((int) (32))).getObject()),mostCurrent.activityBA);
  //BA.debugLineNum = 285;BA.debugLine="If res = DialogResponse.POSITIVE Then";
@@ -734,7 +734,7 @@ _s = BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4.Get(_in
 if (_s.contains("'")) { 
 _s = _s.replace("'","''");};
  //BA.debugLineNum = 321;BA.debugLine="Log(\"odabir -> imgPlay_Click -> Title -> \" & s &";
-anywheresoftware.b4a.keywords.Common.LogImpl("636175879","odabir -> imgPlay_Click -> Title -> "+_s+" by "+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5.Get(_index)),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2786439","odabir -> imgPlay_Click -> Title -> "+_s+" by "+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5.Get(_index)),0);
  //BA.debugLineNum = 322;BA.debugLine="zaSolutionIme = s & \" by \" & Autor.Get(index)";
 _vvv0 = _s+" by "+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5.Get(_index));
  //BA.debugLineNum = 323;BA.debugLine="Dim q As String = \"SELECT imeDat, brojRazina, dat";
@@ -791,7 +791,7 @@ _s = BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4.Get(_in
 if (_s.contains("'")) { 
 _s = _s.replace("'","''");};
  //BA.debugLineNum = 253;BA.debugLine="Log(\"odabir -> imgSolution_Click -> Title -> \" &";
-anywheresoftware.b4a.keywords.Common.LogImpl("635454982","odabir -> imgSolution_Click -> Title -> "+_s+" by "+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5.Get(_index)),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2524294","odabir -> imgSolution_Click -> Title -> "+_s+" by "+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5.Get(_index)),0);
  //BA.debugLineNum = 254;BA.debugLine="zaSolutionIme = s & \" by \" & Autor.Get(index)";
 _vvv0 = _s+" by "+BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5.Get(_index));
  //BA.debugLineNum = 256;BA.debugLine="StartActivity(rijesenja)";
@@ -886,7 +886,7 @@ _res = anywheresoftware.b4a.keywords.Common.Msgbox2(BA.ObjectToCharSequence("Ope
  //BA.debugLineNum = 305;BA.debugLine="If res = DialogResponse.POSITIVE Then";
 if (_res==anywheresoftware.b4a.keywords.Common.DialogResponse.POSITIVE) { 
  //BA.debugLineNum = 306;BA.debugLine="Log(Url.Get(index))";
-anywheresoftware.b4a.keywords.Common.LogImpl("636110347",BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4.Get(_index)),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("2720907",BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4.Get(_index)),0);
  //BA.debugLineNum = 307;BA.debugLine="StartActivity(p.OpenBrowser(Url.Get(index)))";
 anywheresoftware.b4a.keywords.Common.StartActivity(processBA,(Object)(_p.OpenBrowser(BA.ObjectToString(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv4.Get(_index)))));
  };

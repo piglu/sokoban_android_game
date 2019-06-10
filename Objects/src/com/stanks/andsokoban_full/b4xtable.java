@@ -353,7 +353,7 @@ case 7:
 this.state = 61;
 if (_row==-1) { 
 this.state = 9;
-}else if(parent._vvvvvvvvvvvvvvvv7.getSize()>0) { 
+}else {
 this.state = 20;
 }if (true) break;
 
@@ -810,7 +810,7 @@ case 9:
 //C
 this.state = 10;
  //BA.debugLineNum = 153;BA.debugLine="Log(\"closing old db.\")";
-parent.__c.LogImpl("9983053","closing old db.",0);
+parent.__c.LogImpl("99764877","closing old db.",0);
  //BA.debugLineNum = 154;BA.debugLine="OldSQL.Close";
 _oldsql.Close();
  if (true) break;
@@ -1730,7 +1730,7 @@ case 67:
 //C
 this.state = 68;
  //BA.debugLineNum = 395;BA.debugLine="Log(LastException)";
-parent.__c.LogImpl("91441869",BA.ObjectToString(parent.__c.LastException(ba)),0);
+parent.__c.LogImpl("910223693",BA.ObjectToString(parent.__c.LastException(ba)),0);
  if (true) break;
 ;
  //BA.debugLineNum = 397;BA.debugLine="If xui.SubExists(mCallBack, mEventName & \"_DataUp";

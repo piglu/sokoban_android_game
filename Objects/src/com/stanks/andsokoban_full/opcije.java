@@ -61,7 +61,7 @@ public class opcije extends Activity implements B4AActivity{
 		setContentView(layout);
 		afterFirstLayout = false;
         WaitForLayout wl = new WaitForLayout();
-        if (anywheresoftware.b4a.objects.ServiceHelper.StarterHelper.startFromActivity(this, processBA, wl, false))
+        if (anywheresoftware.b4a.objects.ServiceHelper.StarterHelper.startFromActivity(processBA, wl, false))
 		    BA.handler.postDelayed(wl, 5);
 
 	}
@@ -463,7 +463,7 @@ anywheresoftware.b4a.keywords.Common.File.Delete(mostCurrent._vvvvvvv5._vv1+"/sk
 anywheresoftware.b4a.keywords.Common.File.Delete(mostCurrent._vvvvvvv5._vv1+"/skins/","Neon");
  };
  //BA.debugLineNum = 136;BA.debugLine="Log(Starter.SourceFolder & \"/skins\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("631391799",mostCurrent._vvvvvvv5._vv1+"/skins",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("27012407",mostCurrent._vvvvvvv5._vv1+"/skins",0);
  //BA.debugLineNum = 137;BA.debugLine="Dim l As List = ProcitajSveFoldereUSkinDir(Starte";
 _l = new anywheresoftware.b4a.objects.collections.List();
 _l = _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(mostCurrent._vvvvvvv5._vv1+"/skins");
@@ -692,7 +692,7 @@ return "";
 public static String  _cb_checkedchange(boolean _checked) throws Exception{
  //BA.debugLineNum = 249;BA.debugLine="Sub cb_CheckedChange(Checked As Boolean)";
  //BA.debugLineNum = 250;BA.debugLine="Log(\"cb: \" & Checked)";
-anywheresoftware.b4a.keywords.Common.LogImpl("631719425","cb: "+BA.ObjectToString(_checked),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("27340033","cb: "+BA.ObjectToString(_checked),0);
  //BA.debugLineNum = 251;BA.debugLine="cb = Checked";
 _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = _checked;
  //BA.debugLineNum = 252;BA.debugLine="mOpcije.Put(\"cb\", cb)";

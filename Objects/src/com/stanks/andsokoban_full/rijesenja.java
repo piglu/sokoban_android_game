@@ -61,7 +61,7 @@ public class rijesenja extends Activity implements B4AActivity{
 		setContentView(layout);
 		afterFirstLayout = false;
         WaitForLayout wl = new WaitForLayout();
-        if (anywheresoftware.b4a.objects.ServiceHelper.StarterHelper.startFromActivity(this, processBA, wl, false))
+        if (anywheresoftware.b4a.objects.ServiceHelper.StarterHelper.startFromActivity(processBA, wl, false))
 		    BA.handler.postDelayed(wl, 5);
 
 	}
@@ -420,9 +420,9 @@ anywheresoftware.b4a.objects.collections.List _tmplist = null;
 int _i = 0;
  //BA.debugLineNum = 81;BA.debugLine="Sub UbaciRijesenjaUTablicu";
  //BA.debugLineNum = 82;BA.debugLine="Log(video.listaRijesenja.Size)";
-anywheresoftware.b4a.keywords.Common.LogImpl("610289153",BA.NumberToString(mostCurrent._vvvvvvv0._vvvv1.getSize()),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("26684673",BA.NumberToString(mostCurrent._vvvvvvv0._vvvv1.getSize()),0);
  //BA.debugLineNum = 83;BA.debugLine="Log(video.listaRijesenjaText.Size)";
-anywheresoftware.b4a.keywords.Common.LogImpl("610289154",BA.NumberToString(mostCurrent._vvvvvvv0._vvvv2.getSize()),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("26684674",BA.NumberToString(mostCurrent._vvvvvvv0._vvvv2.getSize()),0);
  //BA.debugLineNum = 85;BA.debugLine="Dim bk, bg, rij, tmplist As List";
 _bk = new anywheresoftware.b4a.objects.collections.List();
 _bg = new anywheresoftware.b4a.objects.collections.List();

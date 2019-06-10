@@ -18,7 +18,7 @@ End Sub
 Sub Globals
 	'These global variables will be redeclared each time the activity is created.
 	'These variables can only be accessed from this module.
-	Dim rijT As B4XTable
+	Dim rijT As Table
 	Dim rijP As Panel
 	Dim lblTitle As Label
 '	Dim auth As DbxAuth
@@ -49,12 +49,12 @@ Sub Activity_Create(FirstTime As Boolean)
 
 '	rijT.Initialize(Me, "", 3, Gravity.CENTER_HORIZONTAL, False)
 	rijT.Initialize(Me, "")
-'	rijT.CellAlignment = Bit.Or(Gravity.CENTER_HORIZONTAL, Gravity.CENTER_VERTICAL)
+	rijT.CellAlignment = Bit.Or(Gravity.CENTER_HORIZONTAL, Gravity.CENTER_VERTICAL)
 	rijT.RowHeight = 20dip
-'	rijT.AddToActivity(rijP, 0, 0, rijP.Width, rijP.Height)
-'	rijT.SetHeader(Array As String("Title", "Level Name", "Pushes", "Steps", "Download"))
-'	rijT.SetColumnsWidths(Array As Int(33%x, 33%x, 33%x, 33%x, 33%x))
-'	rijT.TextSize = 10.0
+	rijT.AddToActivity(rijP, 0, 0, rijP.Width, rijP.Height)
+	rijT.SetHeader(Array As String("Title", "Level Name", "Pushes", "Steps", "Download"))
+	rijT.SetColumnsWidths(Array As Int(33%x, 33%x, 33%x, 33%x, 33%x))
+	rijT.TextSize = 10.0
 
 '	Dim dummy As String
 '	dummy = Starter.kvs.GetSimple("token")
@@ -81,7 +81,7 @@ Sub Activity_Create(FirstTime As Boolean)
 '	auth.Initialize("ea41vz8owssfdhq")
 '	downloadrunning = False
 
-'	UbaciRijesenjaUTablicu
+	UbaciRijesenjaUTablicu
 End Sub
 
 Sub UbaciRijesenjaUTablicu
