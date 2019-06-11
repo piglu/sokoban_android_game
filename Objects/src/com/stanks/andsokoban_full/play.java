@@ -765,7 +765,7 @@ _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = any
  //BA.debugLineNum = 1096;BA.debugLine="If razina < ukupno_razina-1 Then";
 if (_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3<_ukupno_razina-1) { 
  //BA.debugLineNum = 1097;BA.debugLine="Log(\"razina|ukupno razina: \" & razina & \"|\" &";
-anywheresoftware.b4a.keywords.Common.LogImpl("33145978","razina|ukupno razina: "+BA.NumberToString(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3)+"|"+BA.NumberToString(_ukupno_razina),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("83145978","razina|ukupno razina: "+BA.NumberToString(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3)+"|"+BA.NumberToString(_ukupno_razina),0);
  //BA.debugLineNum = 1099;BA.debugLine="razina = razina + 1";
 _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = (int) (_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3+1);
  //BA.debugLineNum = 1100;BA.debugLine="ParsajRazine(Main.datZaParsanjeRazina)";
@@ -810,7 +810,7 @@ _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0 = any
  //BA.debugLineNum = 1122;BA.debugLine="If razina < ukupno_razina And razina > 0 Then";
 if (_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3<_ukupno_razina && _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3>0) { 
  //BA.debugLineNum = 1123;BA.debugLine="Log(\"razina|ukupno razina: \" & razina & \"|\" &";
-anywheresoftware.b4a.keywords.Common.LogImpl("33146004","razina|ukupno razina: "+BA.NumberToString(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3)+"|"+BA.NumberToString(_ukupno_razina),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("83146004","razina|ukupno razina: "+BA.NumberToString(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3)+"|"+BA.NumberToString(_ukupno_razina),0);
  //BA.debugLineNum = 1125;BA.debugLine="razina = razina - 1";
 _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = (int) (_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3-1);
  //BA.debugLineNum = 1126;BA.debugLine="ParsajRazine(Main.datZaParsanjeRazina)";
@@ -917,11 +917,11 @@ return "";
 public static String  _btnok_click() throws Exception{
  //BA.debugLineNum = 2093;BA.debugLine="Sub btnOK_Click";
  //BA.debugLineNum = 2094;BA.debugLine="Log(rijesenje)";
-anywheresoftware.b4a.keywords.Common.LogImpl("34390913",mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("84390913",mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7,0);
  //BA.debugLineNum = 2095;BA.debugLine="rijesenje = \"\"";
 mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = "";
  //BA.debugLineNum = 2096;BA.debugLine="Log(razina)";
-anywheresoftware.b4a.keywords.Common.LogImpl("34390915",BA.NumberToString(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("84390915",BA.NumberToString(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3),0);
  //BA.debugLineNum = 2097;BA.debugLine="razina = razina + 1";
 _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3 = (int) (_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3+1);
  //BA.debugLineNum = 2098;BA.debugLine="If razina = ukupno_razina Then";
@@ -945,7 +945,7 @@ _vv4.setEnabled(anywheresoftware.b4a.keywords.Common.False);
  //BA.debugLineNum = 2112;BA.debugLine="panelGotovo.RemoveView";
 mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.RemoveView();
  //BA.debugLineNum = 2113;BA.debugLine="Log(\"btnOK_Click: \" & razina)";
-anywheresoftware.b4a.keywords.Common.LogImpl("34390932","btnOK_Click: "+BA.NumberToString(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("84390932","btnOK_Click: "+BA.NumberToString(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3),0);
  //BA.debugLineNum = 2115;BA.debugLine="izgRazineOdIndeksaPoc = izgRazineDoIndeksaKraj +";
 _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv5 = (int) (_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6+1);
  //BA.debugLineNum = 2116;BA.debugLine="izgRazineDoIndeksaKraj = izgRazineDoIndeksaKraj";
@@ -1635,7 +1635,7 @@ case 66:
 //C
 this.state = 69;
  //BA.debugLineNum = 576;BA.debugLine="Log(\"<80\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("33080366","<80",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("83080366","<80",0);
  //BA.debugLineNum = 577;BA.debugLine="tWidth = 70";
 parent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2 = (int) (70);
  //BA.debugLineNum = 578;BA.debugLine="tHeight = 70";
@@ -2198,7 +2198,7 @@ int _doo = 0;
  //BA.debugLineNum = 282;BA.debugLine="If File.Exists(Starter.SourceFolder, Main.ime_dat";
 if (anywheresoftware.b4a.keywords.Common.File.Exists(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._vv1,mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6._ime_datoteke_za_info+".info")) { 
  //BA.debugLineNum = 283;BA.debugLine="Log(\"play -> NovaIgra -> UcitajInfo -> učitava s";
-anywheresoftware.b4a.keywords.Common.LogImpl("32818057","play -> NovaIgra -> UcitajInfo -> učitava se info o tome koliko je nivoa odigrano za paket nivoa!",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("82818057","play -> NovaIgra -> UcitajInfo -> učitava se info o tome koliko je nivoa odigrano za paket nivoa!",0);
  //BA.debugLineNum = 284;BA.debugLine="UcitajInfo";
 _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2();
  //BA.debugLineNum = 285;BA.debugLine="If razina = ukupno_razina Then";
@@ -2963,7 +2963,7 @@ _img2.setTag((Object)("."));
  //BA.debugLineNum = 1345;BA.debugLine="rijesenje = rijesenje.SubString2(0, rijesenje.Len";
 mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7 = mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7.substring((int) (0),(int) (mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7.length()-1));
  //BA.debugLineNum = 1346;BA.debugLine="Log(\"rijesenje: \" & rijesenje)";
-anywheresoftware.b4a.keywords.Common.LogImpl("33276894","rijesenje: "+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("83276894","rijesenje: "+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7,0);
  //BA.debugLineNum = 1347;BA.debugLine="lblSteps.Text = \"Steps: \" & brojKoraka";
 mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0.setText(BA.ObjectToCharSequence("Steps: "+BA.NumberToString(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6)));
  //BA.debugLineNum = 1348;BA.debugLine="SetLabelTextSize(lblSteps, lblSteps.Text, 28, 10)";
@@ -3109,7 +3109,7 @@ mostCurrent._btnrec.SetBackgroundImageNew((android.graphics.Bitmap)(anywheresoft
 _vv2.setEnabled(anywheresoftware.b4a.keywords.Common.False);
  };
  //BA.debugLineNum = 1878;BA.debugLine="Log(Starter.SourceFolder & \"/\" & DatZaSnimku)";
-anywheresoftware.b4a.keywords.Common.LogImpl("33866660",mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._vv1+"/"+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7,0);
+anywheresoftware.b4a.keywords.Common.LogImpl("83866660",mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._vv1+"/"+mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7,0);
  //BA.debugLineNum = 1879;BA.debugLine="End Sub";
 return "";
 }
@@ -3276,11 +3276,11 @@ int _r = 0;
 int _a = 0;
  //BA.debugLineNum = 222;BA.debugLine="Sub Timer3_Tick";
  //BA.debugLineNum = 223;BA.debugLine="Log(\"pitch: \" & NumberFormat(Pitch, 1, 0))";
-anywheresoftware.b4a.keywords.Common.LogImpl("32555905","pitch: "+anywheresoftware.b4a.keywords.Common.NumberFormat(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1,(int) (1),(int) (0)),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("82555905","pitch: "+anywheresoftware.b4a.keywords.Common.NumberFormat(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1,(int) (1),(int) (0)),0);
  //BA.debugLineNum = 224;BA.debugLine="Log(\"roll: \" & NumberFormat(Roll, 1, 0))";
-anywheresoftware.b4a.keywords.Common.LogImpl("32555906","roll: "+anywheresoftware.b4a.keywords.Common.NumberFormat(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2,(int) (1),(int) (0)),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("82555906","roll: "+anywheresoftware.b4a.keywords.Common.NumberFormat(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv2,(int) (1),(int) (0)),0);
  //BA.debugLineNum = 225;BA.debugLine="Log(\"azimuth: \" & NumberFormat(Azimuth, 1, 0))";
-anywheresoftware.b4a.keywords.Common.LogImpl("32555907","azimuth: "+anywheresoftware.b4a.keywords.Common.NumberFormat(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0,(int) (1),(int) (0)),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("82555907","azimuth: "+anywheresoftware.b4a.keywords.Common.NumberFormat(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv0,(int) (1),(int) (0)),0);
  //BA.debugLineNum = 226;BA.debugLine="Dim p As Int = NumberFormat(Pitch, 1, 0)";
 _p = (int)(Double.parseDouble(anywheresoftware.b4a.keywords.Common.NumberFormat(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1,(int) (1),(int) (0))));
  //BA.debugLineNum = 227;BA.debugLine="Dim r As Int = NumberFormat(Roll, 1, 0)";
@@ -3372,7 +3372,7 @@ _s = mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv6._ime_datoteke_za_info;
  //BA.debugLineNum = 1671;BA.debugLine="s = s.SubString2(0, s.IndexOf(\".\"))";
 _s = _s.substring((int) (0),_s.indexOf("."));
  //BA.debugLineNum = 1673;BA.debugLine="Log(razina)";
-anywheresoftware.b4a.keywords.Common.LogImpl("33473412",BA.NumberToString(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("83473412",BA.NumberToString(_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3),0);
  //BA.debugLineNum = 1675;BA.debugLine="Dim dat As String  = s & \".level_\" & (razina+1) &";
 _dat = _s+".level_"+BA.NumberToString((_vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv3+1))+".mp4.solution";
  //BA.debugLineNum = 1676;BA.debugLine="Dim sol_info As List";

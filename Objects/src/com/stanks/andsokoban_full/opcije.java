@@ -462,7 +462,7 @@ anywheresoftware.b4a.keywords.Common.File.Delete(mostCurrent._vvvvvvvvvvvvvvvvvv
 anywheresoftware.b4a.keywords.Common.File.Delete(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._vv1+"/skins/","Neon");
  };
  //BA.debugLineNum = 136;BA.debugLine="Log(Starter.SourceFolder & \"/skins\")";
-anywheresoftware.b4a.keywords.Common.LogImpl("37077943",mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._vv1+"/skins",0);
+anywheresoftware.b4a.keywords.Common.LogImpl("85505079",mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._vv1+"/skins",0);
  //BA.debugLineNum = 137;BA.debugLine="Dim l As List = ProcitajSveFoldereUSkinDir(Starte";
 _l = new anywheresoftware.b4a.objects.collections.List();
 _l = _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7(mostCurrent._vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv7._vv1+"/skins");
@@ -691,7 +691,7 @@ return "";
 public static String  _cb_checkedchange(boolean _checked) throws Exception{
  //BA.debugLineNum = 249;BA.debugLine="Sub cb_CheckedChange(Checked As Boolean)";
  //BA.debugLineNum = 250;BA.debugLine="Log(\"cb: \" & Checked)";
-anywheresoftware.b4a.keywords.Common.LogImpl("37405569","cb: "+BA.ObjectToString(_checked),0);
+anywheresoftware.b4a.keywords.Common.LogImpl("85832705","cb: "+BA.ObjectToString(_checked),0);
  //BA.debugLineNum = 251;BA.debugLine="cb = Checked";
 _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1 = _checked;
  //BA.debugLineNum = 252;BA.debugLine="mOpcije.Put(\"cb\", cb)";

@@ -148,7 +148,7 @@ public static String  _process_globals() throws Exception{
  //BA.debugLineNum = 9;BA.debugLine="Dim DBFileName As String			: DBFileName = \"db\"";
 _v5 = "";
  //BA.debugLineNum = 9;BA.debugLine="Dim DBFileName As String			: DBFileName = \"db\"";
-_v5 = BA.__b (new byte[] {53,33}, 858048);
+_v5 = BA.__b (new byte[] {53,33}, 895315);
  //BA.debugLineNum = 11;BA.debugLine="Dim upit As SQL";
 _v6 = new anywheresoftware.b4a.sql.SQL();
  //BA.debugLineNum = 12;BA.debugLine="Dim kvs As KeyValueStore";

@@ -59,7 +59,7 @@ if (_success) {
 _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.TransactionSuccessful();
  }else {
  //BA.debugLineNum = 204;BA.debugLine="Log(\"Error saving object: \" & LastException)";
-__c.LogImpl("318284548","Error saving object: "+BA.ObjectToString(__c.LastException(getActivityBA())),0);
+__c.LogImpl("816711684","Error saving object: "+BA.ObjectToString(__c.LastException(getActivityBA())),0);
  };
  //BA.debugLineNum = 206;BA.debugLine="sql1.EndTransaction";
 _vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv1.EndTransaction();
